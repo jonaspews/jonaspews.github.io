@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Reflexion - Radar Chart</title>
+  </head>
+  <body>
+        
+    <!--
+    ____       __ _           _             
+    |  _ \ ___ / _| | _____  _(_) ___  _ __  
+    | |_) / _ \ |_| |/ _ \ \/ / |/ _ \| '_ \ 
+    |  _ <  __/  _| |  __/>  <| | (_) | | | |
+    |_| \_\___|_| |_|\___/_/\_\_|\___/|_| |_|
+                                            
+    *****************************************
+    *****************************************
+
+    -->
+
+    <!-- Start copying here -->
+    <!-- ab hier kopieren -->
+
+      <!-- this line can also go in the <HEAD> of the file // diese Zeile kann man auch in den <HEAD> der Datei schreiben -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  
+
+      <!-- for STYLE reasons the chart-CANVAS is embedded in a seperate DIV-container -->
+      <!-- wegen des STYLE ist die chart-CANVAS in einem seperaten DIV-container eingebettet -->
+      <div class="chart-container" style="position: relative; height: 40vh; width: 40vw">
+        <!-- this canvas is later used to draw the chart, 
+              if you want to draw several seperate charts you have to pay attention to the IDs -->
+        <!-- in diesem canvas wird das Digramm gezeichnet
+              wenn du mehrere Diagramme zeichnen willst, muss du die IDs anpassen-->      
+        <canvas id="evaluation_01" style="border:1px solid"></canvas>
+      </div>
+
+      <script>
+        var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
+        var chartTitle = "Kapitel 1";  // change accordingly
+        var dataSetValues = [10, 9, 0, 4, 1];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
+
+        var chartCanvas = document.getElementById(canvasId);  // don't change this
+        var chartData = {
+          labels: ["Einzelarbeit", "Gruppenarbeit", "Effizienz", "Zeitplanung", "Verständnis"],  // don't change this
+          datasets: [
+            {
+            label: chartTitle,  // keep this
+            backgroundColor: "rgba(200,0,0,0.2)",  // change color here
+            data: dataSetValues  // keep this
+            }, 
+          ]
+        };
+
+        var radarChart = new Chart(chartCanvas, {
+          type: 'radar',  // keep this
+          data: chartData,
+          options: {
+              title: {
+                  display: true,
+                  text: 'Reflexion'  // change this title as you like it
+              },
+              responsive: true,  // keep this
+              maintainAspectRatio: false  // keep this
+          }
+        });
+      </script>
+
+    <!-- bis hier kopieren -->
+    <!-- Stop copying here-->
+
+
+
+    </body>
+
+</html>
+
+
