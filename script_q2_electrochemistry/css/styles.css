@@ -1,0 +1,25 @@
+header {
+    width: 100%;
+    position: fixed;
+    background-color: blue;
+}
+
+#mainContent {
+    padding-top: 10em;
+}
+
+.youtubeContainer {
+    position: relative;
+    width: 75%;
+    height: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
