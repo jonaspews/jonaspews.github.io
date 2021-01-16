@@ -2,6 +2,7 @@ header {
     width: 100%;
     position: fixed;
     background-color: blue;
+    z-index:1;
 }
 
 #mainContent {
@@ -15,6 +16,7 @@ header {
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 56.25%;
+    z-index:0;
 }
 .video {
     position: absolute;
@@ -22,4 +24,5 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index:0;
 }
