@@ -1,3 +1,7 @@
+/* **********
+   own styles
+   ********** */
+   
 header {
     width: 100%;
     position: fixed;
@@ -9,15 +13,17 @@ header {
     padding-top: 10em;
 }
 
+
 .youtubeContainer {
     position: relative;
-    width: 75%;
+    width: 100%;
     height: 0;
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 56.25%;
     z-index:0;
 }
+
 .video {
     position: absolute;
     top: 0;
@@ -25,4 +31,45 @@ header {
     width: 100%;
     height: 100%;
     z-index:0;
+}
+
+.scriptstyle {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* *************************************************************************** */
+/* mobile first approach: so the following styles are only for bigger screens  */
+/* *************************************************************************** */
+
+@media (min-width: 75em) {
+    body {
+        /*padding-left: 10%;
+        padding-right: 10%; */
+        margin-left: 10%;
+        margin-right: 10%;  
+    }
+
+    header {
+        width: 80%;
+    }
+
+    .youtubeContainer {
+        position: relative;
+        width: 80%;
+        height: 0; 
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 56.25%;
+        z-index:0;
+    }
+    
+    .video {
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 80%;
+        height: 80%;
+        z-index:0;
+    }
+    
 }
