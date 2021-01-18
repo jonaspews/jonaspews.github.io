@@ -39,7 +39,7 @@
         var chartTitle = "Kapitel 1";  // change accordingly
         var dataSetValues = [15, 0, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
 
-          // this checks whether values in dataSetValues are in the expected range
+          // this checks whether values in dataSetValues are in the expected range, TODO: maybe later tell user which value is wrong
         dataSetValues.forEach(function(item) {
             if (item < 0 || item > 15) {
               console.log(item);
