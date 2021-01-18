@@ -37,7 +37,17 @@
       <script>
         var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
         var chartTitle = "Kapitel 1";  // change accordingly
-        var dataSetValues = [10, 9, 0, 4, 1];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
+        var dataSetValues = [15, 0, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
+
+          // this checks whether values in dataSetValues are in the expected range
+        dataSetValues.forEach(function(item) {
+            if (item < 0 || item > 15) {
+              console.log(item);
+              alert("Notenwert falsch: " + item + "!");
+              dataSetValues = [0,0,0,0,0];
+            };
+          }
+        );
 
         var chartCanvas = document.getElementById(canvasId);  // don't change this
         var chartData = {
@@ -45,7 +55,7 @@
           datasets: [
             {
             label: chartTitle,  // keep this
-            backgroundColor: "rgba(200,0,0,0.2)",  // change color here
+            backgroundColor: "rgba(131, 15, 173,0.7)",  // change color and saturation/opacity here
             data: dataSetValues  // keep this
             }, 
           ]
@@ -58,6 +68,16 @@
               title: {
                   display: true,
                   text: 'Reflexion'  // change this title as you like it
+              },
+              scale: {
+                  angleLines: {
+                      display: true
+                  },
+                  ticks: {
+                      min: 0,
+                      max: 15,
+                      stepSize: 2,
+                  }
               },
               responsive: true,  // keep this
               maintainAspectRatio: false  // keep this
