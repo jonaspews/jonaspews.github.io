@@ -2,15 +2,23 @@
    own styles
    ********** */
    
+/* *************************************************************** */
+/* mobile first approach: following styles are for mobile screens  */
+/* *************************************************************** */
+
 header {
     width: 100%;
     position: fixed;
-    background-color: blue;
+    background-color: #434343;
     z-index:1;
 }
 
 #mainContent {
     padding-top: 10em;
+}
+
+h3 {
+    padding-top: 20px;
 }
 
 .youtubeContainer {
@@ -36,16 +44,77 @@ header {
 }
 
 .scriptstyle {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */  
+    margin-bottom: 2px;
+    color: #404040;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .tableContainer {
-    position: relative;
-    margin-bottom: 1em;
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */  
     z-index:0;
-  /*  border: 1px solid;
-    box-shadow: 0 5px 5px -3px black;*/
+    border: 1px solid;
+    box-shadow: 0 5px 5px -3px black;
+    border-radius: 5px;
+    padding-top: 13px;
+    margin-bottom: 1em;
 }
+
+.symbolInfo {
+    width: 120px; 
+    height: auto;
+    margin: auto;  /* auto adjust position in the middle */
+}
+
+.containerBoxInfo {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.containerBoxReview {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: orange;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.containerBoxFast {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: red;
+    box-shadow: 0 5px 5px -3px black;
+}
+.chartContainer {
+    position: relative; 
+    width: 85%;
+    margin: auto;
+    margin-top: 3px;
+    padding: 20px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #000000;
+    box-shadow: 0 5px 5px -3px black;
+    /* height: 40vh; width: 40vw */
+}
+
+/*.chartCanvas {
+
+} */
+
 
 /* *************************************************************************** */
 /* mobile first approach: so the following styles are only for bigger screens  */
@@ -53,22 +122,20 @@ header {
 
 @media (min-width: 75em) {
     body {
-        /*padding-left: 10%;
-        padding-right: 10%; */
         margin-left: 10%;
         margin-right: 10%;  
     }
 
     header {
         width: 80%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
 
     .youtubeContainer {
         position: relative;
         width: 75%;
         height: 0; 
-        /* padding-right: 1em;
-        padding-left: 1em; */
         left: 2em;
         margin-bottom: 3em;
         z-index:0;
@@ -78,11 +145,11 @@ header {
     
     .video {
         position: absolute;
-        /* top: 0;
-        left: 2em; 
-        width: 80%;
-        height: 80%; */
         z-index:0;
     }
-    
-}
+
+    .symbolInfo {
+        width: 120px;
+        height: auto;
+    }
+}   
