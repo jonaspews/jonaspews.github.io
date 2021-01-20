@@ -27,11 +27,11 @@
   <header> <!-- navigation (still TODO)-->
     <!-- <h1 class="display-1 text-white">Q2</h1> -->
     <!-- TODO: Chemistry by Minnie Pigeon from the Noun Project-->
-    <button class="accordion display-4 text-white"><img id="headerSymbol" src="symbols/noun_Chemistry_55633.png">Inhalt</button>
-    <div class="panel">
-      <p class="display-4">Einführung</p>
-      <p class="display-4">Grundlagen</p>
-      <p class="display-4">Die galvanische Zelle</p>
+    <button class="accordion display-4 text-white"><img id="headerSymbol" src="symbols/noun_Chemistry_55633_w.png">Inhalt</button>
+    <div class="panel" id="headerPanel">
+      <p class="display-4"><a href="#intro" class="hrefContent">Einführung</a></p>
+      <p class="display-4"><a href="#basics" class="hrefContent">Grundlagen</a</p>
+      <p class="display-4"><a href="#galvanCell" class="hrefContent">Die galvanische Zelle</a></p>
       <!-- <p class="display-4">Lorem ipsum...</p>
       <p class="display-4">Lorem ipsum...</p> -->
     </div>
@@ -44,7 +44,7 @@
       <h1 class="display-1">Skript - Elektrochemie</h1>
       <hr>  <!-- seperator before new chapter-->
         <!-- style for script: use display-2 for chapter headlines-->
-        <h1 class="display-2">Einführung</h1>
+        <h1 id="intro" class="display-2">Einführung</h1>
           <p class="lead">
             Mit Hilfe dieses Skriptes sollen Sie sich das Thema Elektrochemie selbstständig erarbeiten. Selbstständig
             bedeutet wirklich SELBST und STÄNDIG. 
@@ -67,19 +67,20 @@
           Ihr eigenes Zeitmanagement und analysieren Ihre eigenen Fähig- und Fertigkeiten.
           </p>
 
-          <h1 class="display-4">Symbole im Skript</h1>
+          <h2 class="display-4">Symbole im Skript</h2>
             <!-- INFO-Box start -->
             <!-- ************** -->
             <div class="containerBoxInfo container-md">
               <div class="row">
                 <div class="col-md-2">
-                  <img class="img-fluid symbolInfo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Wikipedia_logo_%28svg%29.svg/240px-Wikipedia_logo_%28svg%29.svg.png" alt="wiki logo" loading="lazy">
+                  <img class="img-fluid symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
                 </div>
                 <div class="col-md-10">
                   <p class="scriptstyle">
                     In diesen Texten finden Sie Erklärungen und Hintergründe! <br> 
                     Die Quellen finden Sie in den Fußnoten. Diese Quellen können Ihnen auch als Quizvorbereitung helfen. <br>
-                    Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte Quelle.
+                    Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte Quelle.<br>
+                    Bild: Information by dDara from the Noun Project
                   </p>
                 </div>
               </div>
@@ -166,7 +167,7 @@
             <!-- ************ -->
 
 
-          <h1 class="display-4">Bewertung</h1>
+          <h2 class="display-4">Bewertung</h2>
           <p class="scriptstyle">
             Die Bewertung im Semester erfolgt anhand von:
           </p>
@@ -184,7 +185,7 @@
             ändern. Bitte halten Sie mit Ihrer Lehrkraft Rücksprache.
           </p>
           
-          <h1 class="display-4">Das digitale Portfolio</h1>
+          <h2 class="display-4">Das digitale Portfolio</h2>
           <p class="scriptstyle">
             Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller Arbeitsergebnisse. Sie können und sollten in diesem Portfolio alles sammeln, was Sie an Materialien und Produkten
             selbst erarbeitetet haben. Die zweite Funktion des Portfolios ist die Darstellung Ihrer eigenen Entwicklung. Mit
@@ -380,7 +381,7 @@
 <!-- *****************************************************************************************-->
 <!-- *****************************************************************************************-->
         <hr>  <!-- seperator before new chapter-->
-        <h1 class="display-2">Grundlagen</h1>
+        <h1 class="display-2" id="basics">Grundlagen</h1>
           <!-- <div class="chapterOverview">
             <p class="chapterIntro">
 
@@ -388,7 +389,7 @@
           </div> -->
 <!-- *****************************************************************************************-->
           <div class="chapterContent">
-            <h1 class="display-4"> Wiederholung Grundlagen Chemie</h1>
+            <h2 class="display-4"> Wiederholung Grundlagen Chemie</h2>
               <p class="scriptstyle">
                 <b>Auftrag: Erarbeiten Sie sich die grundlegenden Begriffe und Konzepte, die für dieses Thema nötig sind.</b>
               </p>
@@ -412,7 +413,7 @@
 <!-- *****************************************************************************************-->
 <!-- *****************************************************************************************-->
         <hr>  <!-- seperator before new chapter-->
-        <h1 class="display-2">Die galvanische Zelle</h1>
+        <h1 class="display-2" id="galvanCell">Die galvanische Zelle</h1>
         <!-- <div class="chapterOverview">
             <p class="chapterIntro">
 
@@ -420,7 +421,7 @@
           </div> -->
 <!-- *****************************************************************************************-->
           <div class="chapterContent">
-            <h1 class="display-4">Die Batterie</h1>
+            <h2 class="display-4">Die Batterie</h2>
               <p class="lead">Die meisten modernen Batterien funktionieren immer noch nach den Prinzipien, die
                 bereits im 18.Jahrhundert erforscht und beschrieben wurden: die galvanischen Zellen.
               </p>

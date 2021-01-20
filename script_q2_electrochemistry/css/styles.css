@@ -17,8 +17,23 @@ header {
     padding-top: 10em;
 }
 
+h1 {
+    padding-top: 50px;
+}
+
+
 h3 {
     padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .youtubeContainer {
@@ -49,6 +64,7 @@ h3 {
     margin-bottom: 2px;
     color: #404040;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 .tableContainer {
