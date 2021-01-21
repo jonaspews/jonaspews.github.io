@@ -79,6 +79,7 @@ a:hover {
 }
 
 .symbolInfo {
+    position: relative;
     width: 120px; 
     height: auto;
     margin: auto;  /* auto adjust position in the middle */
@@ -153,6 +154,13 @@ a:hover {
     width: auto;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 /*.chartCanvas {
 
 } */
@@ -162,7 +170,7 @@ a:hover {
 
  /* Style the buttons that are used to open and close the accordion panel */
  .accordion {
-    background-color: #434343;;
+    background-color: #404040;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -175,18 +183,20 @@ a:hover {
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #686868;
   }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #909090;
     display: none;
     overflow: hidden;
   } 
 
-
+  .panelParagraph {
+      border-bottom: 1px solid;
+  }
 
 
 /* *************************************************************************** */
