@@ -32,10 +32,10 @@
       <p class="display-4 panelParagraph"><a href="#intro" class="hrefContent">Einführung</a></p>
       <p class="display-4 panelParagraph"><a href="#basics" class="hrefContent">Grundlagen</a</p>
       <p class="display-4 panelParagraph"><a href="#galvanCell" class="hrefContent">Die galvanische Zelle</a></p>
+      <p class="display-4 panelParagraph"><a href="#electrolysis" class="hrefContent">Die Elektrolyse</a></p>
       <!-- <p class="display-4">Lorem ipsum...</p>
       <p class="display-4">Lorem ipsum...</p> -->
     </div>
-
 
   </header>
   <!-- start main content of script -->
@@ -83,6 +83,11 @@
                   </p>
                 </div>
             </div>
+            
+            <!-- TODO: the alignment of the content does not really look even spaced or good when the viewport is
+            bigger (desktop screen or a bit larger than iPad), 
+            maybe it is usefull to change CSS:justify-content based on @media-queries -->
+            
             <!-- INFO-Box start (without flexbox)-->
             <!-- ************** 
             <div class="containerBoxInfo container-md">
@@ -105,6 +110,25 @@
 
             <!-- REVIEW-Box start -->
             <!-- **************** -->
+            <div class="containerBoxReview flex-container">
+              <div>
+                <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy"> 
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br> 
+                  Sie sollten die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt 
+                  haben. <br> 
+                  Falls nicht, arbeiten Sie Ihre Wissenslücken bitte selbstständig auf.<br>
+                  Bild: Arrow by Aleksandr Vector from the Noun Project
+                </p>
+              </div>
+            </div>
+            <!-- REVIEW-Box end -->
+            <!-- ************** -->
+
+            <!-- REVIEW-Box start (without flexbox)-->
+            <!-- **************** 
             <div class="containerBoxReview container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -120,11 +144,29 @@
                 </div>
               </div>
             </div>
-            <!-- REVIEW-Box end -->
+             REVIEW-Box end -->
             <!-- ************** -->
 
             <!-- FastLearner-Box start -->
             <!-- ********************* -->
+            <div class="containerBoxFast flex-container">
+              <div>
+                <img class="symbolInfo" src="symbols/noun_thunder_3429624.png" alt="thunder " loading="lazy">
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  Es soll keine Langeweile aufkommen. <br>
+                  Wenn Sie mit den Aufträgen bereits fertig sind, während Ihre Gruppe noch arbeitet, 
+                  können Sie sich hier noch weiter in das Thema vertiefen. <br>
+                  Bild: thunder by Pascal Heß from the Noun Project    
+                </p>
+              </div>
+            </div>
+            <!-- FastLearner-Box end -->
+            <!-- ******************* -->
+
+            <!-- FastLearner-Box start (without flexbox) -->
+            <!-- ********************* 
             <div class="containerBoxFast container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -140,11 +182,29 @@
                 </div>
               </div>
             </div>
-            <!-- FastLearner-Box end -->
+             FastLearner-Box end -->
             <!-- ******************* -->
+
 
             <!-- Method-Box start -->
             <!-- *****************-->
+            <div class="containerBoxMethod flex-container">
+              <div>
+                <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin. <br>
+                  Bild: Chemistry by Eucalyp from the Noun Project    
+                </p>
+              </div>
+            </div>
+            <!-- Method-Box end -->
+            <!-- ***************-->
+
+
+            <!-- Method-Box start (without flexbox)-->
+            <!-- *****************
             <div class="containerBoxMethod container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -158,12 +218,30 @@
                 </div>
               </div>
             </div>
-            <!-- Method-Box end -->
+             Method-Box end -->
             <!-- ***************-->
+
 
 
             <!-- Time-Box start -->
             <!-- ***************-->
+            <div class="containerBoxTime flex-container">
+              <div>
+                <img class="symbolInfo" src="symbols/noun_clock_1696015.png" alt="clock logo" loading="lazy">
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  Das Zeitsymbol soll Ihnen zeigen, wie lange Sie für das jeweilige Kapitel brauchen sollten.<br>
+                  Diese Zeitangabe dient aber nur als Orientierung. Am Ende müssen Sie nur die Planung der Lehrkraft und Ihre eigene Zeitplanung beachten.<br>
+                  Bild: clock by Mr. Minuvi from the Noun Project  
+                </p>
+              </div>
+            </div>
+            <!-- Time-Box end -->
+            <!-- ************ -->
+
+            <!-- Time-Box start (without flexbox) -->
+            <!-- ***************
             <div class="containerBoxTime container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -178,7 +256,7 @@
                 </div>
               </div>
             </div>
-            <!-- Time-Box end -->
+            Time-Box end -->
             <!-- ************ -->
 
 
@@ -393,7 +471,7 @@
               </table>
             </div>
 <!-- *****************************************************************************************-->
-<!-- *****************************************************************************************-->
+<!-- *** Start Of Chapter ********************************************************************-->
 <!-- *****************************************************************************************-->
         <hr>  <!-- seperator before new chapter-->
         <h1 class="display-2" id="basics">Grundlagen</h1>
@@ -411,7 +489,10 @@
             </p>
           </div>
           <div>Wiederholungsbox</div> -->
-<!-- *****************************************************************************************-->
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
           <div class="chapterContent">
             <h2 class="display-4"> Wiederholung Grundlagen Chemie</h2>
               <p class="scriptstyle">
@@ -432,12 +513,16 @@
                 <div class="youtubeContainer">
                   <iframe src="https://www.youtube-nocookie.com/embed/Y3BmwGyVjt8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video"></iframe>
                 </div>
-              </div>
-
-<!-- *****************************************************************************************-->
-<!-- *****************************************************************************************-->
-<!-- *****************************************************************************************-->
+          </div>
         <hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->              
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start Of Chapter ******************************************************************** -->
+<!-- ***************************************************************************************** -->
+        
         <h1 class="display-2" id="galvanCell">Die galvanische Zelle</h1>
           <p class="lead">Die meisten modernen Batterien funktionieren immer noch nach den Prinzipien, die
             bereits im 18.Jahrhundert erforscht und beschrieben wurden: die galvanischen Zellen.
@@ -467,6 +552,7 @@
             </div>
           </div>
 <!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
           <div class="chapterContent">
             <h2 class="display-4">Die Batterie</h2>
               <p class="lead">Eine Batterie zu bauen, also mit Hilfe chemischer Reaktionen Strom zu erzeugen, ist eigentlich gar nicht so schwer. Jedenfalls wenn es um das Prinzip geht.</p>
@@ -481,10 +567,6 @@
                   <li><b>Kennzeichnen</b> Sie die Fließrichtung der Elektronen in einem galvanischen Element.</li>
                   <li><b>Erklären</b> Sie die Funktion der Salzbrücke in galvanischen Elementen.</li>
                 </ol>
-              <!--<h3>Input - Edle und unedle Metalle</h3>
-                <div class="youtubeContainer">
-                  <iframe src="https://www.youtube-nocookie.com/embed/dLLxuL-AlOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div> -->
               <p class="scriptstyle">
                 <b>Auftrag: Bauen Sie eine spezielle galvanische Zelle: das <i>Daniell-Element.</i></b>              
               </p>
@@ -504,6 +586,10 @@
                 <div class="youtubeContainer">
                   <iframe src="https://www.youtube-nocookie.com/embed/gifwGurgfVk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
                 </div>
+              <h3>Input - Edle und unedle Metalle</h3>
+                <div class="youtubeContainer">
+                  <iframe src="https://www.youtube-nocookie.com/embed/dLLxuL-AlOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                </div>
             <h2 class="display-4">Der Akkumulator</h2>
               <p class="lead">
                 In vielen Geräten steckt keine normale Batterie, sondern ein Akkumulator. 
@@ -518,9 +604,47 @@
                   <li> <b>Erläutern</b> Sie Aufbau und Funktionsweise eines Blei-Akkumulators. <b>Nennen</b> Sie Anwendungsgebiete für diesen Akkumulatortyp und <b>bewerten</b> Sie seine Umweltverträglichkeit.</li>
                 </ol>
           </div>
-<!-- *****************************************************************************************-->
-<!-- *****************************************************************************************-->
-<!-- *****************************************************************************************-->
+          <hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start Of Chapter ******************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
+        <h1 class="display-2" id="electrolysis">Die Elektrolyse</h1>
+          <p class="lead">In Batterien wird chemische Energie in elektrische Energie umgewandelt. Im Akkumulator wird dieser
+            Prozess wieder umgekehrt. Das ist für die Nutzung von Energiequellen wie Sonne und Wind auch wichtig, da sie keine 
+            konstanten Energielieferanten sind, wie Atomkraftwerkte. Aber es gibt noch andere Möglichkeiten elektrische Energie zu speichern:
+            beispielsweise die Wasserstoffelektolyse.
+          </p>
+          <div class="chapterOverview flex-container">
+            <div>
+              <p class="scriptstyle">
+                <b>Am Ende dieses Kapitel sollen Sie ... :</b>    
+              </p>
+                <ul class="scriptstyle">
+                  <li>den Aufbau einer Elektrolysezelle am Beispiel des Hoffmannschen Zersetzungsapparates <b>beschreiben</b> können.</li>
+                </ul>
+              <p class="scriptstyle"><b>Vorgehensweise:</b></p>
+                <ul class="scriptstyle">
+                  <li>Bearbeiten Sie die Aufgaben zur Elektrolyse erst einmal allein.</li>
+                  <li>Verlgeichen Sie dann mit anderen Lernenden.</li>
+                </ul>
+            </div>
+            <div>
+              <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
+              <p style="text-align: center;"><b>120min</b></p>
+            </div>
+          </div>
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
+
+
   <!-- end of main content of script -->        
   </div>
 
