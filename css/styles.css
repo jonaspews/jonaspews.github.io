@@ -1,0 +1,39 @@
+/* **********
+   own styles
+   ********** */
+   
+/* *************************************************************** */
+/* mobile first approach: following styles are for mobile screens  */
+/* *************************************************************** */
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #434343;
+    z-index:1;
+}
+
+#mainContent {
+    padding-top: 10em;
+}
+
+h1 {
+    padding-top: 50px;
+}
+
+/* *************************************************************************** */
+/* mobile first approach: so the following styles are only for bigger screens  */
+/* *************************************************************************** */
+
+@media (min-width: 75em) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;  
+    }
+
+    header {
+        width: 80%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
