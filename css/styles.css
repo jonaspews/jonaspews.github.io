@@ -21,6 +21,43 @@ h1 {
     padding-top: 50px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contentTile {
+    width: 240px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #000000;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.imageInTile {
+    position: relative;
+    width: 240px; 
+    height: auto;
+    margin: auto;  /* auto adjust position in the middle */
+    opacity: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.tileText {
+    text-align: center;
+}
+
+.contentTile:hover .imageInTile {
+    opacity: .7;
+}
+
+
 /* *************************************************************************** */
 /* mobile first approach: so the following styles are only for bigger screens  */
 /* *************************************************************************** */
