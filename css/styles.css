@@ -53,6 +53,8 @@ a:hover {
 
 .imageInTile {
     position: relative;
+   /* -webkit-clip-path: inset(240px 240px 50px 50px );
+    clip-path: inset(240px 240px 240px 240px); */
     width: 240px; 
     height: auto;
     margin: auto;  /* auto adjust position in the middle */
