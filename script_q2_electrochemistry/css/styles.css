@@ -220,12 +220,12 @@ a:hover {
 
 @media (min-width: 75em) {
     body {
-        margin-left: 10%;
-        margin-right: 10%;  
+        margin-left: 25%;
+        margin-right: 25%;  
     }
 
     header {
-        width: 80%;
+        width: 50%;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
