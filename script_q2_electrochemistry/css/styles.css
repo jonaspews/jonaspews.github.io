@@ -13,6 +13,12 @@ header {
     z-index:1;
 }
 
+/* this overwrites the bootstrap css for padding in accordion class */
+/* I mainly use it in the header */
+.accordion {
+    padding: 0px;
+}
+
 #mainContent {
     padding-top: 10em;
 }
@@ -222,6 +228,12 @@ a:hover {
     body {
         margin-left: 25%;
         margin-right: 25%;  
+    }
+
+    /* this overwrites the bootstrap css for padding in accordion class */
+    /* I mainly use it in the header */
+    .accordion {
+        padding: 0px;
     }
 
     header {
