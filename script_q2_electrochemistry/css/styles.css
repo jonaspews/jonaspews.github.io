@@ -13,12 +13,6 @@ header {
     z-index:1;
 }
 
-/* this overwrites the bootstrap css for padding in accordion class */
-/* I mainly use it in the header */
-.accordion {
-    padding: 0px;
-}
-
 #mainContent {
     padding-top: 10em;
 }
@@ -193,7 +187,7 @@ a:hover {
     background-color: #404040;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 0px;
     width: 100%;
     text-align: left;
     border: none;
