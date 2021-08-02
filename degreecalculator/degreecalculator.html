@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Abschlussrechner</title>
+    <style>
+      body {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Helvetica, sans-serif;
+      }
+      #subjectGroup01 {
+      /*  background-color: aqua;  */
+        margin-bottom: 10px;
+      }
+
+      #subjectGroup02 {
+      /*    background-color: blueviolet; */
+        margin-bottom: 10px;
+      }
+      h1, h2, h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Abschlussberechnung für die Gesamtschule</h1>
+    <p>ACHTUNG: alle Angaben sind ohne Gewähr. Dies ist keine finale Berechnung für ein Zeugnis. Diese Übersicht und Berechnung dient nur der Orientierung für Schüler:innen!</p>
+    <h2>Eingabe der Informationen</h2>
+    <form>
+      <div id="subjectGroup01">
+        <table>
+          <tr>
+            <td>Deutsch</td>
+            <td>
+              <label for="deCourse">Kurs:</label>
+              <select id="deCourse" name="deCourse">
+                <option value="E">E</option>
+                <option value="G">G</option>
+              </select> 
+            </td>
+            <td>
+              <label for="deGradepoints">Notenpunkte:</label>
+                <select id="deGradepoints" name="deGradepoints">
+                  <option value="15">15</option>
+                  <option value="14">14</option>
+                  <option value="13">13</option>
+                  <option value="12">12</option>
+                  <option value="11">11</option>
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                  <option value="0">0</option>
+                </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Mathematik</td>
+            <td>
+              <label for="maCourse">Kurs:</label>
+              <select id="maCourse" name="maCourse">
+                <option value="E">E</option>
+                <option value="G">G</option>
+              </select> 
+            </td>
+            <td>
+              <label for="maGradepoints">Notenpunkte:</label>
+                <select id="maGradepoints" name="maGradepoints">
+                  <option value="15">15</option>
+                  <option value="14">14</option>
+                  <option value="13">13</option>
+                  <option value="12">12</option>
+                  <option value="11">11</option>
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                  <option value="0">0</option>
+                </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Englisch</td>
+            <td>
+              <label for="engCourse">Kurs:</label>
+              <select id="engCourse" name="engCourse">
+                <option value="E">E</option>
+                <option value="G">G</option>
+              </select> 
+            </td>
+            <td>
+              <label for="engGradepoints">Notenpunkte:</label>
+              <select id="engGradepoints" name="engGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Chemie</td>
+            <td>
+              <label for="chCourse">Kurs:</label>
+              <select id="chCourse" name="chCourse">
+                <option value="E">E</option>
+                <option value="G">G</option>
+              </select> 
+            </td>
+            <td>
+              <label for="chGradepoints">Notenpunkte:</label>
+              <select id="chGradepoints" name="chGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Physik</td>
+            <td>
+              <label for="phyCourse">Kurs:</label>
+              <select id="phyCourse" name="phyCourse">
+                <option value="E">E</option>
+                <option value="G">G</option>
+              </select> 
+            </td>
+            <td>
+              <label for="phyGradepoints">Notenpunkte:</label>
+                <select id="phyGradepoints" name="phyGradepoints">
+                  <option value="15">15</option>
+                  <option value="14">14</option>
+                  <option value="13">13</option>
+                  <option value="12">12</option>
+                  <option value="11">11</option>
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                  <option value="0">0</option>
+                </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Wahlpflicht 1</td>
+            <td colspan="2">
+              <label for="wp1Gradepoints">Notenpunkte:</label>
+                <select id="wp1Gradepoints" name="wp1Gradepoints">
+                  <option value="15">15</option>
+                  <option value="14">14</option>
+                  <option value="13">13</option>
+                  <option value="12">12</option>
+                  <option value="11">11</option>
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                  <option value="0">0</option>
+                </select> 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="subjectGroup02">
+        <table>
+          <tr>
+            <td>Wahlpflicht 2</td>
+            <td>
+              <label for="wp2Gradepoints">Notenpunkte:</label>
+              <select id="wp2Gradepoints" name="wp2Gradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Biologie</td>
+            <td>
+              <label for="bioGradepoints">Notenpunkte:</label>
+              <select id="bioGradepoints" name="bioGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>WAT</td>
+            <td>
+              <label for="watGradepoints">Notenpunkte:</label>
+              <select id="watGradepoints" name="watGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Sport</td>
+            <td>
+              <label for="spoGradepoints">Notenpunkte:</label>
+              <select id="spoGradepoints" name="spoGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Kunst</td>
+            <td>
+              <label for="kuGradepoints">Notenpunkte:</label>
+              <select id="kuGradepoints" name="kuGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Musik</td>
+            <td>
+              <label for="muGradepoints">Notenpunkte:</label>
+              <select id="muGradepoints" name="muGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>LER</td>
+            <td>
+              <label for="lerGradepoints">Notenpunkte:</label>
+              <select id="lerGradepoints" name="lerGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Geschichte</td>
+            <td>
+              <label for="geGradepoints">Notenpunkte:</label>
+              <select id="geGradepoints" name="geGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Geografie</td>
+            <td>
+              <label for="geoGradepoints">Notenpunkte:</label>
+              <select id="geoGradepoints" name="geoGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+          <tr>
+            <td>Politische Bildung</td>
+            <td>
+              <label for="pbGradepoints">Notenpunkte:</label>
+              <select id="pbGradepoints" name="pbGradepoints">
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select> 
+            </td>
+          </tr>
+
+        </table>
+      </div>
+      <div>
+        <button type="button" onclick="calculate()">Berechnen</button>
+      </div>
+    </form>
+
+    <h2>Analyse</h2>
+      <h3>Allgemeine Zusammenfassung</h3>
+      <div>
+        <table id="analysisGeneralStats">
+          <tr>
+            <td>Durchschnittsnote Gesellschaftswissenschaften (Ge/Geo/PB):</td>
+            <td id="gewiGradepoints"></td>
+          </tr>
+          <tr>
+            <td>Gesamtpunktzahl:</td>
+            <td id="totalGradepoints"></td>
+          </tr>
+          <tr>
+            <td>Gesamtpunktzahl in Fächergruppe 2:</td>
+            <td id="group2Gradepoints"></td>
+          </tr>
+          <tr>
+            <td>Anzahl E-Kurse:</td>
+            <td id="numberECourses"></td>
+          </tr>
+
+        </table>
+      </div>
+
+      <h3>erweiterter Hauptschulabschluss/eBBR</h3>
+        <table id="analysisEBBR">
+          <tr>
+            <td>Mindestpunktzahl alle Fächer 60 Punkte:</td>
+            <td id="minGradepoints60"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl Fächergruppe II 30 Punkte:</td>
+            <td id="minGradepoints30"></td>
+          </tr>
+          <tr>
+            <td>mindestens 5 Punkte in Mathe <i>oder</i> Deutsch:</td>
+            <td id="eBBRmin5PinMaDeu"></td>
+          </tr>
+          <tr>
+            <td>höchstens zwei Noten 5:</td>
+            <td id="eBBRmaxTwoBadFives"></td>
+          </tr>
+          <tr>
+            <td>keine Note 6:</td>
+            <td id="eBBRnoBadSix"></td>
+          </tr>
+          <tr>
+            <td>Abschluss eBBR:</td>
+            <td id="eBBRpassed"></td>
+          </tr>
+        </table>
+      <h3>Realschulabschluss/FOR</h3>
+        <table id="analysisFOR">
+          <tr>
+            <td>Mindestpunktzahl alle Fächer 84 Punkte:</td>
+            <td id="minGradepoints84"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl Fächergruppe II 42 Punkte:</td>
+            <td id="minGradepoints42"></td>
+          </tr>
+          <tr>
+            <td>Mindestens 2 E-Kurse:</td>
+            <td id="FORmin2ECourses"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl in Fächergruppe I je 7 Punkte:</td>
+            <td id="FORmin7Points"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl in Fächergruppe II je 4 Punkte:</td>
+            <td id="FORmin4Points"></td>
+          </tr>
+          <tr>
+            <td>und zweimal 7 Punkte:</td>
+            <td id="FORmin7PointsTwice"></td>
+          </tr>
+          <tr>
+            <td>höchstens zwei Ausfälle:</td>
+            <td id="FORmax2Fails"></td>
+          </tr>
+          <tr>
+            <td>keine Note 6:</td>
+            <td id="FORnoBadSix"></td>
+          </tr>
+          <tr>
+            <td>mindestens 5 Punkte in Deutsch <i>oder</i> Mathematik:</td>
+            <td id="FORmin5PinMaDeu"></td>
+          </tr>
+          <tr>
+            <td>Abschluss FOR:</td>
+            <td id="FORpassed"></td>
+          </tr>
+        </table>
+      <h3>FOR-Q</h3>
+        <table id="analysisFORQ">
+          <tr>
+            <td>Mindestpunktzahl alle Fächer 112 Punkte:</td>
+            <td id="minGradepoints112"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl Fächergruppe II 56 Punkte:</td>
+            <td id="minGradepoints56"></td>
+          </tr>
+          <tr>
+            <td>mindestens 3 E-Kurse:</td>
+            <td id="FORQmin3ECourses"></td>
+          </tr>
+          <tr>
+            <td>davon zwei Fächer aus Deutsch, Mathematik oder erster Fremdsprache:</td>
+            <td id="FORQ2ECoursesDeuMaFS"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl in Fächergruppe I je 9 Punkte:</td>
+            <td id="FORQmin9Points"></td>
+          </tr>
+          <tr>
+            <td>und einmal 11 Punkte im E-Kurs:</td>
+            <td id="FORQ11PointsECourse"></td>
+          </tr>
+          <tr>
+            <td>Mindestpunktzahl in Fächergruppe II je 4 Punkte:</td>
+            <td id="FORQmin4Points"></td>
+          </tr>
+          <tr>
+            <td>höchstens zwei Ausfälle:</td>
+            <td id="FORQmax2Fails"></td>
+          </tr>
+          <tr>
+            <td>keine Note 6:</td>
+            <td id="FORQnoBadSix"></td>
+          </tr>
+          <tr>
+            <td>mindestens 5 Punkte in Deutsch <i>oder</i> Mathematik:</td>
+            <td id="FORQmin5PinMaDeu"></td>
+          </tr>
+          <tr>
+            <td>Abschluss FOR-Q:</td>
+            <td id="FORQpassed"></td>
+          </tr>
+        </table>
+<!-- ****************************************************************** -->        
+<!-- here starts the JavaScript for the calculation of the final degree -->
+<!-- ****************************************************************** -->
+    <script>
+      function calculate() {
+          // variables for passing degrees (eBBR,FOR,FOR-Q)
+        var EBBRpassed = 0;  // counter for passing eBBR
+        var FORpassed = 0;  // counter for passing FOR
+        var FORQpassed = 0;  // counter for passing FOR-Q
+
+          // variables for calculating criteria
+        var numberECourses = 0;  // for counting all E-Courses
+        var eBBRmaxTwoBadFives = 0;  // you are not allowed to too many Fives, so this will be counted up with every Five 
+        
+        var FORlessThan7Points = 0;  // for FOR: less than 7 points in Subject Group 1
+        var FOR7PointsTwice = 0;  // for FOR: in subject group 2 at least 7 points twice
+        var FORmax2Fails = 0;  // for FOR: only two fails allowed (but different criteria than for FORQ, thus seperate variables)
+        var FORQlessThan4Points = 0;  // for FOR and FOR-Q: minimum of 4 points in all subjects in subject group 2
+        
+        var FORQ2ECoursesDeuMaFS = 0;  // for counting E-Courses in Deu,Ma,Eng (needed for FOR-Q)
+        var FORQ11PointsInECourse = 0;  // for FORQ: at least 11 points in E-Course once
+        var FORQlessThan9Points = 0;  // for FORQ: less than 9 points in Subject Group 1
+        var FORQmax2Fails = 0;    // for FORQ: only two fails allowed (but different criteria than for FOR, thus seperate variables)
+        var badSix = 0;  // you are not allowed to have any Six, so this will be counted up with every Six 
+        
+          // gradepoints of subjects from subject group 1 (Faechergruppe I)
+        let engGradepoints = +document.getElementById("engGradepoints").value;  // The unary plus (+) coerces its operand into a number:
+        let deGradepoints = +document.getElementById("deGradepoints").value;
+        let maGradepoints = +document.getElementById("maGradepoints").value;
+        let chGradepoints = +document.getElementById("chGradepoints").value;
+        let phyGradepoints = +document.getElementById("phyGradepoints").value;
+        let wp1Gradepoints = +document.getElementById("wp1Gradepoints").value;
+          // array of values for subject group 1 (Faechergruppe I)
+        var gradepointsSubjectGroup1 = {engGradepoints, 
+                                          maGradepoints, 
+                                            deGradepoints,
+                                              chGradepoints,
+                                                phyGradepoints,
+                                                  wp1Gradepoints};
+        
+          // gradepoints of subjects from subject group 2 (Faechergruppe II)
+        let wp2Gradepoints = +document.getElementById("wp2Gradepoints").value;
+        let bioGradepoints = +document.getElementById("bioGradepoints").value;
+        let watGradepoints = +document.getElementById("watGradepoints").value;
+        let spoGradepoints = +document.getElementById("spoGradepoints").value;
+        let kuGradepoints = +document.getElementById("kuGradepoints").value;
+        let muGradepoints = +document.getElementById("muGradepoints").value;
+        let lerGradepoints = +document.getElementById("lerGradepoints").value;
+        let geGradepoints = +document.getElementById("geGradepoints").value;
+        let geoGradepoints = +document.getElementById("geoGradepoints").value;
+        let pbGradepoints = +document.getElementById("pbGradepoints").value;
+          // calculate average gradepoints for history,geography,political sciences
+        var gewiGradepoints = Math.round((geGradepoints +geoGradepoints + pbGradepoints)/3);
+          // array of values for subject group 2 (Faechergruppe II) with GEWI
+        var gradepointsSubjectGroup2 = {wp2Gradepoints, 
+                                          bioGradepoints,
+                                            watGradepoints,
+                                              spoGradepoints,
+                                                kuGradepoints,
+                                                  muGradepoints,
+                                                    lerGradepoints,
+                                                      gewiGradepoints};
+
+          // get (E- or G-)courses from subject group 1 and store values in array
+        let deCourse = String(document.getElementById("deCourse").value);
+        let maCourse = String(document.getElementById("maCourse").value);
+        let engCourse = String(document.getElementById("engCourse").value);
+        let chCourse = String(document.getElementById("chCourse").value);
+        let phyCourse = String(document.getElementById("phyCourse").value);
+        var coursesSubjectGroup1 = {deCourse,
+                                      maCourse,
+                                        engCourse,
+                                          chCourse,
+                                            phyCourse};
+
+          // show in analysis
+        document.getElementById("gewiGradepoints").innerText = gewiGradepoints;
+
+          // calculation of overall gradepoints (Notenpunkte)
+        var totalGradepoints = 0;
+        for (var i in gradepointsSubjectGroup1) {
+          totalGradepoints = totalGradepoints + gradepointsSubjectGroup1[i];
+          console.log("Berechnung Punte Fächergruppe 1:");  // FIXME: Development Purpose, delete later
+          console.log(totalGradepoints);  // FIXME: Development Purpose, delete later
+        }
+        var group2Gradepoints = 0;
+        for (var j in gradepointsSubjectGroup2) {
+          console.log("Punkte in Gruppe 2:" + gradepointsSubjectGroup2[j])  // FIXME: Development Purpose, delete later
+            // continue calculation of overall gradepoints
+          totalGradepoints = totalGradepoints + gradepointsSubjectGroup2[j];
+          console.log("Berechnung Punkte insgesamt:");  // FIXME: Development Purpose, delete later
+          console.log(totalGradepoints);  // FIXME: Development Purpose, delete later
+            // calculation of gradepoints in subject group 2 (Faechergruppe II)
+          group2Gradepoints = group2Gradepoints + gradepointsSubjectGroup2[j];
+          console.log("Berechnung Punkte FG2:")  // FIXME: Development Purpose, delete later
+          console.log(group2Gradepoints);  // FIXME: Development Purpose, delete later
+            // calculation of criteria specific to subject groups 2
+          if (gradepointsSubjectGroup2[j] < 4) {  // less that 4 points in all subjects in subject group 2
+            FORQlessThan4Points++;
+            FORmax2Fails++;  // for FOR: less than 3 points is considered a fail
+            FORQmax2Fails++;  // for FOR-Q: less than 3 points is considered a fail
+          }
+          if (gradepointsSubjectGroup2[j] >= 7) {  // for FOR: at least 7 points twice
+           FOR7PointsTwice++; 
+          }
+          if (gradepointsSubjectGroup2[j] == 0) {
+            badSix++;
+          }
+        }
+
+          // overall gradepoints are displayed (Notenpunkte)
+        document.getElementById("totalGradepoints").innerText = totalGradepoints;
+          // overall points in subject group 2 are displayed (Notenpunkte)
+        document.getElementById("group2Gradepoints").innerText = group2Gradepoints;
+
+          // this function checks Gradepoints and Course-type against certain criteria 
+          // this is for subject group 1
+        function checkCourseAndPoints(Gradepoints, Course) {
+          if (Course == "E") {  // check whether it is an E-course
+            numberECourses++;   // count number of E-courses
+            if (Gradepoints >= 11) {  // for FOR-Q: in one E-course you need at least 11 points
+              FORQ11PointsInECourse++;
+            }
+            if (Gradepoints < 5) {
+              badSix++;  // if you have below 5 points in an E-Course, that is a Six
+            }
+            if (Gradepoints == 6 || Gradepoints == 5) {
+              eBBRmaxTwoBadFives++;  //
+            }
+          }
+          if (Course == "G") {  // check wether it is a G-Course
+            if (Gradepoints < 3) {
+              badSix++;  // if you have below 3 points in an G-Course, that is a Six
+            }
+            if (Gradepoints == 4 || Gradepoints == 3) {
+              eBBRmaxTwoBadFives++;
+            }
+          }
+          if (Gradepoints < 7) {
+            FORlessThan7Points++;
+            FORmax2Fails++;  // for FOR: 6 Points and below is considered a fail
+          }
+          if (Gradepoints < 9) {
+            FORQlessThan9Points++;
+            FORQmax2Fails++;  // for FOR-Q: 8 points and below is considered a fail
+          }
+          // FIXME: for development purposes, delete later
+          console.log("Anzahl E-Kurse:");
+          console.log(numberECourses);
+          console.log(FORQ11PointsInECourse);
+          console.log(FORlessThan7Points);
+          console.log(FORQlessThan9Points);
+          // return[isECourse, FORenoughPoints7, FORQenoughPoints9, FORQenoughPoints11]
+        }
+
+        var checkValues = checkCourseAndPoints(deGradepoints, deCourse);
+        console.log("Deutsch");  // FIXME: for developlment purposes
+        var checkValues = checkCourseAndPoints(maGradepoints, maCourse);
+        console.log("Mathe");  // FIXME: for developlment purposes
+        var checkValues = checkCourseAndPoints(engGradepoints, engCourse);
+        console.log("Eng");  // FIXME: for developlment purposes
+        var checkValues = checkCourseAndPoints(chGradepoints, chCourse);
+        console.log("Ch");  // FIXME: for developlment purposes
+        var checkValues = checkCourseAndPoints(phyGradepoints, phyCourse);
+        console.log("Phy");  // FIXME: for developlment purposes
+        var checkValues = checkCourseAndPoints(wp1Gradepoints, "N");  // WP1 does not have E- or G-Course, thus this string
+        console.log("WP1");  // FIXME: for developlment purposes
+
+        // for FORQ you need at least 2 E-Courses in Deu,Eng,Ma
+        if (deCourse == "E") {
+          FORQ2ECoursesDeuMaFS++;
+        }
+        if (maCourse == "E") {
+          FORQ2ECoursesDeuMaFS++;
+        }
+        if (engCourse == "E") {
+          FORQ2ECoursesDeuMaFS++;
+        }
+
+         // number E-Courses is displayed (E-Kurse)
+        document.getElementById("numberECourses").innerText = numberECourses;
+
+          // depending on final degree (FOR/FORQ) you need to have at least 2 or 3 E-Courses overall
+        if (numberECourses >= 3) {
+          document.getElementById("FORQmin3ECourses").innerText = "Erreicht";
+          FORQpassed++;
+          document.getElementById("FORmin2ECourses").innerText = "Erreicht";
+          FORpassed++;
+        } else if (numberECourses >= 2) {
+          document.getElementById("FORQmin3ECourses").innerText = "Nicht erreicht";
+          document.getElementById("FORmin2ECourses").innerText = "Erreicht";
+          FORpassed++;
+        } else {
+          document.getElementById("FORQmin3ECourses").innerText = "Nicht erreicht";
+          document.getElementById("FORmin2ECourses").innerText = "Nicht erreicht";          
+        }
+
+        if (eBBRmaxTwoBadFives > 2) {
+          document.getElementById("eBBRmaxTwoBadFives").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("eBBRmaxTwoBadFives").innerText = "Erreicht";
+          EBBRpassed++
+        }
+
+        if (FORlessThan7Points > 0) {
+          document.getElementById("FORmin7Points").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("FORmin7Points").innerText = "Erreicht";
+          FORpassed++;
+        }
+          // for FORQ: you need at least 9 points in all subjects (subject group 1)
+        if (FORQlessThan9Points > 0) {
+          document.getElementById("FORQmin9Points").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("FORQmin9Points").innerText = "Erreicht";
+          FORQpassed++;
+        }
+
+        if (FORQ11PointsInECourse >= 1) {
+          document.getElementById("FORQ11PointsECourse").innerText = "Erreicht";
+          FORQpassed++;
+        } else {
+          document.getElementById("FORQ11PointsECourse").innerText = "Nicht erreicht";
+        }
+
+          // check total sum of points for each degree
+        if (totalGradepoints >= 112) {
+          document.getElementById("minGradepoints112").innerText = "Erreicht";
+          FORQpassed++;
+          document.getElementById("minGradepoints84").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("minGradepoints60").innerText = "Erreicht";
+          EBBRpassed++;
+        } else if (totalGradepoints >= 84) {
+          document.getElementById("minGradepoints112").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints84").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("minGradepoints60").innerText = "Erreicht";
+          EBBRpassed++;
+        } else if (totalGradepoints >= 60) {
+          document.getElementById("minGradepoints112").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints84").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints60").innerText = "Erreicht";
+          EBBRpassed++;
+        } else {
+          document.getElementById("minGradepoints112").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints84").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints60").innerText = "Nicht erreicht";
+        }
+
+          // check total sum of points in Faechergruppe II for each degree
+        if (group2Gradepoints >= 56) {
+          document.getElementById("minGradepoints56").innerText = "Erreicht";
+          FORQpassed++;
+          document.getElementById("minGradepoints42").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("minGradepoints30").innerText = "Erreicht";
+          EBBRpassed++;
+        } else if (group2Gradepoints >= 42) {
+          document.getElementById("minGradepoints56").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints42").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("minGradepoints30").innerText = "Erreicht";
+          EBBRpassed++;
+        } else if (group2Gradepoints >= 30) {
+          document.getElementById("minGradepoints56").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints42").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints30").innerText = "Erreicht";
+          EBBRpassed++;
+        } else {
+          document.getElementById("minGradepoints56").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints42").innerText = "Nicht erreicht";
+          document.getElementById("minGradepoints30").innerText = "Nicht erreicht";
+        }
+
+          // at least 5 points in Math or German (for all degrees)
+        if (deGradepoints >= 5 || maGradepoints >= 5) {
+          document.getElementById("eBBRmin5PinMaDeu").innerText = "Erreicht";
+          EBBRpassed++;
+          document.getElementById("FORmin5PinMaDeu").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("FORQmin5PinMaDeu").innerText = "Erreicht";
+          FORQpassed++;
+        } else {
+          document.getElementById("eBBRmin5PinMaDeu").innerText = "Nicht erreicht";
+          document.getElementById("FORmin5PinMaDeu").innerText = "Nicht erreicht";
+          document.getElementById("FORQmin5PinMaDeu").innerText = "Nicht erreicht";
+        }
+
+/*          // number of E-Courses (for FOR and FOR-Q)  FIXME: doppelt?!
+        if (numberECourses >= 3) {
+          document.getElementById("FORQmin3ECourses").innerText = "Erreicht";
+          FORQpassed++;
+          document.getElementById("FORmin2ECourses").innerText = "Erreicht";
+          FORpassed++;
+        } else if (numberECourses >= 2) {
+          document.getElementById("FORQmin3ECourses").innerText = "Nicht erreicht";
+          document.getElementById("FORmin2ECourses").innerText = "Erreicht";
+          FORpassed++;
+        } else {
+          document.getElementById("FORQmin3ECourses").innerText = "Nicht erreicht";
+          document.getElementById("FORmin2ECourses").innerText = "Nicht erreicht";
+        }
+*/
+          // for FOR and FORQ: at least 4 points in all subjects in subject group 2
+        if (FORQlessThan4Points > 0) {
+          document.getElementById("FORmin4Points").innerText = "Nicht erreicht";
+          document.getElementById("FORQmin4Points").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("FORmin4Points").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("FORQmin4Points").innerText = "Erreicht";
+          FORQpassed++;
+        }
+
+          // for FOR: at least 7 points twice in subject group 2
+        if (FOR7PointsTwice >= 2) {
+          document.getElementById("FORmin7PointsTwice").innerText = "Erreicht";
+          FORpassed++;
+        } else {
+          FORmax2Fails++;  // for FOR: if you have 7 points only once in subject group 2 that's a fail
+          document.getElementById("FORmin7PointsTwice").innerText = "Nicht erreicht";          
+        }
+
+          // for FOR-Q: 2 E-Courses in Deu or Ma or Eng 
+        if (FORQ2ECoursesDeuMaFS >= 2) {
+          document.getElementById("FORQ2ECoursesDeuMaFS").innerText = "Erreicht";
+          FORQpassed++;
+        } else {
+          document.getElementById("FORQ2ECoursesDeuMaFS").innerText = "Nicht erreicht";
+        }
+
+
+        console.log(FORmax2Fails); // FIXME: for development purposes, delete later
+          // for FOR: only 2 fails are allowed
+        if (FORmax2Fails > 2) {
+          document.getElementById("FORmax2Fails").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("FORmax2Fails").innerText = "Erreicht";
+          FORpassed++;
+        }
+
+        if (FORQ11PointsInECourse == 0) {
+          FORQmax2Fails++;
+        }
+        if (FORQmax2Fails > 2) {
+          document.getElementById("FORQmax2Fails").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("FORQmax2Fails").innerText = "Erreicht";
+          FORQpassed++;
+        }
+
+          // for eBBR/FOR/FORQ: no Six!!!
+        if (badSix > 0) {
+          document.getElementById("eBBRnoBadSix").innerText = "Nicht erreicht";
+          document.getElementById("FORnoBadSix").innerText = "Nicht erreicht";
+          document.getElementById("FORQnoBadSix").innerText = "Nicht erreicht";
+        } else {
+          document.getElementById("eBBRnoBadSix").innerText = "Erreicht";
+          EBBRpassed++;
+          document.getElementById("FORnoBadSix").innerText = "Erreicht";
+          FORpassed++;
+          document.getElementById("FORQnoBadSix").innerText = "Erreicht";
+          FORQpassed++;
+        }
+
+        console.log(EBBRpassed);  // FIXME: for development purposes, delete later
+        if (EBBRpassed == 5) {
+          document.getElementById("eBBRpassed").innerText = "Erreicht";
+        } else {
+          document.getElementById("eBBRpassed").innerText = "Nicht erreicht";
+        }
+
+        console.log(FORpassed);  // FIXME: for development purposes, delete later
+        if (FORpassed == 9) {
+          document.getElementById("FORpassed").innerText = "Erreicht";
+        } else {
+          document.getElementById("FORpassed").innerText = "Nicht erreicht";
+        }
+
+        console.log(FORQpassed);  // FIXME: for development purposes, delete later
+        if (FORQpassed == 10) {
+          document.getElementById("FORQpassed").innerText = "Erreicht";
+        } else {
+          document.getElementById("FORQpassed").innerText = "Nicht erreicht";
+        }
+
+
+      }
+    </script>
+  </body>
+</html>
+
+
