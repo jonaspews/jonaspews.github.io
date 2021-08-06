@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <title>Abschlussrechner</title>
     <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
       body {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         font-family: Helvetica, sans-serif;
+        line-height: 1.7;
       }
       #subjectGroup01 {
       /*  background-color: aqua;  */
@@ -22,11 +27,20 @@
       h1, h2, h3 {
         text-align: center;
       }
+      #warningText {
+        color: red;
+        font-weight: bold;
+        text-align: center;
+        font-size: large;
+      }
+      #buttonCaclulate {
+        
+      }
     </style>
   </head>
   <body>
     <h1>Abschlussberechnung für die Gesamtschule</h1>
-    <p>ACHTUNG: alle Angaben sind ohne Gewähr. Dies ist keine finale Berechnung für ein Zeugnis. Diese Übersicht und Berechnung dient nur der Orientierung für Schüler:innen!</p>
+    <p id="warningText">ACHTUNG: alle Angaben sind ohne Gewähr. <br> Dies ist keine finale Berechnung für ein Zeugnis. <br> Übersicht und Berechnung dient nur der Orientierung für Schüler:innen!</p>
     <h2>Eingabe der Informationen</h2>
     <form>
       <div id="subjectGroup01">
@@ -458,14 +472,14 @@
         </table>
       </div>
       <div>
-        <button type="button" onclick="calculate()">Berechnen</button>
+        <button type="button" id="buttonCalculate" onclick="calculate()">Berechnen</button>
       </div>
     </form>
 
     <h2>Analyse</h2>
       <h3>Allgemeine Zusammenfassung</h3>
-      <div>
-        <table id="analysisGeneralStats">
+      <div id="analysisGeneralStats">
+        <table>
           <tr>
             <td>Durchschnittsnote Gesellschaftswissenschaften (Ge/Geo/PB):</td>
             <td id="gewiGradepoints"></td>
@@ -487,7 +501,8 @@
       </div>
 
       <h3>erweiterter Hauptschulabschluss/eBBR</h3>
-        <table id="analysisEBBR">
+      <div id="analysisEBBR">
+        <table>
           <tr>
             <td>Mindestpunktzahl alle Fächer 60 Punkte:</td>
             <td id="minGradepoints60"></td>
@@ -513,8 +528,10 @@
             <td id="eBBRpassed"></td>
           </tr>
         </table>
+        </div>
       <h3>Realschulabschluss/FOR</h3>
-        <table id="analysisFOR">
+      <div id="analysisFOR">
+        <table>
           <tr>
             <td>Mindestpunktzahl alle Fächer 84 Punkte:</td>
             <td id="minGradepoints84"></td>
@@ -556,8 +573,10 @@
             <td id="FORpassed"></td>
           </tr>
         </table>
+      </div>
       <h3>FOR-Q</h3>
-        <table id="analysisFORQ">
+      <div id="analysisFORQ">
+        <table>
           <tr>
             <td>Mindestpunktzahl alle Fächer 112 Punkte:</td>
             <td id="minGradepoints112"></td>
@@ -603,6 +622,7 @@
             <td id="FORQpassed"></td>
           </tr>
         </table>
+      </div>
 <!-- ****************************************************************** -->        
 <!-- here starts the JavaScript for the calculation of the final degree -->
 <!-- ****************************************************************** -->
@@ -655,7 +675,7 @@
         let geoGradepoints = +document.getElementById("geoGradepoints").value;
         let pbGradepoints = +document.getElementById("pbGradepoints").value;
           // calculate average gradepoints for history,geography,political sciences
-        var gewiGradepoints = Math.round((geGradepoints +geoGradepoints + pbGradepoints)/3);
+        var gewiGradepoints = Math.round((geGradepoints + geGradepoints + geoGradepoints + pbGradepoints)/4);  // Points for History(geGradepoints) is weighted twice
           // array of values for subject group 2 (Faechergruppe II) with GEWI
         var gradepointsSubjectGroup2 = {wp2Gradepoints, 
                                           bioGradepoints,
@@ -971,25 +991,33 @@
 
         console.log(EBBRpassed);  // FIXME: for development purposes, delete later
         if (EBBRpassed == 5) {
-          document.getElementById("eBBRpassed").innerText = "Erreicht";
+          document.getElementById("eBBRpassed").innerText = "Erreicht (ohne Gewähr)";
+          document.getElementById("analysisEBBR").style.backgroundColor  = "green";  // change backgroundcolor of DIV according to pass/no pass. for visual reason
         } else {
-          document.getElementById("eBBRpassed").innerText = "Nicht erreicht";
+          document.getElementById("eBBRpassed").innerText = "Nicht erreicht (ohne Gewähr)";
+          document.getElementById("analysisEBBR").style.backgroundColor  = "red";
         }
 
         console.log(FORpassed);  // FIXME: for development purposes, delete later
         if (FORpassed == 9) {
-          document.getElementById("FORpassed").innerText = "Erreicht";
+          document.getElementById("FORpassed").innerText = "Erreicht (ohne Gewähr)";
+          document.getElementById("analysisFOR").style.backgroundColor  = "green";
         } else {
-          document.getElementById("FORpassed").innerText = "Nicht erreicht";
+          document.getElementById("FORpassed").innerText = "Nicht erreicht (ohne Gewähr)";
+          document.getElementById("analysisFOR").style.backgroundColor  = "red";
         }
 
         console.log(FORQpassed);  // FIXME: for development purposes, delete later
         if (FORQpassed == 10) {
-          document.getElementById("FORQpassed").innerText = "Erreicht";
+          document.getElementById("FORQpassed").innerText = "Erreicht (ohne Gewähr)";
+          document.getElementById("analysisFORQ").style.backgroundColor  = "green";
         } else {
-          document.getElementById("FORQpassed").innerText = "Nicht erreicht";
+          document.getElementById("FORQpassed").innerText = "Nicht erreicht (ohne Gewähr)";
+          document.getElementById("analysisFORQ").style.backgroundColor  = "red";
         }
 
+        // FIXME: try to put document.getElementById... in a function PassNoPass(HTML-Id, pass/nopass)
+        // try to shorten all those calls ... just as an idea
 
       }
     </script>
