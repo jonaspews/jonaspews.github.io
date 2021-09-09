@@ -236,6 +236,10 @@ a:hover {
         border-bottom-right-radius: 5px;
     }
 
+    h2 {
+        margin-top: 15px;
+    }    
+
     .youtubeContainer {
         position: relative;
         width: 75%;
