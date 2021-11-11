@@ -19,21 +19,25 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- for reflection radar chart-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 </head>
 
 <body>
-  <header> <!-- navigation (still TODO)-->
+  <header>
+    <!-- navigation (still TODO)-->
     <!-- <h1 class="display-1 text-white">Q2</h1> -->
     <!-- TODO: Chemistry by Minnie Pigeon from the Noun Project-->
-    <button class="accordion display-4 text-white"><img id="headerSymbol" src="symbols/noun_Chemistry_55633_w.png">Inhalt</button>
+    <button class="accordion display-4 text-white"><img id="headerSymbol"
+        src="symbols/noun_Chemistry_55633_w.png">Inhalt</button>
     <div class="panel" id="headerPanel">
       <p class="display-4 panelParagraph"><a href="#intro" class="hrefContent">Einführung</a></p>
-      <p class="display-4 panelParagraph"><a href="#exp_soap" class="hrefContent">Herstellung von Seife</a</p>
-      <p class="display-4 panelParagraph"><a href="#wash_function_soap" class="hrefContent">Die Waschwirkung von Seife</a></p>
+      <p class="display-4 panelParagraph"><a href="#exp_soap" class="hrefContent">Herstellung von Seife</a></p>
+      <p class="display-4 panelParagraph"><a href="#wash_function_soap" class="hrefContent">Die Waschwirkung von
+          Seife</a></p>
       <p class="display-4 panelParagraph"><a href="#fat_and_oil" class="hrefContent">Fette und Öle</a></p>
       <p class="display-4 panelParagraph"><a href="#chem_calculations" class="hrefContent">Stöchiometrie</a></p>
+      <p class="display-4 panelParagraph"><a href="#chem_washing_powder" class="hrefContent">Waschmittel und Tenside</a></p>
       <!--<p class="display-4 panelParagraph"><a href="#corrosion" class="hrefContent">Die Korrosion</a></p> -->
     </div>
 
@@ -42,54 +46,58 @@
   <div id="mainContent" class="container-fluid">
     <div class="row">
       <h1 class="display-1">Skript - Seifen und Fette</h1>
-      <hr>  <!-- seperator before new chapter-->
-        <!-- style for script: use display-2 for chapter headlines-->
-        <h1 id="intro" class="display-2">Einführung</h1>
-          <p class="lead">
-            Mit Hilfe dieses Skriptes sollen Sie sich das Thema Seifen und Fette selbstständig erarbeiten. Selbstständig
-            bedeutet wirklich SELBST und STÄNDIG. 
-          </p>
-          <p class="scriptstyle">
-            Der Unterricht im klassischen Sinne hat aufgehört. Sie können Ihr eigenes
-            Tempo bestimmen und sich Ihre eigenen Partner suchen. Sollte die Lehrkraft nicht da sein, haben Sie nun immer
-            das Material um selbstständig zu arbeiten.
-          </p>
-          <p class="scriptstyle">Die Lehrkraft soll Ihnen dabei als Berater zur Seite stehen. Wenn Sie Fragen haben oder auf Probleme stoßen,
-            die Sie weder allein noch im Team lösen konnten, dann fragen Sie nach!</p>
-          <p class="scriptstyle">
-          Für jedes Kapitel dieser Reihe ist angegeben, wie Sie vorgehen sollten. Die Vorüberlegungen sollen Ihnen helfen
-          Wissen zu reaktivieren oder Wissenslücken zu schließen. Wenn Sie sich an die vorgegebenen Vorgehensweisen hallten,
-          sollte es keine Probleme geben.</p>
-          <p class="scriptstyle">
-          Vielleicht fragen Sie sich jetzt, warum die Lehrer so faul sein dürfen und Sie jetzt alles allein machen müssen.
-          Der Grund ist recht einfach: die Lehrer haben alles bereits so vorbereitet, dass Sie sich intensiv mit einem Thema
-          beschäftigen können. Dadurch bleibt es besser in Ihrem Gedächtnis. Sie lernen effektiver die Inhalte, verbessern
-          Ihr eigenes Zeitmanagement und analysieren Ihre eigenen Fähig- und Fertigkeiten.
-          </p>
+      <hr> <!-- seperator before new chapter-->
+      <!-- style for script: use display-2 for chapter headlines-->
+      <h1 id="intro" class="display-2">Einführung</h1>
+      <p class="lead">
+        Mit Hilfe dieses Skriptes sollen Sie sich das Thema Seifen und Fette selbstständig erarbeiten. Selbstständig
+        bedeutet wirklich SELBST und STÄNDIG.
+      </p>
+      <p class="scriptstyle">
+        Der Unterricht im klassischen Sinne hat aufgehört. Sie können Ihr eigenes
+        Tempo bestimmen und sich Ihre eigenen Partner suchen. Sollte die Lehrkraft nicht da sein, haben Sie nun immer
+        das Material um selbstständig zu arbeiten.
+      </p>
+      <p class="scriptstyle">Die Lehrkraft soll Ihnen dabei als Berater zur Seite stehen. Wenn Sie Fragen haben oder auf
+        Probleme stoßen,
+        die Sie weder allein noch im Team lösen konnten, dann fragen Sie nach!</p>
+      <p class="scriptstyle">
+        Für jedes Kapitel dieser Reihe ist angegeben, wie Sie vorgehen sollten. Die Vorüberlegungen sollen Ihnen helfen
+        Wissen zu reaktivieren oder Wissenslücken zu schließen. Wenn Sie sich an die vorgegebenen Vorgehensweisen
+        hallten,
+        sollte es keine Probleme geben.</p>
+      <p class="scriptstyle">
+        Vielleicht fragen Sie sich jetzt, warum die Lehrer so faul sein dürfen und Sie jetzt alles allein machen müssen.
+        Der Grund ist recht einfach: die Lehrer haben alles bereits so vorbereitet, dass Sie sich intensiv mit einem
+        Thema
+        beschäftigen können. Dadurch bleibt es besser in Ihrem Gedächtnis. Sie lernen effektiver die Inhalte, verbessern
+        Ihr eigenes Zeitmanagement und analysieren Ihre eigenen Fähig- und Fertigkeiten.
+      </p>
 
-          <h2 class="display-4">Symbole im Skript</h2>
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-                <div>
-                  <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-                </div>
-                <div>
-                  <p class="scriptstyle">
-                    In diesen Texten finden Sie Erklärungen und Hintergründe! <br> 
-                    Die Quellen finden Sie in den Fußnoten. Diese Quellen können Ihnen auch als Quizvorbereitung helfen. <br>
-                    Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte Quelle.<br>
-                    Bild: Information by dDara from the Noun Project
-                  </p>
-                </div>
-            </div>
-            
-            <!-- TODO: the alignment of the content does not really look even spaced or good when the viewport is
+      <h2 class="display-4">Symbole im Skript</h2>
+      <!-- INFO-Box start -->
+      <!-- ************** -->
+      <div class="containerBoxInfo flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            In diesen Texten finden Sie Erklärungen und Hintergründe! <br>
+            Die Quellen finden Sie in den Fußnoten. Diese Quellen können Ihnen auch als Quizvorbereitung helfen. <br>
+            Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte
+            Quelle.<br>
+            Bild: Information by dDara from the Noun Project
+          </p>
+        </div>
+      </div>
+
+      <!-- TODO: the alignment of the content does not really look even spaced or good when the viewport is
             bigger (desktop screen or a bit larger than iPad), 
             maybe it is usefull to change CSS:justify-content based on @media-queries -->
-            
-            <!-- INFO-Box start (without flexbox)-->
-            <!-- ************** 
+
+      <!-- INFO-Box start (without flexbox)-->
+      <!-- ************** 
             <div class="containerBoxInfo container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -105,30 +113,31 @@
                 </div>
               </div>
             </div> -->
-            <!-- INFO-Box end -->
-            <!-- ************ -->
+      <!-- INFO-Box end -->
+      <!-- ************ -->
 
-            <!-- REVIEW-Box start -->
-            <!-- **************** -->
-<!-- 4Tab--><div class="containerBoxReview flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy"> 
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br> 
-                  Sie sollten die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt 
-                  haben. <br> 
-                  Falls nicht, arbeiten Sie Ihre Wissenslücken bitte selbstständig auf.<br>
-                  Bild: Arrow by Aleksandr Vector from the Noun Project
-                </p>
-              </div>
-            </div>
-            <!-- REVIEW-Box end -->
-            <!-- ************** -->
+      <!-- REVIEW-Box start -->
+      <!-- **************** -->
+      <!-- 4Tab-->
+      <div class="containerBoxReview flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br>
+            Sie sollten die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt
+            haben. <br>
+            Falls nicht, arbeiten Sie Ihre Wissenslücken bitte selbstständig auf.<br>
+            Bild: Arrow by Aleksandr Vector from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- REVIEW-Box end -->
+      <!-- ************** -->
 
-            <!-- REVIEW-Box start (without flexbox)-->
-            <!-- **************** 
+      <!-- REVIEW-Box start (without flexbox)-->
+      <!-- **************** 
             <div class="containerBoxReview container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -145,28 +154,28 @@
               </div>
             </div>
              REVIEW-Box end -->
-            <!-- ************** -->
+      <!-- ************** -->
 
-            <!-- FastLearner-Box start -->
-            <!-- ********************* -->
-            <div class="containerBoxFast flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_thunder_3429624.png" alt="thunder " loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Es soll keine Langeweile aufkommen. <br>
-                  Wenn Sie mit den Aufträgen bereits fertig sind, während Ihre Gruppe noch arbeitet, 
-                  können Sie sich hier noch weiter in das Thema vertiefen. <br>
-                  Bild: thunder by Pascal Heß from the Noun Project    
-                </p>
-              </div>
-            </div>
-            <!-- FastLearner-Box end -->
-            <!-- ******************* -->
+      <!-- FastLearner-Box start -->
+      <!-- ********************* -->
+      <div class="containerBoxFast flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_thunder_3429624.png" alt="thunder " loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            Es soll keine Langeweile aufkommen. <br>
+            Wenn Sie mit den Aufträgen bereits fertig sind, während Ihre Gruppe noch arbeitet,
+            können Sie sich hier noch weiter in das Thema vertiefen. <br>
+            Bild: thunder by Pascal Heß from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- FastLearner-Box end -->
+      <!-- ******************* -->
 
-            <!-- FastLearner-Box start (without flexbox) -->
-            <!-- ********************* 
+      <!-- FastLearner-Box start (without flexbox) -->
+      <!-- ********************* 
             <div class="containerBoxFast container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -183,28 +192,28 @@
               </div>
             </div>
              FastLearner-Box end -->
-            <!-- ******************* -->
+      <!-- ******************* -->
 
 
-            <!-- Method-Box start -->
-            <!-- *****************-->
-            <div class="containerBoxMethod flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin. <br>
-                  Bild: Chemistry by Eucalyp from the Noun Project    
-                </p>
-              </div>
-            </div>
-            <!-- Method-Box end -->
-            <!-- ***************-->
+      <!-- Method-Box start -->
+      <!-- *****************-->
+      <div class="containerBoxMethod flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin. <br>
+            Bild: Chemistry by Eucalyp from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- Method-Box end -->
+      <!-- ***************-->
 
 
-            <!-- Method-Box start (without flexbox)-->
-            <!-- *****************
+      <!-- Method-Box start (without flexbox)-->
+      <!-- *****************
             <div class="containerBoxMethod container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -219,29 +228,30 @@
               </div>
             </div>
              Method-Box end -->
-            <!-- ***************-->
+      <!-- ***************-->
 
 
 
-            <!-- Time-Box start -->
-            <!-- ***************-->
-            <div class="containerBoxTime flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_clock_1696015.png" alt="clock logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Das Zeitsymbol soll Ihnen zeigen, wie lange Sie für das jeweilige Kapitel brauchen sollten.<br>
-                  Diese Zeitangabe dient aber nur als Orientierung. Am Ende müssen Sie nur die Planung der Lehrkraft und Ihre eigene Zeitplanung beachten.<br>
-                  Bild: clock by Mr. Minuvi from the Noun Project  
-                </p>
-              </div>
-            </div>
-            <!-- Time-Box end -->
-            <!-- ************ -->
+      <!-- Time-Box start -->
+      <!-- ***************-->
+      <div class="containerBoxTime flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_clock_1696015.png" alt="clock logo" loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            Das Zeitsymbol soll Ihnen zeigen, wie lange Sie für das jeweilige Kapitel brauchen sollten.<br>
+            Diese Zeitangabe dient aber nur als Orientierung. Am Ende müssen Sie nur die Planung der Lehrkraft und Ihre
+            eigene Zeitplanung beachten.<br>
+            Bild: clock by Mr. Minuvi from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- Time-Box end -->
+      <!-- ************ -->
 
-            <!-- Time-Box start (without flexbox) -->
-            <!-- ***************
+      <!-- Time-Box start (without flexbox) -->
+      <!-- ***************
             <div class="containerBoxTime container-md">
               <div class="row">
                 <div class="col-md-2">
@@ -257,73 +267,78 @@
               </div>
             </div>
             Time-Box end -->
-            <!-- ************ -->
+      <!-- ************ -->
 
 
-          <h2 class="display-4">Bewertung</h2>
-          <p class="scriptstyle">
-            Die Bewertung im Semester erfolgt anhand von:
-          </p>
-            <div>
-              <ul class="scriptstyle">
-                <li>min. 2 Tests</li>
-                <li>2 Protokollen</li>
-                <li>Mitarbeit im Unterricht</li>
-                <li>digitalem Portfolio</li>
-                <li>ggf. Klausur</li>
-              </ul>
-            </div>
-          <p class="scriptstyle">
-            Auf Grund unvorhergesehener Umstände (z.B. Pandemie) kann sich diese Liste auch
-            ändern. Bitte halten Sie mit Ihrer Lehrkraft Rücksprache.
-          </p>
-          
-          <h2 class="display-4">Das digitale Portfolio</h2>
-          <p class="scriptstyle">
-            Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller Arbeitsergebnisse. Sie können und sollten in diesem Portfolio alles sammeln, was Sie an Materialien und Produkten
-            selbst erarbeitetet haben. Die zweite Funktion des Portfolios ist die Darstellung Ihrer eigenen Entwicklung. Mit
-            Hilfe des Portfolios belegen Sie Ihren Lernfortschritt und reflektieren Ihre Arbeitsergebnisse und Arbeitsweisen.
-            Diese Reflexion sollte sich auf alle Arbeitsprozesse, wie z.B. Recherchen oder Gruppenarbeiten, beziehen. Die
-            Selbstreflexion sollte unabhängig von den Arbeitsaufträgen der Lehrkraft erfolgen.</p>
-          <p class="scriptstyle">
-            Darüber hinaus können Sie dieses Portfolio auch als Teil Ihrer zukünftigen Bewerbungsmappen nutzen. Ihr zukünftiger Arbeitgeber erlangt dadurch ein umfassenderes Bild von Ihnen. Sehen Sie das Portfolio also nicht nur als
-            weiteren Schulhefter sondern auch als Selbstdarstellungsmöglichkeit.</p>
-          <p class="scriptstyle">
-            Die Bewertung des Portfolios erfolgt zum Ende des jeweiligen Semesters und erfolgt mit Hilfe des gegebenen
-            Bewertungsrasters.
-          </p>
-          <h3>Hilfreiche Fragen für die Reflexion</h3>
-          <p  class="scriptstyle">
-            Falls Sie anfangs bei der Reflexion Probleme haben, können Sie sich erst einmal 
-            an diesen Fragen orientieren. Die Reflexion sollten Sie regelmäßig durchführen und 
-            als Fließtext ausformulieren.
-          </p>
-          <div>
-            <ul class="scriptstyle">
-              <li>Habe ich die Zeit effektiv genutzt?</li>
-              <li>Habe ich alle Aufträge gelöst?</li>
-              <li>Habe ich alles verstanden?</li>  
-              <li>Habe ich gut allein gearbeitet?</li>
-              <li>Habe ich gut in der Gruppe gearbeitet?</li>
-              <li>Was kann ich in der nächsten Stunde besser machen?</li>
-            </ul>
-          </div>
-          <h3>Netzdiagramm zur Schnellreflexion</h3>
-          <p class="scriptstyle">
-            In Ihrem digitalen Portfolio sollen Sie Ihren Arbeits- und Lernprozess sinnvoll
-            reflektieren um Verbesserungsmöglichkeiten zu finden und dann umzusetzen. Dazu sollten 
-            Sie regelmäßig, also beispielsweise nach jedem Kapitel, eine Reflexion durchführen.
-          </p>
-          <p class="scriptstyle">
-            Dieses Netzdiagramm soll Ihnen dabei helfen. Sie können den Code für das Diagramm an die 
-            jeweilige Stelle in ihrem digitalen Portfolio kopieren und dort anpassen. Dadurch visualisieren
-            Sie für sich ihren Fortschritt. Am Ende sollte das Netzdiagramm komplett gefüllt sein.
-          </p>
-          <p class="scriptstyle">
-            Zusätzlich sollten Sie die Reflexion in einem Fließtext ausformulieren. Das könnten Seite
-            auch unterhalb des Diagramms in Ihrem Portfolio machen. 
-          </p>
-          <!--
+      <h2 class="display-4">Bewertung</h2>
+      <p class="scriptstyle">
+        Die Bewertung im Semester erfolgt anhand von:
+      </p>
+      <div>
+        <ul class="scriptstyle">
+          <li>min. 2 Tests</li>
+          <li>2 Protokollen</li>
+          <li>Mitarbeit im Unterricht</li>
+          <li>digitalem Portfolio</li>
+          <li>ggf. Klausur</li>
+        </ul>
+      </div>
+      <p class="scriptstyle">
+        Auf Grund unvorhergesehener Umstände (z.B. Pandemie) kann sich diese Liste auch
+        ändern. Bitte halten Sie mit Ihrer Lehrkraft Rücksprache.
+      </p>
+
+      <h2 class="display-4">Das digitale Portfolio</h2>
+      <p class="scriptstyle">
+        Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller
+        Arbeitsergebnisse. Sie können und sollten in diesem Portfolio alles sammeln, was Sie an Materialien und
+        Produkten
+        selbst erarbeitetet haben. Die zweite Funktion des Portfolios ist die Darstellung Ihrer eigenen Entwicklung. Mit
+        Hilfe des Portfolios belegen Sie Ihren Lernfortschritt und reflektieren Ihre Arbeitsergebnisse und
+        Arbeitsweisen.
+        Diese Reflexion sollte sich auf alle Arbeitsprozesse, wie z.B. Recherchen oder Gruppenarbeiten, beziehen. Die
+        Selbstreflexion sollte unabhängig von den Arbeitsaufträgen der Lehrkraft erfolgen.</p>
+      <p class="scriptstyle">
+        Darüber hinaus können Sie dieses Portfolio auch als Teil Ihrer zukünftigen Bewerbungsmappen nutzen. Ihr
+        zukünftiger Arbeitgeber erlangt dadurch ein umfassenderes Bild von Ihnen. Sehen Sie das Portfolio also nicht nur
+        als
+        weiteren Schulhefter sondern auch als Selbstdarstellungsmöglichkeit.</p>
+      <p class="scriptstyle">
+        Die Bewertung des Portfolios erfolgt zum Ende des jeweiligen Semesters und erfolgt mit Hilfe des gegebenen
+        Bewertungsrasters.
+      </p>
+      <h3>Hilfreiche Fragen für die Reflexion</h3>
+      <p class="scriptstyle">
+        Falls Sie anfangs bei der Reflexion Probleme haben, können Sie sich erst einmal
+        an diesen Fragen orientieren. Die Reflexion sollten Sie regelmäßig durchführen und
+        als Fließtext ausformulieren.
+      </p>
+      <div>
+        <ul class="scriptstyle">
+          <li>Habe ich die Zeit effektiv genutzt?</li>
+          <li>Habe ich alle Aufträge gelöst?</li>
+          <li>Habe ich alles verstanden?</li>
+          <li>Habe ich gut allein gearbeitet?</li>
+          <li>Habe ich gut in der Gruppe gearbeitet?</li>
+          <li>Was kann ich in der nächsten Stunde besser machen?</li>
+        </ul>
+      </div>
+      <h3>Netzdiagramm zur Schnellreflexion</h3>
+      <p class="scriptstyle">
+        In Ihrem digitalen Portfolio sollen Sie Ihren Arbeits- und Lernprozess sinnvoll
+        reflektieren um Verbesserungsmöglichkeiten zu finden und dann umzusetzen. Dazu sollten
+        Sie regelmäßig, also beispielsweise nach jedem Kapitel, eine Reflexion durchführen.
+      </p>
+      <p class="scriptstyle">
+        Dieses Netzdiagramm soll Ihnen dabei helfen. Sie können den Code für das Diagramm an die
+        jeweilige Stelle in ihrem digitalen Portfolio kopieren und dort anpassen. Dadurch visualisieren
+        Sie für sich ihren Fortschritt. Am Ende sollte das Netzdiagramm komplett gefüllt sein.
+      </p>
+      <p class="scriptstyle">
+        Zusätzlich sollten Sie die Reflexion in einem Fließtext ausformulieren. Das könnten Seite
+        auch unterhalb des Diagramms in Ihrem Portfolio machen.
+      </p>
+      <!--
            ____       __ _           _             
           |  _ \ ___ / _| | _____  _(_) ___  _ __  
           | |_) / _ \ |_| |/ _ \ \/ / |/ _ \| '_ \ 
@@ -335,241 +350,249 @@
 
           -->
 
-          <!-- Start copying here -->
-          <!-- ab hier kopieren -->
+      <!-- Start copying here -->
+      <!-- ab hier kopieren -->
 
-            <!-- for STYLE reasons the chart-CANVAS is embedded in a seperate DIV-container -->
-            <!-- wegen des STYLE ist die chart-CANVAS in einem seperaten DIV-container eingebettet -->
-          <div class="chartContainer">
-            <!-- this canvas is later used to draw the chart, 
+      <!-- for STYLE reasons the chart-CANVAS is embedded in a seperate DIV-container -->
+      <!-- wegen des STYLE ist die chart-CANVAS in einem seperaten DIV-container eingebettet -->
+      <div class="chartContainer">
+        <!-- this canvas is later used to draw the chart, 
                   if you want to draw several seperate charts you have to pay attention to the IDs -->
-            <!-- in diesem canvas wird das Digramm gezeichnet
-                  wenn du mehrere Diagramme zeichnen willst, muss du die IDs anpassen-->      
-            <canvas id="evaluation_01" class="chartCanvas"></canvas>
-          </div>
+        <!-- in diesem canvas wird das Digramm gezeichnet
+                  wenn du mehrere Diagramme zeichnen willst, muss du die IDs anpassen-->
+        <canvas id="evaluation_01" class="chartCanvas"></canvas>
+      </div>
 
-            <script>
-              var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
-              var chartTitle = "Kapitel 1";  // change accordingly
-              var dataSetValues = [15, 4, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
+      <script>
+        var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
+        var chartTitle = "Kapitel 1";  // change accordingly
+        var dataSetValues = [15, 4, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
 
-                // this checks whether values in dataSetValues are in the expected range, TODO: maybe later tell user which value is wrong
-              dataSetValues.forEach(function(item) {
-                  if (item < 0 || item > 15) {
-                    console.log(item);
-                    alert("Notenwert falsch: " + item + "!");
-                    dataSetValues = [0,0,0,0,0];
-                  };
-                }
-              );
+        // this checks whether values in dataSetValues are in the expected range, TODO: maybe later tell user which value is wrong
+        dataSetValues.forEach(function (item) {
+          if (item < 0 || item > 15) {
+            console.log(item);
+            alert("Notenwert falsch: " + item + "!");
+            dataSetValues = [0, 0, 0, 0, 0];
+          };
+        }
+        );
 
-              var chartCanvas = document.getElementById(canvasId);  // don't change this
-              var chartData = {
-                labels: ["Einzelarbeit", "Gruppenarbeit", "Effizienz", "Zeitplanung", "Verständnis"],  // don't change this
-                datasets: [
-                  {
-                  label: chartTitle,  // keep this
-                  backgroundColor: "rgba(131, 15, 173,0.7)",  // change color and saturation/opacity here
-                  data: dataSetValues  // keep this
-                  }, 
-                ]
-              };
+        var chartCanvas = document.getElementById(canvasId);  // don't change this
+        var chartData = {
+          labels: ["Einzelarbeit", "Gruppenarbeit", "Effizienz", "Zeitplanung", "Verständnis"],  // don't change this
+          datasets: [
+            {
+              label: chartTitle,  // keep this
+              backgroundColor: "rgba(131, 15, 173,0.7)",  // change color and saturation/opacity here
+              data: dataSetValues  // keep this
+            },
+          ]
+        };
 
-              var radarChart = new Chart(chartCanvas, {
-                type: 'radar',  // keep this
-                data: chartData,
-                options: {
-                    title: {
-                        display: true,
-                        text: 'Reflexion'  // change this title as you like it
-                    },
-                    scale: {
-                        angleLines: {
-                            display: true
-                        },
-                        ticks: {
-                            min: 0,
-                            max: 15,
-                            stepSize: 2,
-                        }
-                    },
-                    responsive: true,  // keep this
-                    maintainAspectRatio: false  // keep this
-                }
-              });
-            </script>
+        var radarChart = new Chart(chartCanvas, {
+          type: 'radar',  // keep this
+          data: chartData,
+          options: {
+            title: {
+              display: true,
+              text: 'Reflexion'  // change this title as you like it
+            },
+            scale: {
+              angleLines: {
+                display: true
+              },
+              ticks: {
+                min: 0,
+                max: 15,
+                stepSize: 2,
+              }
+            },
+            responsive: true,  // keep this
+            maintainAspectRatio: false  // keep this
+          }
+        });
+      </script>
 
-          <!-- bis hier kopieren -->
-          <!-- Stop copying here-->
-          
-          <h3>Bewertung des digitalen Portfolios</h3>
-              <!-- one table at this point (for mobile), later maybe media queries and two tables to switch -->
-                <!-- see: https://stackoverflow.com/questions/37551057/how-to-change-table-layout-depending-on-resolution  -->
-            <div class="tableContainer">
-              <table class="table table-bordered">
-                <tr>
-                  <th colspan="2">Umsetzung digitales Portfolio (Gewicht: 1)</th>
-                </tr>
-                <tr>
-                  <th>1BE</th>
-                  <th>2BE</th>
-                </tr>
-                <tr>
-                  <td>HTML</td>
-                  <td>schönes HTML</td>
-                </tr>
-                <tr>
-                  <th>3BE</th>
-                  <th>4BE</th>
-                </tr>
-                <tr>
-                  <td>HTML,CSS</td>
-                  <td>schönes HTML, schönes CSS (JavaScript)</td>
-                </tr>
-              </table>
-              <table  class="table table-bordered">
-                <tr>
-                  <th colspan="2">Dokumentation (Gewicht: 2)</th>
-                </tr>
-                <tr>
-                  <th>1BE</th>
-                  <th>2BE</th>
-                </tr>
-                <tr>
-                  <td>Weniger als zur Hälfte erfüllt</td>
-                  <td>Mehr als zur Hälfte erfüllt</td>
-                </tr>
-                <tr>
-                  <th>3BE</th>
-                  <th>4BE</th>
-                </tr>
-                <tr>
-                  <td>Weitgehend erfüllt</td>
-                  <td>Vollständig erfüllt</td>
-                </tr>
-              </table>
-              <table  class="table table-bordered">
-                <tr>
-                  <th colspan="2">Reflexion (Gewicht: 3)</th>
-                </tr>
-                <tr>
-                  <th>1BE</th>
-                  <th>2BE</th>
-                </tr>
-                <tr>
-                  <td><b>Kaum Reflexionsfähigkeit erkennbar.</b>
-                      Die Kurzreflexionen wurden selten genutzt oder 
-                      das Semester wurde abschließend reflektiert 
-                      oder die Reflexion wurde während des Semsters manchmal vorgenommen.
-                  </td>
-                  <td><b>Reflexionsfähigkeit zum Teil erkennbar.</b>
-                      Die Kurzreflexionen wurden selten genutzt. 
-                      Das Semester wurde abschließend reflektiert 
-                      oder die Reflexion wurde während des Semsters manchmal vorgenommen.
-                  </td>
-                </tr>
-                <tr>
-                  <th>3BE</th>
-                  <th>4BE</th>
-                </tr>
-                <tr>
-                  <td><b>Gute Reflexionsfähigkeit erkennbar.</b> 
-                      Die Reflexion wurde mehrfach während des Semsters vorgenommen. 
-                      Die Kurzreflexionen wurden genutzt. 
-                      Das Semester wurde abschließend ergänzend reflektiert.
-                  </td>
-                  <td><b>Sehr gute Reflexionsfähigkeit erkennbar.</b> 
-                      Die Reflexion wurde mehrfach während des Semsters vorgenommen. 
-                      Die Kurzreflexionen wurden sinnvoll genutzt. 
-                      Das Semester wurde abschließend ausführlich ergänzend und glaubhaft reflektiert.</td>
-                </tr>
-              </table>
-            </div>
-           
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
-        <hr>  <!-- seperator before new chapter-->
-<!--4--><h1 class="display-2" id="exp_soap">Die Herstellung von Seife</h1>
-<!--5  --><p class="lead">
-            Nachdem Sie in den bisherigen Jahrgängen über verschiedene Stoffe gesprochen haben, ist es nun Zeit, 
-            aus diesen bekannten Stoffe neue Stoffe herzustellen. 
-            Mit Hilfe dieser Reaktionen sollen Sie die Grundlagen der organischen Chemie wiederholen.
+      <!-- bis hier kopieren -->
+      <!-- Stop copying here-->
+
+      <h3>Bewertung des digitalen Portfolios</h3>
+      <!-- one table at this point (for mobile), later maybe media queries and two tables to switch -->
+      <!-- see: https://stackoverflow.com/questions/37551057/how-to-change-table-layout-depending-on-resolution  -->
+      <div class="tableContainer">
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="2">Umsetzung digitales Portfolio (Gewicht: 1)</th>
+          </tr>
+          <tr>
+            <th>1BE</th>
+            <th>2BE</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>schönes HTML</td>
+          </tr>
+          <tr>
+            <th>3BE</th>
+            <th>4BE</th>
+          </tr>
+          <tr>
+            <td>HTML,CSS</td>
+            <td>schönes HTML, schönes CSS (JavaScript)</td>
+          </tr>
+        </table>
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="2">Dokumentation (Gewicht: 2)</th>
+          </tr>
+          <tr>
+            <th>1BE</th>
+            <th>2BE</th>
+          </tr>
+          <tr>
+            <td>Weniger als zur Hälfte erfüllt</td>
+            <td>Mehr als zur Hälfte erfüllt</td>
+          </tr>
+          <tr>
+            <th>3BE</th>
+            <th>4BE</th>
+          </tr>
+          <tr>
+            <td>Weitgehend erfüllt</td>
+            <td>Vollständig erfüllt</td>
+          </tr>
+        </table>
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="2">Reflexion (Gewicht: 3)</th>
+          </tr>
+          <tr>
+            <th>1BE</th>
+            <th>2BE</th>
+          </tr>
+          <tr>
+            <td><b>Kaum Reflexionsfähigkeit erkennbar.</b>
+              Die Kurzreflexionen wurden selten genutzt oder
+              das Semester wurde abschließend reflektiert
+              oder die Reflexion wurde während des Semsters manchmal vorgenommen.
+            </td>
+            <td><b>Reflexionsfähigkeit zum Teil erkennbar.</b>
+              Die Kurzreflexionen wurden selten genutzt.
+              Das Semester wurde abschließend reflektiert
+              oder die Reflexion wurde während des Semsters manchmal vorgenommen.
+            </td>
+          </tr>
+          <tr>
+            <th>3BE</th>
+            <th>4BE</th>
+          </tr>
+          <tr>
+            <td><b>Gute Reflexionsfähigkeit erkennbar.</b>
+              Die Reflexion wurde mehrfach während des Semsters vorgenommen.
+              Die Kurzreflexionen wurden genutzt.
+              Das Semester wurde abschließend ergänzend reflektiert.
+            </td>
+            <td><b>Sehr gute Reflexionsfähigkeit erkennbar.</b>
+              Die Reflexion wurde mehrfach während des Semsters vorgenommen.
+              Die Kurzreflexionen wurden sinnvoll genutzt.
+              Das Semester wurde abschließend ausführlich ergänzend und glaubhaft reflektiert.</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- *****************************************************************************************-->
+      <!-- *** Start Of Chapter ********************************************************************-->
+      <!-- *****************************************************************************************-->
+      <hr> <!-- seperator before new chapter-->
+      <!--4-->
+      <h1 class="display-2" id="exp_soap">Die Herstellung von Seife</h1>
+      <!--5  -->
+      <p class="lead">
+        Nachdem Sie in den bisherigen Jahrgängen über verschiedene Stoffe gesprochen haben, ist es nun Zeit,
+        aus diesen bekannten Stoffe neue Stoffe herzustellen.
+        Mit Hilfe dieser Reaktionen sollen Sie die Grundlagen der organischen Chemie wiederholen.
+      </p>
+      <div class="chapterOverview flex-container">
+        <div>
+          <p class="scriptstyle">
+            <b>Am Ende dieses Kapitel sollen Sie ... :</b>
           </p>
-          <div class="chapterOverview flex-container">
-            <div>
-              <p class="scriptstyle">
-                <b>Am Ende dieses Kapitel sollen Sie ... :</b>    
-              </p>
-                <ul class="scriptstyle">
-                  <li>die chemischen Hintergründe der Seifenherstellung <b>erläutern</b> können.</li>
-                  <li>ein Experiment ausführlich <b>protokollieren</b> können.</li>
-                </ul>
-              <p class="scriptstyle"><b>Vorgehensweise:</b></p>
-                <ul class="scriptstyle">
-                  <li>Experimentieren Sie in 3-4er Gruppen.</li>
-                  <li>Schreiben Sie Ihr Protokoll selbstständig und in eigenen Worten.</li>
-                  <li>Besprechen Sie mit Ihrer Lehrkraft, wie ein ausführliches Protokoll strukturiert ist.</li>
-                </ul>
-            </div>
-            <div>
-              <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
-              <p style="text-align: center;"><b>90min</b></p>
-            </div>
+          <ul class="scriptstyle">
+            <li>die chemischen Hintergründe der Seifenherstellung <b>erläutern</b> können.</li>
+            <li>ein Experiment ausführlich <b>protokollieren</b> können.</li>
+          </ul>
+          <p class="scriptstyle"><b>Vorgehensweise:</b></p>
+          <ul class="scriptstyle">
+            <li>Experimentieren Sie in 3-4er Gruppen.</li>
+            <li>Schreiben Sie Ihr Protokoll selbstständig und in eigenen Worten.</li>
+            <li>Besprechen Sie mit Ihrer Lehrkraft, wie ein ausführliches Protokoll strukturiert ist.</li>
+          </ul>
+        </div>
+        <div>
+          <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project"
+            loading="lazy">
+          <p style="text-align: center;"><b>90min</b></p>
+        </div>
+      </div>
+
+      <!-- ***************************************************************************************** -->
+      <!-- *** Start of Content ******************************************************************** -->
+
+      <!--5  -->
+      <div class="chapterContent">
+        <h2 class="display-4">Experiment - Die Herstellung von Seife</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Führen Sie das Experiment im Unterricht durch.</b>
+        </p>
+        <ol class="scriptstyle">
+          <li><b>Lesen Sie die Durchführung und führen Sie das Experiment dementsprechend durch.</b></li>
+          <li>Das Experimentieren wird mit bewertet:</li>
+          <ul>
+            <li>Sauberkeit</li>
+            <li>Sparsamkeit</li>
+            <li>Sicherheit</li>
+            <li>Organisation in der Gruppe</li>
+          </ul>
+          <li>Schreiben Sie ein ausführliches Protokoll! Jedes Gruppenmitglied schreibt ein eigenes Protokoll <b>in
+              eigenen Worten</b>!</li>
+          <li>Die Auswertung erläutert die Beobachtung!</li>
+          <li>Der Schritt des Reifens kann aus Zeitgründen nicht in ihren Beobachtungen beschrieben werden. Er sollte
+            aber in der Auswertung ausgeführt werden.</li>
+          <li>Nutzen Sie geeignete Reaktionsgleichungen für Ihre Auswertung!</li>
+          <li><b>Beantworten Sie die folgenden Fragen als Teil der Auswertung:</b></li>
+          <ul>
+            <li><b>Erklären</b> Sie auch, warum die Seife nicht sofort zum Einsatz kommen kann. </li>
+            <li>Früher hatte man nicht immer ein Labor zur Verfügung. <b>Erläutern</b> Sie mit Hilfe von
+              Reaktionsgleichungen wie Sie Laugen gewinnen können. Nehmen Sie \[ Ca(OH)_2 \] als Beispiel.</li>
+          </ul>
+        </ol>
+        <!-- Method-Box start -->
+        <!-- *****************-->
+        <div class="containerBoxMethod flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
           </div>
-
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
-
-<!--5  --><div class="chapterContent">
-            <h2 class="display-4">Experiment - Die Herstellung von Seife</h2>
-              <p class="scriptstyle">
-                <b>Auftrag: Führen Sie das Experiment im Unterricht durch.</b>
-              </p>
-                <ol class="scriptstyle">
-                  <li><b>Lesen Sie die Durchführung und führen Sie das Experiment dementsprechend durch.</b></li>
-                  <li>Das Experimentieren wird mit bewertet:</li>
-                    <ul>
-                      <li>Sauberkeit</li>
-                      <li>Sparsamkeit</li>
-                      <li>Sicherheit</li>
-                      <li>Organisation in der Gruppe</li>
-                    </ul>
-                  <li>Schreiben Sie ein ausführliches Protokoll! Jedes Gruppenmitglied schreibt ein eigenes Protokoll <b>in eigenen Worten</b>!</li>
-                  <li>Die Auswertung erläutert die Beobachtung!</li>
-                  <li>Der Schritt des Reifens kann aus Zeitgründen nicht in ihren Beobachtungen beschrieben werden. Er sollte aber in der Auswertung ausgeführt werden.</li>
-                  <li>Nutzen Sie geeignete Reaktionsgleichungen für Ihre Auswertung!</li>
-                  <li><b>Beantworten Sie die folgenden Fragen als Teil der Auswertung:</b></li>
-                    <ul>
-                      <li><b>Erklären</b> Sie auch, warum die Seife nicht sofort zum Einsatz kommen kann. </li>
-                      <li>Früher hatte man nicht immer ein Labor zur Verfügung. <b>Erläutern</b> Sie mit Hilfe von Reaktionsgleichungen wie Sie Laugen gewinnen können. Nehmen Sie \[ Ca(OH)_2 \] als Beispiel.</li>
-                    </ul>
-                </ol>
-              <!-- Method-Box start -->
-              <!-- *****************-->
-              <div class="containerBoxMethod flex-container">
-                <div>
-                  <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
-                </div>
-                <div>
-                  <p class="scriptstyle">
-                    Es werden 10 g Kokosfett und 5 ml destilliertes Wasser langsam in einem Becherglas 
-                    erhitzt. Nach und nach werden unter Rühren 10 ml Natronlauge hinzugegeben. 
-                    Man lässt die Mischung 20 Minuten unter ständigem Umrühren auf kleiner Flamme kochen
-                    , wobei verdampftes Wasser durch dest. Wasser ersetzt wird. 
-		                Anschließend wird der Inhalt des Becherglases in ein Gefäß mit konzentrierter 
-                    Kochsalzlösung gegossen. Die entstehende Seife sammelt sich auf der Oberfläche der Flüssigkeit. Sie wird mit einem Löffelspatel 
-                    abgeschöpft und in eine Form gepresst. Dort bleibt die Seife einige Zeit zum Reifen.
-                  </p>
-                </div>
-              </div>
-              <!-- Method-Box end -->
-              <!-- ***************-->
+          <div>
+            <p class="scriptstyle">
+              Es werden 10 g Kokosfett und 5 ml destilliertes Wasser langsam in einem Becherglas
+              erhitzt. Nach und nach werden unter Rühren 10 ml Natronlauge hinzugegeben.
+              Man lässt die Mischung 20 Minuten unter ständigem Umrühren auf kleiner Flamme kochen
+              , wobei verdampftes Wasser durch dest. Wasser ersetzt wird.
+              Anschließend wird der Inhalt des Becherglases in ein Gefäß mit konzentrierter
+              Kochsalzlösung gegossen. Die entstehende Seife sammelt sich auf der Oberfläche der Flüssigkeit. Sie wird
+              mit einem Löffelspatel
+              abgeschöpft und in eine Form gepresst. Dort bleibt die Seife einige Zeit zum Reifen.
+            </p>
+          </div>
+        </div>
+        <!-- Method-Box end -->
+        <!-- ***************-->
 
 
 
 
-              <!--              <h3>Input - Einfacher Redox-Begriff</h3>
+        <!--              <h3>Input - Einfacher Redox-Begriff</h3>
                 <div class="youtubeContainer">
                   <iframe src="https://www.youtube-nocookie.com/embed/csRIZZuIC0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
                 </div>
@@ -577,89 +600,98 @@
                 <div class="youtubeContainer">
                   <iframe src="https://www.youtube-nocookie.com/embed/Y3BmwGyVjt8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video"></iframe>
                 </div>  -->
-          </div>
-        <hr>  <!-- seperator before new chapter-->
-<!-- ***************************************************************************************** -->
-<!-- *** End Of Chapter ********************************************************************** -->
-<!-- ***************************************************************************************** -->              
+      </div>
+      <hr> <!-- seperator before new chapter-->
+      <!-- ***************************************************************************************** -->
+      <!-- *** End Of Chapter ********************************************************************** -->
+      <!-- ***************************************************************************************** -->
 
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
+      <!-- *****************************************************************************************-->
+      <!-- *** Start Of Chapter ********************************************************************-->
+      <!-- *****************************************************************************************-->
 
-<!--4--><h1 class="display-2" id="wash_function_soap">Die Waschwirkung von Seife</h1>
-<!--5  --><p class="lead">
-            Seife ist eine Möglichkeit Dinge zu reinigen. Daneben gibt es den Klassiker <i>Wasser</i> und dann auch noch speziellere Dinge wie Waschbenzin.
-            Aber was ist da eigentlich der Unterschied und wann nutzt man die jeweiligen Mittel am Besten?
+      <!--4-->
+      <h1 class="display-2" id="wash_function_soap">Die Waschwirkung von Seife</h1>
+      <!--5  -->
+      <p class="lead">
+        Seife ist eine Möglichkeit Dinge zu reinigen. Daneben gibt es den Klassiker <i>Wasser</i> und dann auch noch
+        speziellere Dinge wie Waschbenzin.
+        Aber was ist da eigentlich der Unterschied und wann nutzt man die jeweiligen Mittel am Besten?
+      </p>
+      <div class="chapterOverview flex-container">
+        <div>
+          <p class="scriptstyle">
+            <b>Am Ende dieses Kapitel sollen Sie ... :</b>
           </p>
-          <div class="chapterOverview flex-container">
-            <div>
-              <p class="scriptstyle">
-                <b>Am Ende dieses Kapitel sollen Sie ... :</b>    
-              </p>
-                <ul class="scriptstyle">
-                  <li>die chemischen Hintergründe der Reinigungswirkung von Seife <b>erläutern</b> können.</li>
-                  <li>Stoffeigenschaften mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts <b>erklären</b> können</li>
-                  <li>ein Experiment einfach <b>protokollieren</b> können.</li>
-                </ul>
-              <p class="scriptstyle"><b>Vorgehensweise:</b></p>
-                <ul class="scriptstyle">
-                  <li>Experimentieren Sie in 3-4er Gruppen.</li>
-                  <li>Schreiben Sie Ihr Protokoll selbstständig und in eigenen Worten.</li>
-                  <li>Besprechen Sie mit Ihrer Lehrkraft, wie ein ausführliches Protokoll strukturiert ist.</li>
-                </ul>
-            </div>
-            <div>
-              <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
-              <p style="text-align: center;"><b>90min</b></p>
-            </div>
+          <ul class="scriptstyle">
+            <li>die chemischen Hintergründe der Reinigungswirkung von Seife <b>erläutern</b> können.</li>
+            <li>Stoffeigenschaften mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts <b>erklären</b> können</li>
+            <li>ein Experiment einfach <b>protokollieren</b> können.</li>
+          </ul>
+          <p class="scriptstyle"><b>Vorgehensweise:</b></p>
+          <ul class="scriptstyle">
+            <li>Experimentieren Sie in 3-4er Gruppen.</li>
+            <li>Schreiben Sie Ihr Protokoll selbstständig und in eigenen Worten.</li>
+            <li>Besprechen Sie mit Ihrer Lehrkraft, wie ein ausführliches Protokoll strukturiert ist.</li>
+          </ul>
+        </div>
+        <div>
+          <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project"
+            loading="lazy">
+          <p style="text-align: center;"><b>90min</b></p>
+        </div>
+      </div>
+
+      <!-- ***************************************************************************************** -->
+      <!-- *** Start of Content ******************************************************************** -->
+
+      <!--5  -->
+      <div class="chapterContent">
+        <h2 class="display-4">Lösemittel zum Säubern</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Vergleichen Sie Wasser und Waschbenzin! Nutzen Sie dazu die folgenden Kriterien in dieser
+            Reihenfolge.</b>
+        </p>
+        <ol class="scriptstyle">
+          <li>Struktur</li>
+          <li>Kräfte</li>
+          <li>Eigenschaften</li>
+        </ol>
+        <p class="scriptstyle">Beziehen Sie sich bei den Eigenschaft auf die Löslichkeit in polaren und unpolaren
+          Lösungsmitteln.
+          Nutzen Sie Oktan als Beispiel für Waschbenzin.
+          Sie können den Vergleich auch tabellarisch durchführen.</p>
+        <h2 class="display-4">Die Waschwirkung von Seife</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Erklären Sie mit Hilfe des Experiments die Waschwirkung von Seife!</b>
+        </p>
+        <ul class="scriptstyle">
+          <li>Protokollieren Sie stichpunktartig.</li>
+          <li>Erläutern Sie in Ihrer Auswertung die Waschwirkung der Seife.</li>
+        </ul>
+
+        <!-- Method-Box start -->
+        <!-- *****************-->
+        <div class="containerBoxMethod flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
           </div>
-
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
-
-<!--5  --><div class="chapterContent">
-            <h2 class="display-4">Lösemittel zum Säubern</h2>
-              <p class="scriptstyle">
-                <b>Auftrag: Vergleichen Sie Wasser und Waschbenzin! Nutzen Sie dazu die folgenden Kriterien in dieser Reihenfolge.</b>
-              </p>
-                <ol class="scriptstyle">
-                  <li>Struktur</li>
-                  <li>Kräfte</li>
-                  <li>Eigenschaften</li>
-                </ol>
-              <p class="scriptstyle">Beziehen Sie sich bei den Eigenschaft auf die Löslichkeit in polaren und unpolaren Lösungsmitteln. 
-                Nutzen Sie Oktan als Beispiel für Waschbenzin.
-                Sie können den Vergleich auch tabellarisch durchführen.</p>
-            <h2 class="display-4">Die Waschwirkung von Seife</h2>
-              <p class="scriptstyle">
-                <b>Auftrag: Erklären Sie mit Hilfe des Experiments die Waschwirkung von Seife!</b>
-              </p>
-                <ul class="scriptstyle">
-                  <li>Protokollieren Sie stichpunktartig.</li>
-                  <li>Erläutern Sie in Ihrer Auswertung die Waschwirkung der Seife.</li>
-                </ul>
-  
-                <!-- Method-Box start -->
-              <!-- *****************-->
-              <div class="containerBoxMethod flex-container">
-                <div>
-                  <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
-                </div>
-                <div>
-                  <p class="scriptstyle">
-                    Füllen Sie ein Reagenzglas mit ca. 3ml Wasser und 0,5ml Olivenöl. Schütteln Sie das Reagenzglas vorsichtig.
-                    Bestimmen Sie die ungefähre Zeitspanne bis zur Entmischung. Wiederholen Sie den Versuch mit einer Seifenlösung anstatt reinem Wasser.
-                  </p>
-                </div>
-              </div>
-              <!-- Method-Box end -->
-              <!-- ***************-->
+          <div>
+            <p class="scriptstyle">
+              Füllen Sie ein Reagenzglas mit ca. 3ml Wasser und 0,5ml Olivenöl. Schütteln Sie das Reagenzglas
+              vorsichtig.
+              Bestimmen Sie die ungefähre Zeitspanne bis zur Entmischung. Wiederholen Sie den Versuch mit einer
+              Seifenlösung anstatt reinem Wasser.
+            </p>
+          </div>
+        </div>
+        <!-- Method-Box end -->
+        <!-- ***************-->
 
 
 
 
-              <!--              <h3>Input - Einfacher Redox-Begriff</h3>
+        <!--              <h3>Input - Einfacher Redox-Begriff</h3>
                 <div class="youtubeContainer">
                   <iframe src="https://www.youtube-nocookie.com/embed/csRIZZuIC0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
                 </div>
@@ -667,272 +699,384 @@
                 <div class="youtubeContainer">
                   <iframe src="https://www.youtube-nocookie.com/embed/Y3BmwGyVjt8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video"></iframe>
                 </div>  -->
-          </div>
-        <hr>  <!-- seperator before new chapter-->
-<!-- ***************************************************************************************** -->
-<!-- *** End Of Chapter ********************************************************************** -->
-<!-- ***************************************************************************************** -->       
+      </div>
+      <hr> <!-- seperator before new chapter-->
+      <!-- ***************************************************************************************** -->
+      <!-- *** End Of Chapter ********************************************************************** -->
+      <!-- ***************************************************************************************** -->
 
 
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
+      <!-- *****************************************************************************************-->
+      <!-- *** Start Of Chapter ********************************************************************-->
+      <!-- *****************************************************************************************-->
 
-<!--4--><h1 class="display-2" id="fat_and_oil">Fette und Öle</h1>
-<!--5  --><p class="lead">
-            Um Seife herzustellen, kann man Kokosfett nehmen oder auch Olivenöl. Ist das egal? Sind Fett und Öl das Gleiche oder gibt es Unterschiede?
+      <!--4-->
+      <h1 class="display-2" id="fat_and_oil">Fette und Öle</h1>
+      <!--5  -->
+      <p class="lead">
+        Um Seife herzustellen, kann man Kokosfett nehmen oder auch Olivenöl. Ist das egal? Sind Fett und Öl das Gleiche
+        oder gibt es Unterschiede?
+      </p>
+      <div class="chapterOverview flex-container">
+        <div>
+          <p class="scriptstyle">
+            <b>Am Ende dieses Kapitel sollen Sie ... :</b>
           </p>
-          <div class="chapterOverview flex-container">
-            <div>
-              <p class="scriptstyle">
-                <b>Am Ende dieses Kapitel sollen Sie ... :</b>    
-              </p>
-                <ul class="scriptstyle">
-                  <li>die chemischen Hintergründe von Ölen und Fetten <b>erläutern</b> können.</li>
-                  <li>Stoffeigenschaften mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts <b>erklären</b> können.</li>
-                  <li>einen Nachweis für Doppelbindungen in Fetten und Ölen <b>durchführen und erklären</b> können.</li>
-                  <li>den Prozess der Hydrierung <b>erläutern</b> können.</li>
-                </ul>
-              <p class="scriptstyle"><b>Vorgehensweise:</b></p>
-                <ul class="scriptstyle">
-                  <li>Bearbeiten Sie die Arbeitsaufträge in Gruppen oder allein.</li>
-                </ul>
-            </div>
-            <div>
-              <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
-              <p style="text-align: center;"><b>90min</b></p>
-            </div>
-          </div>
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
+          <ul class="scriptstyle">
+            <li>die chemischen Hintergründe von Ölen und Fetten <b>erläutern</b> können.</li>
+            <li>Stoffeigenschaften mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts <b>erklären</b> können.</li>
+            <li>einen Nachweis für Doppelbindungen in Fetten und Ölen <b>durchführen und erklären</b> können.</li>
+            <li>den Prozess der Hydrierung <b>erläutern</b> können.</li>
+          </ul>
+          <p class="scriptstyle"><b>Vorgehensweise:</b></p>
+          <ul class="scriptstyle">
+            <li>Bearbeiten Sie die Arbeitsaufträge in Gruppen oder allein.</li>
+          </ul>
+        </div>
+        <div>
+          <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project"
+            loading="lazy">
+          <p style="text-align: center;"><b>90min</b></p>
+        </div>
+      </div>
+      <!-- ***************************************************************************************** -->
+      <!-- *** Start of Content ******************************************************************** -->
 
-<!--5  --><div class="chapterContent">
+      <!--5  -->
+      <div class="chapterContent">
         <h2 class="display-4">Vorüberlegungen</h2>
-             <!-- REVIEW-Box start -->
-            <!-- **************** -->
-            <!-- 4Tab--><div class="containerBoxReview flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy"> 
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br> 
-                </p>
-                <ul class="scriptstyle">
-                  <li>In der homologen Reihe der Alkane (Methan, Ethan, Propan ... ) steigt die Siede- und Schmelztemperatur.
-                    <b>Erläutern</b> Sie – auch mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts – diesen Sachverhalt!</li>
-                  <li>Wasser und Öl vermischen sich nicht. <b>Erläutern</b> Sie – auch mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts – diesen Sachverhalt!</li>
-                  <li>Hexanol vermischt sich mit Wasser aber nicht mit Benzin. <b>Erläutern</b> Sie – auch mit Hilfe
-                    des Struktur-Kräfte-Eigenschaften-Konzepts – diesen Sachverhalt!</li>
-                </ul>
-              </div>
-              </div>
-              <!-- REVIEW-Box end -->
-              <!-- ************** -->
-        <h2 class="display-4">Struktur der Fette und Öle</h2>
-          <p class="scriptstyle">
-            <b>Auftrag: Erläutern Sie allgemein den Aufbau der Fett/Öl-Moleküle. 
-              Nennen Sie die Stoffgruppe und zeichnen Sie die entsprechende funktionelle Gruppe!</b>
-          </p>
-        <h2 class="display-4">Die Eigenschaften der Fette und Öle</h2>
-          <p class="scriptstyle">
-            <b>Auftrag: Erläutern Sie die unterschiedlichen Eigenschaften von Fetten und Ölen in Bezug
-              auf ihren Siedepunkt (oder: Warum ist Öl bei RT flüssig und Butter fest?)!</b>
-          </p>
+        <!-- REVIEW-Box start -->
+        <!-- **************** -->
+        <!-- 4Tab-->
+        <div class="containerBoxReview flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy">
+          </div>
+          <div>
+            <p class="scriptstyle">
+              An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br>
+            </p>
             <ul class="scriptstyle">
-              <li>Nutzen Sie die gegebene Literatur und die Modellbaukästen.</li>
-              <li><b>Vergleichen</b> Sie Fette und Öle in Bezug auf die enthaltenen Fettsäuren.</li>
-              <li><b>Zeichnen</b> Sie die vereinfachte LEWIS-Formel von einigen Fettsäuren, die in Ölen oder/und Fetten vorkommen.</li>
-              <li><b>Erklären</b> Sie den Einfluss der Doppelbindung auf die Flexibilität der Moleküle.</li>
-              <li><b>Erläutern</b> Sie, wie sich das auf die Anordung der Moleküle und den Einfluss der van-der-Waals Kräfte auswirkt.</li>
+              <li>In der homologen Reihe der Alkane (Methan, Ethan, Propan ... ) steigt die Siede- und
+                Schmelztemperatur.
+                <b>Erläutern</b> Sie – auch mit Hilfe des Struktur-Kräfte-Eigenschaften-Konzepts – diesen Sachverhalt!
+              </li>
+              <li>Wasser und Öl vermischen sich nicht. <b>Erläutern</b> Sie – auch mit Hilfe des
+                Struktur-Kräfte-Eigenschaften-Konzepts – diesen Sachverhalt!</li>
+              <li>Hexanol vermischt sich mit Wasser aber nicht mit Benzin. <b>Erläutern</b> Sie – auch mit Hilfe
+                des Struktur-Kräfte-Eigenschaften-Konzepts – diesen Sachverhalt!</li>
             </ul>
+          </div>
+        </div>
+        <!-- REVIEW-Box end -->
+        <!-- ************** -->
+        <h2 class="display-4">Struktur der Fette und Öle</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Erläutern Sie allgemein den Aufbau der Fett/Öl-Moleküle.
+            Nennen Sie die Stoffgruppe und zeichnen Sie die entsprechende funktionelle Gruppe!</b>
+        </p>
+        <h2 class="display-4">Die Eigenschaften der Fette und Öle</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Erläutern Sie die unterschiedlichen Eigenschaften von Fetten und Ölen in Bezug
+            auf ihren Siedepunkt (oder: Warum ist Öl bei RT flüssig und Butter fest?)!</b>
+        </p>
+        <ul class="scriptstyle">
+          <li>Nutzen Sie die gegebene Literatur und die Modellbaukästen.</li>
+          <li><b>Vergleichen</b> Sie Fette und Öle in Bezug auf die enthaltenen Fettsäuren.</li>
+          <li><b>Zeichnen</b> Sie die vereinfachte LEWIS-Formel von einigen Fettsäuren, die in Ölen oder/und Fetten
+            vorkommen.</li>
+          <li><b>Erklären</b> Sie den Einfluss der Doppelbindung auf die Flexibilität der Moleküle.</li>
+          <li><b>Erläutern</b> Sie, wie sich das auf die Anordung der Moleküle und den Einfluss der van-der-Waals Kräfte
+            auswirkt.</li>
+        </ul>
         <h2 class="display-4">Nachweis der Doppelbindungen in Fetten und Ölen</h2>
-            <p><b>Auftrag: Weisen Sie experimentell die Doppelbindungen
-              in Fetten und Ölen nach!</b></p>
-            <ol>
-              <li><b>Lesen</b> Sie die Durchführung und führen Sie das Experiment durch!</li>
-              <li>Fertigen Sie ein <b>einfaches Protokoll</b> an!</li>
-              <li><b>Erläutern</b> Sie in Ihrer Auswertung die chemischen Hintergründe der Beobachtungen mit Hilfe einer
-                Reaktionsgleichung. Nutzen Sie dabei vereinfachte Strukturformeln!</li>
-              <li><b>Recherchieren und erklären</b> Sie, warum ungesättigte Fettsäuren wichtig für die Ernährung sein sollen!</li>
-            </ol>
-            <!-- Method-Box start -->
-            <!-- *****************-->
-            <div class="containerBoxMethod flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Verdünnen Sie die Betaisodona-Lösung noch einmal im Verhältnis 1:2. Danach werden in zwei Reagenzgläsern die
-                  gleichen Mengen (sparsam arbeiten) von Öl und Palmin gegeben. Das Reagenzglas mit Palmin wird in ein Wasserbad
-                  mit kochendem Wasser gestellt, damit sich das Fett verflüssigt. Nun wird zu beiden Fettproben tropfenweise die
-                  verdünnte Iod-Lösung zugegeben. Nach jeder Zugabe werden die Reagenzgläser verschlossen und kräftig geschüttelt.<br>
-                  (Quelle: https://www.chids.de/dachs/wiss hausarbeiten/ExperimentelleHA Konen/V/PDF/V7.pdf)
-                </p>
-              </div>
-            </div>
-            <!-- Method-Box end -->
-            <!-- ***************-->
+        <p><b>Auftrag: Weisen Sie experimentell die Doppelbindungen
+            in Fetten und Ölen nach!</b></p>
+        <ol>
+          <li><b>Lesen</b> Sie die Durchführung und führen Sie das Experiment durch!</li>
+          <li>Fertigen Sie ein <b>einfaches Protokoll</b> an!</li>
+          <li><b>Erläutern</b> Sie in Ihrer Auswertung die chemischen Hintergründe der Beobachtungen mit Hilfe einer
+            Reaktionsgleichung. Nutzen Sie dabei vereinfachte Strukturformeln!</li>
+          <li><b>Recherchieren und erklären</b> Sie, warum ungesättigte Fettsäuren wichtig für die Ernährung sein
+            sollen!</li>
+        </ol>
+        <!-- Method-Box start -->
+        <!-- *****************-->
+        <div class="containerBoxMethod flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+          </div>
+          <div>
+            <p class="scriptstyle">
+              Verdünnen Sie die Betaisodona-Lösung noch einmal im Verhältnis 1:2. Danach werden in zwei Reagenzgläsern
+              die
+              gleichen Mengen (sparsam arbeiten) von Öl und Palmin gegeben. Das Reagenzglas mit Palmin wird in ein
+              Wasserbad
+              mit kochendem Wasser gestellt, damit sich das Fett verflüssigt. Nun wird zu beiden Fettproben tropfenweise
+              die
+              verdünnte Iod-Lösung zugegeben. Nach jeder Zugabe werden die Reagenzgläser verschlossen und kräftig
+              geschüttelt.<br>
+              (Quelle: https://www.chids.de/dachs/wiss hausarbeiten/ExperimentelleHA Konen/V/PDF/V7.pdf)
+            </p>
+          </div>
+        </div>
+        <!-- Method-Box end -->
+        <!-- ***************-->
         <h2>Die Fetthärtung</h2>
-          <p><b>Auftrag: Erläutern Sie den Prozess der Fetthärtung</b></p>
-          <ol>
-            <li><b>Erläutern</b> Sie anhand einer geeigneten Fettsäure den Prozess der Hydrierung!</li>
-            <li><b>Erklären</b> Sie warum die Hydrierung zur Fetthärtung führt! <b>Erklären</b> Sie, wie sich die chemische Zusammensetzung 
-              von Olivenöl ändern sollte, damit es ein festeres Streichfett ergibt.</li>
-          </ol>
-          <!-- INFO-Box start -->
-          <!-- ************** -->
-          <div class="containerBoxInfo flex-container">
+        <p><b>Auftrag: Erläutern Sie den Prozess der Fetthärtung</b></p>
+        <ol>
+          <li><b>Erläutern</b> Sie anhand einer geeigneten Fettsäure den Prozess der Hydrierung!</li>
+          <li><b>Erklären</b> Sie warum die Hydrierung zur Fetthärtung führt! <b>Erklären</b> Sie, wie sich die
+            chemische Zusammensetzung
+            von Olivenöl ändern sollte, damit es ein festeres Streichfett ergibt.</li>
+        </ol>
+        <!-- INFO-Box start -->
+        <!-- ************** -->
+        <div class="containerBoxInfo flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+          </div>
+          <div>
+            <p class="scriptstyle">
+              Unter <b>Hydrierung</b> versteht man in der Chemie die Addition von Wasserstoff an andere chemische
+              Elemente oder Verbindungen.
+              In der organischen Chemie werden sehr oft Kohlenstoff-Kohlenstoff-Doppelbindungen hydriert und dabei in
+              Einfachbindungen umgewandelt.
+              Hydrierungen haben eine große industrielle Bedeutung wie z.B. bei der katalytischen Hydrierung von
+              Fettsäuren (Fetthärtung) bei der
+              Herstellung von Margarine.
+              Bild: Information by dDara from the Noun Project
+            </p>
+          </div>
+        </div>
+        <!-- INFO-Box end -->
+        <!-- ************** -->
+        <!-- INFO-Box start -->
+        <!-- ************** -->
+        <div class="containerBoxInfo flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+          </div>
+          <div>
+            <div style="width: fit-content;">
+              <img class="img-fluid" src="img/fettsaeuren1.png"><br>
+              <img class="img-fluid" src="img/zusammensetzungfette.png">
+            </div>
+          </div>
+        </div>
+        <!-- INFO-Box end -->
+        <!-- ************** -->
+        <h2 class="display-4">Ranziges Fett</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Erklären Sie die chemischen Hintergründe von ranzigem Fett.</b>
+        </p>
+        <ul>
+          <li><b>Lesen</b> Sie den Text zu den chemischen Hintergründen, die zu ranzigem Fett führen.</li>
+          <li><b>Erläutern</b> Sie das Prinzip mit Hilfe einer Reaktionsgleichung.
+            <b>Kennzeichnen</b> Sie dabei den Glycerinteil des Fettes als R<sub>F</sub>. Nehmen Sie Buttersäure
+            (Butansäure) als "Gegenstück".
+          </li>
+          <li>Wenn Buttersäure im Labor hergestellt wird, nutzt man Schwefelsäure als Katalysator. <b>Nennen</b> Sie die
+            drei definierenden
+            Eigenschaften eines Katalysators. <b>Nennen</b> Sie das biologische Gegenstück zur Schwefelsäure und
+            erklären Sie dessen Funktionsweise.</li>
+          <li>Die Herstellung von Buttersäure in der Schule ist ein umstrittendes Experiment. <b>Bewerten</b> Sie die
+            Eignung des Experiments für den Unterricht.</li>
+          <li>Buttersäure ist ein sehr übelriechender Stoff. Dabei stellt die Natur auch sehr gut riechende Stoffe her,
+            die Sie über Ihre Nase wahrnehmen.
+            <b>Recherchieren und erläutern</b> Sie, wie man Buttersäure in besserriechende Stoffe umwandeln kann.
+          </li>
+        </ul>
+
+        <div class="containerBoxInfo flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+          </div>
+          <div>
+            <p class="scriptstyle">
+              Für die Entstehung von ranzigem Fett sind Licht, Sauerstoff, Feuchtigkeit sowie Mikroorganismen und Enzyme
+              verantwortlich.
+              Unter dem Einfluss dieser Faktoren werden die Fette zersetzt und es entstehen Abbauprodukte, die nicht nur
+              schlecht riechen und schmecken,
+              sondern die auch zum Teil gesundheitsschädlich sind.
+              Wird die Bindung zwischen Glycerin und den Fettsäuren unter Anlagerung von Wasser gespalten, so spricht
+              man von einer hydrolytischen Spaltung
+              oder Lipolyse. <br>
+              Die auf diesem Wege entstehenden Produkte sind in der Regel physiologisch unbedenklich, jedoch werden
+              solche Fette als verdorben empfunden,
+              da meist nieder- bis mittelkettige Fettsäuren entstehen, die einen unangenehmen Geruch und Geschmack
+              aufweisen. Bereits 1 µg Caprylsäure
+              und 10 µg Caprinsäure pro Gramm Fett reichen aus, um ein Fett ungenießbar zu machen (übrigens: 1 µg =
+              0,000001 g!).
+              Längerkettige Fettsäuren sind dagegen sensorisch kaum feststellbar.<br>
+              Eine hydrolytische Spaltung kann auch von Enzymen bewirkt werden, die aus pflanzlichem und tierischem
+              Fettgewebe oder aus Mikroorganismen stammen.
+              Man bezeichnet diese Enzyme als Lipasen.
+              Nicht immer ist eine Lipolyse mit einem Fettverderb gleichzusetzen. Es gibt nämlich auch Lebensmittel,
+              bei denen eine hydrolytische Spaltung mehr als erwünscht, also eigentlich unverzichtbar ist.
+              Zu diesen Lebensmitteln gehört unter anderem der Käse, bei dessen Reifungsprozess die Entstehung von
+              freien Fettsäuren Voraussetzung für
+              eine gute Aromabildung ist. (Quelle: <a
+                href="https://www.chemieunterricht.de/dc2/milch/ranzig.htm">Prof.Blume</a>)
+            </p>
+          </div>
+        </div>
+        <!-- ***************************************************************************************** -->
+        <!-- *** End Of Chapter ********************************************************************** -->
+        <!-- ***************************************************************************************** -->
+
+        <!-- TODO: missing chapter about double bonds and iodine-solution -->
+        
+        <hr> <!-- seperator before new chapter-->
+        <!-- *****************************************************************************************-->
+        <!-- *** Start Of Chapter ********************************************************************-->
+        <!-- *****************************************************************************************-->
+
+        <!--4-->
+        <h1 class="display-2" id="chem_calculations">Stöchiometrie</h1>
+        <!--5  -->
+        <p class="lead">
+          Bei der Herstellung von Stoffen achtet man auf effiziente und kostengünstige Prozesse. Es ist daher von
+          Vorteil, dass man die Massen bei chemische Reaktionen
+          so genau berechnen kann.
+        </p>
+        <div class="chapterOverview flex-container">
+          <div>
+            <p class="scriptstyle">
+              <b>Am Ende dieses Kapitel sollen Sie ... :</b>
+            </p>
+            <ul class="scriptstyle">
+              <li>die chemischen Hintergründe des chemischen Rechnens <b>erläutern</b> können.</li>
+              <li>Massen bei chemischen Reaktionen <b>berechnen</b> können.</li>
+            </ul>
+            <p class="scriptstyle"><b>Vorgehensweise:</b></p>
+            <ul class="scriptstyle">
+              <li>Besprechen Sie mit Ihrer Lehrkraft, wie man chemische Berechnungen durchführt.</li>
+            </ul>
+          </div>
+          <div>
+            <img class="img-fluid symbolInfo" src="symbols/noun_clock.png"
+              alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
+            <p style="text-align: center;"><b>135min</b></p>
+          </div>
+        </div>
+
+        <!-- ***************************************************************************************** -->
+        <!-- *** Start of Content ******************************************************************** -->
+
+        <!--5  -->
+        <div class="chapterContent">
+          <!-- REVIEW-Box start -->
+          <!-- **************** -->
+          <div class="containerBoxReview flex-container">
             <div>
-              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+              <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy">
             </div>
             <div>
               <p class="scriptstyle">
-                Unter <b>Hydrierung</b> versteht man in der Chemie die Addition von Wasserstoff an andere chemische Elemente oder Verbindungen. 
-                In der organischen Chemie werden sehr oft Kohlenstoff-Kohlenstoff-Doppelbindungen hydriert und dabei in Einfachbindungen umgewandelt. 
-                Hydrierungen haben eine große industrielle Bedeutung wie z.B. bei der katalytischen Hydrierung von Fettsäuren (Fetthärtung) bei der 
-                Herstellung von Margarine.
-                Bild: Information by dDara from the Noun Project
+                An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br>
               </p>
+              <ul class="scriptstyle">
+                <li>Laden Sie sich die <a href="res/anleitung_chem_rechnen.pdf"><b>Anleitung</b></a> herunter.</li>
+                <li>Erarbeiten Sie zusammen mit Ihrer Lehrkraft, wie man stöchiometrische Berechnungen durchführt.</li>
+                <li>Üben Sie <a
+                    href="https://www.schule-bw.de/faecher-und-schularten/berufliche-bildung/ernaehrungslehre/unterrichtsmaterialien/handreichungen/handreichung_ernaehrung_und_chemie/eingangsklasse/lpe5/lpe0502"><b>hier</b></a>
+                  und <a
+                    href="http://chemie-digital.zum.de/images/4/49/St%C3%B6chiometrie-Aufgaben-Sch%C3%BCler-Download-Variante.pdf"><b>hier</b></a>.
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- INFO-Box end -->
+          <!-- REVIEW-Box end -->
           <!-- ************** -->
-          <!-- INFO-Box start -->
-          <!-- ************** -->
-          <div class="containerBoxInfo flex-container">
-            <div>
-              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-            </div>
-            <div>
-              <div style="width: fit-content;">
-                <img class="img-fluid" src="img/fettsaeuren1.png"><br>
-                <img class="img-fluid" src="img/zusammensetzungfette.png">
-              </div>
-            </div>
-          </div>
-          <!-- INFO-Box end -->
-          <!-- ************** -->
-        <h2 class="display-4">Ranziges Fett</h2>
+          <h2 class="display-4">Das chemische Rechnen</h2>
           <p class="scriptstyle">
-            <b>Auftrag: Erklären Sie die chemischen Hintergründe von ranzigem Fett.</b>
+            <b>1. Auftrag:</b> Berechnen Sie die Stoffmenge Magnesiumoxid, die in 20g Magnesiumoxid sind.
+          </p>
+          <p class="scriptstyle">
+            <b>2. Auftrag:</b> Berechnen Sie die Masse an KOH, die man bei der Verseifung benötigt, wenn man 1500g
+            Glycerin herstellen will. Gehen Sie dabei von folgender Gleichung aus.
+            <img src="img/verseifung.png">
+          </p>
+          <p class="scriptstyle"><b>3. Auftrag:</b> Berechnen Sie die Masse an Sauerstoff, die Sie benötigen, wenn 25kg
+            Wasserstoff verbrennen.</p>
+        </div>
+        <!-- ***************************************************************************************** -->
+        <!-- *** End Of Chapter ********************************************************************** -->
+        <!-- ***************************************************************************************** -->
+
+        <hr> <!-- seperator before new chapter-->
+        <!-- *****************************************************************************************-->
+        <!-- *** Start Of Chapter ********************************************************************-->
+        <!-- *****************************************************************************************-->
+
+        <!--4-->
+        <h1 class="display-2" id="chem_washing_powder">Waschmittel und Tenside</h1>
+        <!--5  -->
+        <p class="lead">
+          Stellen Sie sich folgende Situation vor: ein WG-Mitbewohner hat - aus
+          Mangel an Alternativen - die Wäsche mit Seife gewaschen. Als
+          Chemiker hat er dann einfach behauptet, dass Seife und
+          Waschmittel im Wesentlichen das Gleiche sind. Seine Mitbewohner:in ist
+          anderer Meinung!!
+        </p>
+        <div class="chapterOverview flex-container">
+          <div>
+            <p class="scriptstyle">
+              <b>Am Ende dieses Kapitel sollen Sie ... :</b>
+            </p>
+            <ul class="scriptstyle">
+              <li>die chemischen Hintergründe von Waschmittel <b>erklären</b> können.</li>
+            </ul>
+            <p class="scriptstyle"><b>Vorgehensweise:</b></p>
+            <ul class="scriptstyle">
+              <li>Erarbeiten Sie sich das Thema erst allein und vergleichen Sie dann mit anderen Lernenden.</li>
+            </ul>
+          </div>
+          <div>
+            <img class="img-fluid symbolInfo" src="symbols/noun_clock.png"
+              alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
+            <p style="text-align: center;"><b>90min</b></p>
+          </div>
+        </div>
+
+        <!-- ***************************************************************************************** -->
+        <!-- *** Start of Content ******************************************************************** -->
+
+        <!--5  -->
+        <div class="chapterContent">
+          <h2 class="display-4">Waschmittel vs. Seife</h2>
+          <p class="scriptstyle">
+            <b>Auftrag: Lösen Sie die Streitfrage: ist Seife das Gleiche wie Waschmittel?!</b>
           </p>
           <ul>
-            <li><b>Lesen</b> Sie den Text zu den chemischen Hintergründen, die zu ranzigem Fett führen.</li>
-            <li><b>Erläutern</b> Sie das Prinzip mit Hilfe einer Reaktionsgleichung. 
-              <b>Kennzeichnen</b> Sie dabei den Glycerinteil des Fettes als R<sub>F</sub>. Nehmen Sie Buttersäure (Butansäure) als "Gegenstück".</li>
-            <li>Wenn Buttersäure im Labor hergestellt wird, nutzt man Schwefelsäure als Katalysator. <b>Nennen</b> Sie die drei definierenden 
-              Eigenschaften eines Katalysators. <b>Nennen</b> Sie das biologische Gegenstück zur Schwefelsäure und erklären Sie dessen Funktionsweise.</li>
-            <li>Die Herstellung von Buttersäure in der Schule ist ein umstrittendes Experiment. <b>Bewerten</b> Sie die Eignung des Experiments für den Unterricht.</li>
-            <li>Buttersäure ist ein sehr übelriechender Stoff. Dabei stellt die Natur auch sehr gut riechende Stoffe her, die Sie über Ihre Nase wahrnehmen. 
-              <b>Recherchieren und erläutern</b> Sie, wie man Buttersäure in besserriechende Stoffe umwandeln kann.</li>
+            <li><b>Vergleichen</b> Sie die waschwirksamen Stoffe in Seife und Waschmittel.</li>
+            <li><b>Recherchieren</b> Sie dazu die waschaktiven Inhaltsstoffe in Waschmitteln</li>
+            <li><b>Bewerten</b> Sie die Aussage des Chemie-Mitbewohners. Ist es egal, ob man Waschmittel oder Seife zum Wäschewaschen nutzt?</li>
           </ul>
-
-          <div class="containerBoxInfo flex-container">
-            <div>
-              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-            </div>
-            <div>
-              <p class="scriptstyle">
-                Für die Entstehung von ranzigem Fett sind Licht, Sauerstoff, Feuchtigkeit sowie Mikroorganismen und Enzyme verantwortlich. 
-                Unter dem Einfluss dieser Faktoren werden die Fette zersetzt und es entstehen Abbauprodukte, die nicht nur schlecht riechen und schmecken, 
-                sondern die auch zum Teil gesundheitsschädlich sind.
-                Wird die Bindung zwischen Glycerin und den Fettsäuren unter Anlagerung von Wasser gespalten, so spricht man von einer hydrolytischen Spaltung 
-                oder Lipolyse. <br>
-                Die auf diesem Wege entstehenden Produkte sind in der Regel physiologisch unbedenklich, jedoch werden solche Fette als verdorben empfunden, 
-                da meist nieder- bis mittelkettige Fettsäuren entstehen, die einen unangenehmen Geruch und Geschmack aufweisen. Bereits 1 µg Caprylsäure 
-                und 10 µg Caprinsäure pro Gramm Fett reichen aus, um ein Fett ungenießbar zu machen (übrigens: 1 µg = 0,000001 g!). 
-                Längerkettige Fettsäuren sind dagegen sensorisch kaum feststellbar.<br>
-                Eine hydrolytische Spaltung kann auch von Enzymen bewirkt werden, die aus pflanzlichem und tierischem Fettgewebe oder aus Mikroorganismen stammen. 
-                Man bezeichnet diese Enzyme als Lipasen.
-                Nicht immer ist eine Lipolyse mit einem Fettverderb gleichzusetzen. Es gibt nämlich auch Lebensmittel, 
-                bei denen eine hydrolytische Spaltung mehr als erwünscht, also eigentlich unverzichtbar ist. 
-                Zu diesen Lebensmitteln gehört unter anderem der Käse, bei dessen Reifungsprozess die Entstehung von freien Fettsäuren Voraussetzung für 
-                eine gute Aromabildung ist. (Quelle: <a href="https://www.chemieunterricht.de/dc2/milch/ranzig.htm">Prof.Blume</a>)
-              </p>
-            </div>
         </div>
-<!-- ***************************************************************************************** -->
-<!-- *** End Of Chapter ********************************************************************** -->
-<!-- ***************************************************************************************** -->       
-
-
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
-
-<!--4--><h1 class="display-2" id="chem_calculations">Stöchiometrie</h1>
-<!--5  --><p class="lead">
-            Bei der Herstellung von Stoffen achtet man auf effiziente und kostengünstige Prozesse. Es ist daher von Vorteil, dass man die Massen bei chemische Reaktionen
-            so genau berechnen kann.
-          </p>
-          <div class="chapterOverview flex-container">
-            <div>
-              <p class="scriptstyle">
-                <b>Am Ende dieses Kapitel sollen Sie ... :</b>    
-              </p>
-                <ul class="scriptstyle">
-                  <li>die chemischen Hintergründe des chemischen Rechnens <b>erläutern</b> können.</li>
-                  <li>Massen bei chemischen Reaktionen <b>berechnen</b> können.</li>
-              </ul>
-              <p class="scriptstyle"><b>Vorgehensweise:</b></p>
-                <ul class="scriptstyle">
-                  <li>Besprechen Sie mit Ihrer Lehrkraft, wie man chemische Berechnungen durchführt.</li>
-                </ul>
-            </div>
-            <div>
-              <img class="img-fluid symbolInfo" src="symbols/noun_clock.png" alt="clock by Mr. Minuvi from the Noun Project" loading="lazy">
-              <p style="text-align: center;"><b>135min</b></p>
-            </div>
-          </div>
-
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
-
-<!--5  --><div class="chapterContent">
-            <!-- REVIEW-Box start -->
-            <!-- **************** -->
-            <div class="containerBoxReview flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy"> 
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br> 
-                </p>
-                <ul class="scriptstyle">
-                  <li>Laden Sie sich die <a href="res/anleitung_chem_rechnen.pdf"><b>Anleitung</b></a> herunter.</li>
-                  <li>Erarbeiten Sie zusammen mit Ihrer Lehrkraft, wie man stöchiometrische Berechnungen durchführt.</li>
-                  <li>Üben Sie <a href="https://www.schule-bw.de/faecher-und-schularten/berufliche-bildung/ernaehrungslehre/unterrichtsmaterialien/handreichungen/handreichung_ernaehrung_und_chemie/eingangsklasse/lpe5/lpe0502"><b>hier</b></a>
-                     und <a href="http://chemie-digital.zum.de/images/4/49/St%C3%B6chiometrie-Aufgaben-Sch%C3%BCler-Download-Variante.pdf"><b>hier</b></a>.</li>
-                </ul>
-              </div>
-              </div>
-              <!-- REVIEW-Box end -->
-              <!-- ************** -->
-            <h2 class="display-4">Das chemische Rechnen</h2>
-              <p class="scriptstyle">
-                <b>Auftrag: Berechnen Sie die Masse an KOH, die man bei der Verseifung benötigt, wenn man 1500g Glycerin herstellen will. Gehen Sie dabei von folgender Gleichung aus.</b>
-                <img src="img/verseifung.png">
-              </p>
-              
-  <!-- end of main content of script -->        
-  </div>
+        <!-- ***************************************************************************************** -->
+        <!-- *** End Of Chapter ********************************************************************** -->
+        <!-- ***************************************************************************************** -->
 
 
 
-    <!-- JavaScript for Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <!-- JavaScript for MathJax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- end of main content of script -->
+      </div>
+
+
+
+      <!-- JavaScript for Bootstrap 5 -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
+      <!-- JavaScript for MathJax -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 
 </html>
