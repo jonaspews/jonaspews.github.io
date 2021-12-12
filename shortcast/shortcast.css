@@ -1,0 +1,12 @@
+
+
+/* *************************************************************************** */
+/* mobile first approach: so the following styles are only for bigger screens  */
+/* *************************************************************************** */
+
+@media (min-width: 75em) {
+    body {
+        margin-left: 25%;
+        margin-right: 25%;  
+    }
+}
