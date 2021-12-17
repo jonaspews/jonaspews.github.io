@@ -45,6 +45,17 @@ a:hover {
     color: inherit;
 }
 
+.td_centered {
+    text-align: center; 
+}
+
+
+#backtotop {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+
 .youtubeContainer {
     position: relative;
     width: 100%;
@@ -280,5 +291,10 @@ a:hover {
         text-align: center;
         padding-top: 10px;
     }
+
+    .td_centered {
+        text-align: center; 
+    }
+    
     
 }   
