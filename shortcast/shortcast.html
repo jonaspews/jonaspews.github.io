@@ -23,7 +23,7 @@
   <body>
     <div class="container-fluid">
       <h1 class="display-1">Create a Shortcast</h1>
-      <p class="lead">To improve your English you are going to speak the language on a regular basis outside of class. Therefor you will make a <i>Shortcast</i> (instead of a Podcast).</p>
+      <p class="lead">To improve your English you are going to speak the language on a regular basis outside of class. Therefore you will make a <i>Shortcast</i> (instead of a Podcast).</p>
         
       <p class="lead">To make it easier for you, here is a list of topics you will cover and record:</p>
       <ol class="list-group">
@@ -32,8 +32,21 @@
         <li  class="list-group-item"><b>Name five words you did not know</b> before and their German translation.</li>
         <li  class="list-group-item">Pick a picture you saw this week. <b>Describe the picture</b> using the phrases you learned in your English class. It can be a picture from a news site or social media. It must not be a private picture of you or some friends. Length: at least 1min</li>
       </ol>
-      <p class="lead">In addition, you will work with a partner. Your partner has to listen to your recording and has to comment on your article and your opinion as well. </p>
-      <p>Your partner will change every two weeks. So you need to make your recording in the first week, exchange your recordings, record your comment on your partners opinion and the add it all together.</p>
+      <p class="lead"><b>In addition,</b> you will work with a partner. Your partner has to listen to your recording and has to comment on your article and your opinion as well. </p>
+      <p class="lead">Your partner will change every two weeks. So you need to make your recording in the first week, exchange your recordings, record your comment on your partners opinion and then add it all together.</p>
+      <form>
+        <label>Number of students:</label>
+        <input type="number" id="numberOfStudents" name="numberOfStudents" min="1" max="40">
+        <button type="button" id="buttonGeneratePairs" class="btn btn-dark" onclick="generatePairs()">Create Pairs</button>
+      </form>
+      <table id="tableOfPairs" class="table table-bordered">
+        <tr>
+          <th>Pair</th>
+          <th>Student 1</th>
+          <th>Student 2</th>
+        </tr>
+      </table>
+      <p id="deadline"></p>
     </div>
     
 
@@ -44,7 +57,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
     crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <script src="shortcast.js"></script>
   <!-- JavaScript for MathJax -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
