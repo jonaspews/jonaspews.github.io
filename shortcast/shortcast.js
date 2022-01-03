@@ -5,6 +5,19 @@ function generatePairs() {
     var listOfStudentNumbers = [];
     console.log(numberOfStudents);  // TODO: for development purposes, delete later
 
+    try {
+        if(numberOfStudents == "") throw "empty";
+        if(isNaN(numberOfStudents)) throw "not a number";
+        numberOfStudents = Number(numberOfStudents);
+        if(numberOfStudents < 1) throw "too low";
+        if(numberOfStudents > 40) throw "too high";
+        }
+    catch(err) {
+        document.getElementById("deadline").innerText = "Input is " + err;
+        console.log(err);
+        return;
+    }
+
     
 
       
