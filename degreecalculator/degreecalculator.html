@@ -728,6 +728,9 @@
           if (gradepointsSubjectGroup2[j] >= 7) {  // for FOR: at least 7 points twice
            FOR7PointsTwice++; 
           }
+          if (gradepointsSubjectGroup2[j] < 4 && gradepointsSubjectGroup2[j] > 0) {
+            eBBRmaxTwoBadFives++;
+          } 
           if (gradepointsSubjectGroup2[j] == 0) {
             badSix++;
           }
@@ -758,6 +761,14 @@
               badSix++;  // if you have below 3 points in an G-Course, that is a Six
             }
             if (Gradepoints == 4 || Gradepoints == 3) {
+              eBBRmaxTwoBadFives++;
+            }
+          }
+          if (Course == "N") {  // check for WP1-Course
+            if (Gradepoints < 1) {
+              badSix++;  // if you have below 1 points in an WP1-Course, that is a Six
+            }
+            if (Gradepoints < 4 && Gradepoints > 0) {
               eBBRmaxTwoBadFives++;
             }
           }
@@ -819,7 +830,7 @@
           document.getElementById("FORQmin3ECourses").innerText = "Nicht erreicht";
           document.getElementById("FORmin2ECourses").innerText = "Nicht erreicht";          
         }
-
+        console.log("FÜNFEN:" + eBBRmaxTwoBadFives);  // FIXME: for dev-purposes
         if (eBBRmaxTwoBadFives > 2) {
           document.getElementById("eBBRmaxTwoBadFives").innerText = "Nicht erreicht";
         } else {
