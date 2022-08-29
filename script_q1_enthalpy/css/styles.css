@@ -1,0 +1,259 @@
+/* **********
+   own styles
+   ********** */
+   
+/* *************************************************************** */
+/* mobile first approach: following styles are for mobile screens  */
+/* *************************************************************** */
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #434343;
+    z-index:1;
+}
+
+#mainContent {
+    padding-top: 10em;
+}
+
+h1 {
+    padding-top: 50px;
+}
+
+
+h3 {
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.youtubeContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 56.25%; 
+    margin-bottom: 1em;
+    z-index:0;
+    border: 1px solid;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:0;
+}
+
+.scriptstyle {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */  
+    margin-bottom: 2px;
+    color: #404040;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.tableContainer {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */  
+    z-index:0;
+    border: 1px solid;
+    box-shadow: 0 5px 5px -3px black;
+    border-radius: 5px;
+    padding-top: 13px;
+    margin-bottom: 1em;
+}
+
+.symbolInfo {
+    position: relative;
+    width: 120px; 
+    height: auto;
+    margin: auto;  /* auto adjust position in the middle */
+}
+
+.containerBoxInfo {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: grey;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.containerBoxReview {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: orange;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.containerBoxFast {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: red;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.containerBoxMethod {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: green;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.containerBoxTime {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 0 5px 5px -3px black;
+}
+
+.chapterOverview {
+    width: 95%;  /* width of paragraph */
+    margin: auto;  /* auto adjust position in the middle */
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    /* box-shadow: 0 5px 5px -3px black; */
+}
+
+
+.chartContainer {
+    position: relative; 
+    width: 85%;
+    margin: auto;
+    margin-top: 3px;
+    padding: 20px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #000000;
+    box-shadow: 0 5px 5px -3px black;
+    /* height: 40vh; width: 40vw */
+}
+
+#headerSymbol {
+    height: 75px;
+    width: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*.chartCanvas {
+
+} */
+
+/* ******** Navigation Panel accordion *** */
+/* from: https://www.w3schools.com/howto/howto_js_accordion.asp */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion {
+    background-color: #404040;
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #686868;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #909090;
+    display: none;
+    overflow: hidden;
+  } 
+
+  .panelParagraph {
+      border-bottom: 1px solid;
+      color: white;
+  }
+
+
+/* *************************************************************************** */
+/* mobile first approach: so the following styles are only for bigger screens  */
+/* *************************************************************************** */
+
+@media (min-width: 75em) {
+    body {
+        margin-left: 25%;
+        margin-right: 25%;  
+    }
+
+    /* this overwrites the bootstrap css for padding in accordion class */
+    /* I mainly use it in the header */
+    .accordion {
+        padding: 0px;
+    }
+
+    header {
+        width: 50%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .youtubeContainer {
+        position: relative;
+        width: 75%;
+        height: 0; 
+        left: 2em;
+        margin-bottom: 3em;
+        z-index:0;
+        border: 1px solid;
+        box-shadow: 0 5px 5px -3px black;
+    }
+    
+    .video {
+        position: absolute;
+        z-index:0;
+    }
+
+    .symbolInfo {
+        width: 120px;
+        height: auto;
+    }
+}   
