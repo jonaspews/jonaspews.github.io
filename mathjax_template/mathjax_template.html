@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template für MathJax Beispiele</title>
+
+<!-- kept for test purposes, might be useless for this template (2023-01-11)
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+-->
+<!-- kept for test purposes, might be useless for this template (2023-01-11)
+    The loading of KaTeX is deferred to speed up page rendering
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+-->
+    
+<!-- kept for test purposes, might be useless for this template (2023-01-11)
+    To automatically render math in text elements, include the auto-render extension:
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+-->
+
+    <!-- Diese beiden Referenzen in den <head> kopieren -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+ 
+  </head>
+  <body>
+    
+    <p>Hello, das hier sollen einfache Beispiele sein, aus denen man Beispiele für die Nutzung von MathJax-Formeln raussuchen kann. Einfach übernehmen und anpassen.</p>
+      
+    <p>Im Text direkt kann man Formeln unterbringen, so wie  die Reaktionsgleichung für die Knallgasprobe \(\ce{2H2 + O2 -> 2 H2O}\).</p>
+    <p>Man kann Gleichungen aber auch zentriert darstellen, wie das oft in wissenschaftlichen Publikationen genmacht wird:
+          $$\ce{2H2 + O2 -> 2 H2O}$$  
+    </p>
+    <p>Ansonsten gibt es:</p>
+    <ul>
+      <li>einfache Formeln: \(\ce{H2O}\),\(\ce{2H2O}\), \(\ce{H2SO4}\)</li>
+      <li>Formeln mit Aggregatzusant: \(\ce{H2O_{(l)}}\), \(\ce{H2O_{(s)}}\), \(\ce{H2O_{(g)}}\), \(\ce{H2SO4_{(aq)}}\) </li>
+      <li>Ionenschreibweisen: \(\ce{H+}\), \(\ce{Cl-}\), \(\ce{Mg^2+}\), \(\ce{SO4^2-}\)</li>
+      <li>Reaktionspfeile:</li>
+      <ul>
+        <li>Normaler Pfeil: \(\ce{C6H12O6 -> 2C2H5OH + 2CO2}\)</li>
+        <li>Normaler Pfeil mit Beschriftung: \(\ce{C6H12O6 ->[Kat.] 2C2H5OH + 2CO2}\)</li>
+        <li>Mesomeriepfeil: \(\ce{A <-> B}\)</li>
+        <li>Gleichgewichtspfeil: \(\ce{H2O + CO2 <=> H2CO3}\), \(\ce{H2O + CO2 <=>> H2CO3}\), \(\ce{H2O + CO2 <<=> H2CO3}\) </li>
+      </ul>
+    </ul>
+
+    <p>
+      Mathematik geht natürlich auch:
+      $$\begin{align}
+      \sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
+      & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
+      & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
+      & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
+      & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
+      \end{align}$$
+    </p>
+      <p>
+        Ich erhebe hier nicht den Anspruch auf Vollständigkeit! Es gibt bestimmt noch viel mehr, was man machen kann. Quellen, die hilfreich sein könnten <a href="https://docs.mathjax.org/en/latest/input/tex/extensions/mhchem.html">hier</a> und <a href="https://mhchem.github.io/MathJax-mhchem/">hier</a>. [Stand:2023-Jan-11] 
+      </p>
+  </body>
+</html>
