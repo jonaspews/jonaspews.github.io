@@ -10,6 +10,14 @@
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-box position="0 0 0" animation="property: rotation; to: 360 360 360; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
+
+      <script>
+        const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+        const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+        const cube = new THREE.Mesh( geometry, material );
+        scene.add( cube );
+      </script>
+
     </a-scene>
   </body>
 </html>
