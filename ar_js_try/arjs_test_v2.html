@@ -26,14 +26,23 @@
 			<a-marker type="pattern" url="pattern-marker.patt">   
 			    
 				<!-- Mit dem folgenden Code wird der AR-Inhalt eingefügt. -->  
-				<a-cone color="blue" material="opacity: 0.7; transparent: true" radius-bottom="1" radius-top="1" height="0.1"></a-cone>
-				<a-box 
-					color="blue" 
-					rotation="0 0 0"
-					scale="2 2 2"  
-					material="opacity: 0.1; transparent: true">
-				</a-box>
-
+				<a-cone
+				position="0 -1 0" 
+				color="blue" 
+				material="opacity: 0.5; transparent: true" 
+				radius-bottom="1" 
+				radius-top="1" 
+				height="0.02">
+			  </a-cone>
+			  <a-box 
+				position="0 0.75 0" 
+				color="blue"
+				depth="1.5" height="1.5" width="1.5" 
+				rotation="0 0 0"
+				scale="2 2 2"  
+				material="opacity: 0.1; transparent: true">
+			  </a-box>
+		
 				<!-- example code for GLB-model-->
 				<!-- <a-entity position="0 0 0" scale="0.5 0.5 0.5" gltf-model="url(blender_export_molecule.glb)"></a-entity>-->
 

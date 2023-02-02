@@ -5,25 +5,23 @@
   <body>
     <a-scene>
       <a-sky color="#ECECEC"></a-sky>
-     <a-entity position="0 0 -2" gltf-model="url(blender_export_box.glb)"></a-entity>
-     <!--   <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-     
-     <a-box position="0 0 -2" rotation="0 45 0" color="#4CC3D9"></a-box>
-     
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      
-     
-     <a-box position="0 0 0" animation="property: rotation; to: 360 360 360; dur: 2000; easing: linear; loop: true" color="tomato"></a-box>
+      <a-cone
+        position="0 -1 0" 
+        color="blue" 
+        material="opacity: 0.5; transparent: true" 
+        radius-bottom="1" 
+        radius-top="1" 
+        height="0.02">
+      </a-cone>
+      <a-box 
+        position="0 0.75 0" 
+        color="blue"
+        depth="1.5" height="1.5" width="1.5" 
+        rotation="0 0 0"
+        scale="2 2 2"  
+        material="opacity: 0.1; transparent: true">
+      </a-box>
 
-      
-
-      <script>
-        const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-        const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-        const cube = new THREE.Mesh( geometry, material );
-        scene.add( cube );
-      </script>-->
 
     </a-scene>
   </body>
