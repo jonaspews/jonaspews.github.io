@@ -175,6 +175,11 @@ a:hover {
     align-items: center;
 }
 
+#switchDL {
+    height: 50px;
+    width: auto;
+    filter: invert(0);  /*for dark mode starting with Bootstrap 5.3*/
+}
 
 /*.chartCanvas {
 
@@ -256,5 +261,11 @@ a:hover {
     .symbolInfo {
         width: 120px;
         height: auto;
+    }
+
+    #switchDL {
+        height: 70px;
+        width: auto;
+        filter: invert(0);  /*for dark mode starting with Bootstrap 5.3*/
     }
 }   
