@@ -6,6 +6,10 @@
 /* mobile first approach: following styles are for mobile screens  */
 /* *************************************************************** */
 
+body {
+    margin-left: 10px;  /*TODO: maybe align everything center on smaller mobile screens*/
+}
+
 header {
     width: 100%;
     position: fixed;
