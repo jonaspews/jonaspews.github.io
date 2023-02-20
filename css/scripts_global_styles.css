@@ -92,7 +92,7 @@ a:hover {
     margin-bottom: 10px;  
     border-style: solid;
     border-radius: 5px;
-    border-color: grey;
+    border-color: #5c85d6; /* used to be grey */
     box-shadow: 0 5px 5px -3px black;
 }
 
