@@ -38,19 +38,27 @@ for (j = 0; j < anchor.length; j++) {
 
 // script do toggle between dark and light mode
 // starting with Bootstrap 5.3 (Feb 2023)
+// help from: https://bobbyhadz.com/blog/javascript-change-style-of-all-elements-with-class
 
 var htmlElement = document.getElementsByTagName("html")[0];
 var currentTheme;
+const symbolImages = document.querySelectorAll('.symbolInfo'); // get all Elements, which belong to this class
 
 document.getElementById("switchDL").addEventListener("click", function() {
   currentTheme = htmlElement.getAttribute('data-bs-theme');
   if (currentTheme === 'dark' ) {
-    document.documentElement.setAttribute('data-bs-theme', 'light')
-    document.getElementById("switchDL").style.filter = "invert(100)"
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+    document.getElementById("switchDL").style.filter = "invert(100)";
+    symbolImages.forEach(symbolInfo => { // change style for each element which belongs to this class
+      symbolInfo.style.filter = "invert(0)";
+    });        
     panel.style.display = "none";
   } else {
-    document.documentElement.setAttribute('data-bs-theme', 'dark')
-    document.getElementById("switchDL").style.filter = "invert(0)"
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    document.getElementById("switchDL").style.filter = "invert(0)";
+    symbolImages.forEach(symbolInfo => {  // change style for each element which belongs to this class
+      symbolInfo.style.filter = "invert(100)";
+    });
     panel.style.display = "none";
   }
 });

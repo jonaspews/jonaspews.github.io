@@ -78,12 +78,14 @@ a:hover {
     margin-bottom: 1em;
 }
 
+/*
 .symbolInfo {
     position: relative;
     width: 120px; 
     height: auto;
-    margin: auto;  /* auto adjust position in the middle */
+    margin: auto;
 }
+*/
 
 .containerBoxInfo {
     width: 95%;  /* width of paragraph */
@@ -131,7 +133,7 @@ a:hover {
     margin-bottom: 10px;  
     border-style: solid;
     border-radius: 5px;
-    border-color: black;
+    border-color: magenta;
     box-shadow: 0 5px 5px -3px black;
 }
 
@@ -252,8 +254,11 @@ a:hover {
         z-index:0;
     }
 
+    /*
     .symbolInfo {
         width: 120px;
         height: auto;
     }
+*/
+
 }   

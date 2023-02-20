@@ -132,7 +132,7 @@ a:hover {
     margin-bottom: 10px;  
     border-style: solid;
     border-radius: 5px;
-    border-color: black;
+    border-color: #990099;
     box-shadow: 0 5px 5px -3px black;
 }
 
@@ -142,10 +142,9 @@ a:hover {
     margin-bottom: 10px;  
     border-style: solid;
     border-radius: 5px;
-    border-color: black;
+    border-color: #990099;
     /* box-shadow: 0 5px 5px -3px black; */
 }
-
 
 .chartContainer {
     position: relative; 
@@ -261,6 +260,7 @@ a:hover {
     .symbolInfo {
         width: 120px;
         height: auto;
+        filter: invert(100); /*use for dark mode, starting with Bootstrap 5.3*/
     }
 
     #switchDL {
