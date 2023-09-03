@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en"  data-bs-theme="dark">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skript-Q1: Proteine</title>
+  <meta name="description" content="Skript-11: Bauchemie">
+  <meta name="author" content="Jonas Pews">
+  <!-- developed via https://bootstrapious.com/p/bootstrap-sidebar  -->
+
+
+  <!-- Bootstrap 5 CSS CDN TODO: ALWAYS check for new Bootstrap -->
+  <!-- old version <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- own CSS -->
+  <link rel="stylesheet" href="../css/scripts_global_styles.css">
+
+  <!-- MathJax support -->
+  <script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <!-- for reflection radar chart-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  
+
+</head>
+
+<body>
+  <header> <!-- navigation (still TODO)-->
+    <!-- <h1 class="display-1 text-white">Q2</h1> -->
+    <!-- TODO: Chemistry by Minnie Pigeon from the Noun Project-->
+    <button class="accordion display-4 text-white"><img id="headerSymbol" src="../symbols/noun_Chemistry_55633_w.png">Inhalt</button>
+    <div class="panel" id="headerPanel">
+      <p class="display-4 panelParagraph"><a href="#intro" class="hrefContent">Einführung</a></p>
+     <!-- <p class="display-4 panelParagraph"><a href="#material" class="hrefContent">Baumaterialien</a></p>
+      <p class="display-4 panelParagraph"><a href="#limecycle" class="hrefContent">Kalkkreislauf</a></p>
+      <p class="display-4 panelParagraph"><a href="#chem_calculations" class="hrefContent">Stöchiometrie</a></p>
+      <p class="display-4 panelParagraph"><a href="#cement" class="hrefContent">Zementherstellung</a></p>
+      <p class="display-4 panelParagraph"><a href="#acidrain" class="hrefContent">Saurer Regen</a></p>
+      <p class="display-4 panelParagraph"><a href="#titration" class="hrefContent">Titration</a></p>
+      <p class="display-4 panelParagraph"><a href="#steel" class="hrefContent">Stahl und Eisen</a></p>  -->
+      <!-- following entry should always be last entry in panel-->
+      <p class="display-5 panelParagraph" align="right"><a href="../index.html" class="hrefContent">&#171;&#171;</a>|<img id="switchDL" src="../symbols/noun-erlenmeyer-2673382_sw.png"></p>
+    </div>
+
+  </header>
+  
+  <!-- start main content of script -->
+  <div id="mainContent" class="container-fluid">
+    <div class="row">
+      <h1 class="display-1">Skript - Proteine</h1>
+      <hr>  <!-- seperator before new chapter-->
+        <!-- style for script: use display-2 for chapter headlines-->
+        <h1 id="intro" class="display-2">Einführung</h1>
+          <p class="lead">
+            Mit Hilfe dieses Skriptes sollen Sie sich das Thema <i>Proteine</i> selbstständig erarbeiten. Selbstständig
+            bedeutet wirklich SELBST und STÄNDIG. 
+          </p>
+          <p class="scriptstyle">
+            Der Unterricht im klassischen Sinne hat aufgehört. Sie können Ihr eigenes
+            Tempo bestimmen und sich Ihre eigenen Partner suchen. Sollte die Lehrkraft nicht da sein, haben Sie nun immer
+            das Material um selbstständig zu arbeiten.
+          </p>
+          <p class="scriptstyle">Die Lehrkraft soll Ihnen dabei als Berater zur Seite stehen. Wenn Sie Fragen haben oder auf Probleme stoßen,
+            die Sie weder allein noch im Team lösen konnten, dann fragen Sie nach!</p>
+          <p class="scriptstyle">
+          Für jedes Kapitel dieser Reihe ist angegeben, wie Sie vorgehen sollten. Die Vorüberlegungen sollen Ihnen helfen
+          Wissen zu reaktivieren oder Wissenslücken zu schließen. Wenn Sie sich an die vorgegebenen Vorgehensweisen hallten,
+          sollte es keine Probleme geben.</p>
+          <p class="scriptstyle">
+          Vielleicht fragen Sie sich jetzt, warum die Lehrer so faul sein dürfen und Sie jetzt alles allein machen müssen.
+          Der Grund ist recht einfach: die Lehrer haben alles bereits so vorbereitet, dass Sie sich intensiv mit einem Thema
+          beschäftigen können. Dadurch bleibt es besser in Ihrem Gedächtnis. Sie lernen effektiver die Inhalte, verbessern
+          Ihr eigenes Zeitmanagement und analysieren Ihre eigenen Fähig- und Fertigkeiten.
+          </p>
+
+          <h2 class="display-4">Symbole im Skript</h2>
+            <!-- INFO-Box start -->
+            <!-- ************** -->
+            <div class="containerBoxInfo flex-container">
+                <div>
+                  <img class="symbolInfo" src="../symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+                </div>
+                <div>
+                  <p class="scriptstyle">
+                    In diesen Texten finden Sie Erklärungen und Hintergründe! <br> 
+                    Die Quellen finden Sie in den Fußnoten. Diese Quellen können Ihnen auch als Quizvorbereitung helfen. <br>
+                    Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte Quelle.<br>
+                    Bild: Information by dDara from the Noun Project
+                  </p>
+                </div>
+            </div>
+            
+            <!-- TODO: the alignment of the content does not really look even spaced or good when the viewport is
+            bigger (desktop screen or a bit larger than iPad), 
+            maybe it is usefull to change CSS:justify-content based on @media-queries -->
+            
+            <!-- REVIEW-Box start -->
+            <!-- **************** -->
+            <div class="containerBoxReview flex-container">
+              <div>
+                <img class="symbolInfo" src="../symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy"> 
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br> 
+                  Sie sollten die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt 
+                  haben. <br> 
+                  Falls nicht, arbeiten Sie Ihre Wissenslücken bitte selbstständig auf.<br>
+                  Bild: Arrow by Aleksandr Vector from the Noun Project
+                </p>
+              </div>
+            </div>
+            <!-- REVIEW-Box end -->
+            <!-- ************** -->
+
+
+            <!-- FastLearner-Box start -->
+            <!-- ********************* -->
+            <div class="containerBoxFast flex-container">
+              <div>
+                <img class="symbolInfo" src="../symbols/noun_thunder_3429624.png" alt="thunder " loading="lazy">
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  Es soll keine Langeweile aufkommen. <br>
+                  Wenn Sie mit den Aufträgen bereits fertig sind, während Ihre Gruppe noch arbeitet, 
+                  können Sie sich hier noch weiter in das Thema vertiefen. <br>
+                  Bild: thunder by Pascal Heß from the Noun Project    
+                </p>
+              </div>
+            </div>
+            <!-- FastLearner-Box end -->
+            <!-- ******************* -->
+
+            <!-- Method-Box start -->
+            <!-- *****************-->
+            <div class="containerBoxMethod flex-container">
+              <div>
+                <img class="symbolInfo" src="../symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin. <br>
+                  Bild: Chemistry by Eucalyp from the Noun Project    
+                </p>
+              </div>
+            </div>
+            <!-- Method-Box end -->
+            <!-- ***************-->
+
+            <!-- Time-Box start -->
+            <!-- ***************-->
+            <div class="containerBoxTime flex-container">
+              <div>
+                <img class="symbolInfo" src="../symbols/noun_clock_1696015.png" alt="clock logo" loading="lazy">
+              </div>
+              <div>
+                <p class="scriptstyle">
+                  Das Zeitsymbol soll Ihnen zeigen, wie lange Sie für das jeweilige Kapitel brauchen sollten.<br>
+                  Diese Zeitangabe dient aber nur als Orientierung. Am Ende müssen Sie nur die Planung der Lehrkraft und Ihre eigene Zeitplanung beachten.<br>
+                  Bild: clock by Mr. Minuvi from the Noun Project  
+                </p>
+              </div>
+            </div>
+            <!-- Time-Box end -->
+            <!-- ************ -->
+
+
+          <h2 class="display-4">Bewertung</h2>
+          <p class="scriptstyle">
+            Die Bewertung im Semester erfolgt anhand von:
+          </p>
+            <div>
+              <ul class="scriptstyle">
+                <li>Tests</li>
+                <li>Protokollen</li>
+                <li>Mitarbeit im Unterricht bei der Sicherung und Diskussion von Inhalten</li>
+                <li>digitalem Portfolio</li>
+                <li>ggf. Klausur</li>
+              </ul>
+            </div>
+          <p class="scriptstyle">
+            Auf Grund unvorhergesehener Umstände (z.B. Pandemie) kann sich diese Liste auch
+            ändern. Bitte halten Sie mit Ihrer Lehrkraft Rücksprache.
+          </p>
+          
+          <h2 class="display-4">Das digitale Portfolio</h2>
+          <p class="scriptstyle">
+            Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller Arbeitsergebnisse. Sie können und sollten in diesem Portfolio alles sammeln, was Sie an Materialien und Produkten
+            selbst erarbeitetet haben. Die zweite Funktion des Portfolios ist die Darstellung Ihrer eigenen Entwicklung. Mit
+            Hilfe des Portfolios belegen Sie Ihren Lernfortschritt und reflektieren Ihre Arbeitsergebnisse und Arbeitsweisen.
+            Diese Reflexion sollte sich auf alle Arbeitsprozesse, wie z.B. Recherchen oder Gruppenarbeiten, beziehen. Die
+            Selbstreflexion sollte unabhängig von den Arbeitsaufträgen der Lehrkraft erfolgen.</p>
+          <p class="scriptstyle">
+            Darüber hinaus können Sie dieses Portfolio auch als Teil Ihrer zukünftigen Bewerbungsmappen nutzen. Ihr zukünftiger Arbeitgeber erlangt dadurch ein umfassenderes Bild von Ihnen. Sehen Sie das Portfolio also nicht nur als
+            weiteren Schulhefter sondern auch als Selbstdarstellungsmöglichkeit.</p>
+          <p class="scriptstyle">
+            Die Bewertung des Portfolios erfolgt zum Ende des jeweiligen Semesters und erfolgt mit Hilfe des gegebenen
+            Bewertungsrasters.
+          </p>
+          <h3>Hilfreiche Fragen für die Reflexion</h3>
+          <p  class="scriptstyle">
+            Falls Sie anfangs bei der Reflexion Probleme haben, können Sie sich erst einmal 
+            an diesen Fragen orientieren. Die Reflexion sollten Sie regelmäßig durchführen und 
+            als Fließtext ausformulieren.
+          </p>
+          <div>
+            <ul class="scriptstyle">
+              <li>Habe ich die Zeit effektiv genutzt?</li>
+              <li>Habe ich alle Aufträge gelöst?</li>
+              <li>Habe ich alles verstanden?</li>  
+              <li>Habe ich gut allein gearbeitet?</li>
+              <li>Habe ich gut in der Gruppe gearbeitet?</li>
+              <li>Was kann ich in der nächsten Stunde besser machen?</li>
+            </ul>
+          </div>
+          <h3>Netzdiagramm zur Schnellreflexion</h3>
+          <p class="scriptstyle">
+            In Ihrem digitalen Portfolio sollen Sie Ihren Arbeits- und Lernprozess sinnvoll
+            reflektieren um Verbesserungsmöglichkeiten zu finden und dann umzusetzen. Dazu sollten 
+            Sie regelmäßig, also beispielsweise nach jedem Kapitel, eine Reflexion durchführen.
+          </p>
+          <p class="scriptstyle">
+            Dieses Netzdiagramm soll Ihnen dabei helfen. Sie können den Code für das Diagramm an die 
+            jeweilige Stelle in ihrem digitalen Portfolio kopieren und dort anpassen. Dadurch visualisieren
+            Sie für sich ihren Fortschritt. Am Ende sollte das Netzdiagramm komplett gefüllt sein.
+          </p>
+          <p class="scriptstyle">
+            Zusätzlich sollten Sie die Reflexion in einem Fließtext ausformulieren. Das könnten Seite
+            auch unterhalb des Diagramms in Ihrem Portfolio machen. 
+          </p>
+          <!--
+           ____       __ _           _             
+          |  _ \ ___ / _| | _____  _(_) ___  _ __  
+          | |_) / _ \ |_| |/ _ \ \/ / |/ _ \| '_ \ 
+          |  _ <  __/  _| |  __/>  <| | (_) | | | |
+          |_| \_\___|_| |_|\___/_/\_\_|\___/|_| |_|
+                                                  
+          *****************************************
+          *****************************************
+
+          -->
+
+          <!-- Start copying here -->
+          <!-- ab hier kopieren -->
+
+            <!-- for STYLE reasons the chart-CANVAS is embedded in a seperate DIV-container -->
+            <!-- wegen des STYLE ist die chart-CANVAS in einem seperaten DIV-container eingebettet -->
+          <div class="chartContainer">
+            <!-- this canvas is later used to draw the chart, 
+                  if you want to draw several seperate charts you have to pay attention to the IDs -->
+            <!-- in diesem canvas wird das Digramm gezeichnet
+                  wenn du mehrere Diagramme zeichnen willst, muss du die IDs anpassen-->      
+            <canvas id="evaluation_01" class="chartCanvas"></canvas>
+          </div>
+
+            <script>
+              var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
+              var chartTitle = "Kapitel 1";  // change accordingly
+              var dataSetValues = [15, 4, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
+
+                // this checks whether values in dataSetValues are in the expected range, TODO: maybe later tell user which value is wrong
+              dataSetValues.forEach(function(item) {
+                  if (item < 0 || item > 15) {
+                    console.log(item);
+                    alert("Notenwert falsch: " + item + "!");
+                    dataSetValues = [0,0,0,0,0];
+                  };
+                }
+              );
+
+              var chartCanvas = document.getElementById(canvasId);  // don't change this
+              var chartData = {
+                labels: ["Einzelarbeit", "Gruppenarbeit", "Effizienz", "Zeitplanung", "Verständnis"],  // don't change this
+                datasets: [
+                  {
+                  label: chartTitle,  // keep this
+                  backgroundColor: "rgba(131, 15, 173,0.7)",  // change color and saturation/opacity here
+                  data: dataSetValues  // keep this
+                  }, 
+                ]
+              };
+
+              var radarChart = new Chart(chartCanvas, {
+                type: 'radar',  // keep this
+                data: chartData,
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Reflexion'  // change this title as you like it
+                    },
+                    scale: {
+                        angleLines: {
+                            display: true
+                        },
+                        ticks: {
+                            min: 0,
+                            max: 15,
+                            stepSize: 2,
+                        }
+                    },
+                    responsive: true,  // keep this
+                    maintainAspectRatio: false  // keep this
+                }
+              });
+            </script>
+
+          <!-- bis hier kopieren -->
+          <!-- Stop copying here-->
+          
+          <h3>Bewertung des digitalen Portfolios</h3>
+              <!-- one table at this point (for mobile), later maybe media queries and two tables to switch -->
+                <!-- see: https://stackoverflow.com/questions/37551057/how-to-change-table-layout-depending-on-resolution  -->
+            <div class="tableContainer">
+              <table class="table table-bordered">
+                <tr>
+                  <th colspan="2">Umsetzung digitales Portfolio (Gewicht: 1)</th>
+                </tr>
+                <tr>
+                  <th>1BE</th>
+                  <th>2BE</th>
+                </tr>
+                <tr>
+                  <td>HTML, CSS</td>
+                  <td>kreativ HTML, CSS</td>
+                </tr>
+                <tr>
+                  <th>3BE</th>
+                  <th>4BE</th>
+                </tr>
+                <tr>
+                  <td>neu, kreativ HTML,CSS</td>
+                  <td>nreu, kreativ HTML, CSS und JS</td>
+                </tr>
+              </table>
+              <table  class="table table-bordered">
+                <tr>
+                  <th colspan="2">Dokumentation (Gewicht: 2)</th>
+                </tr>
+                <tr>
+                  <th>1BE</th>
+                  <th>2BE</th>
+                </tr>
+                <tr>
+                  <td>Weniger als zur Hälfte erfüllt</td>
+                  <td>Mehr als zur Hälfte erfüllt</td>
+                </tr>
+                <tr>
+                  <th>3BE</th>
+                  <th>4BE</th>
+                </tr>
+                <tr>
+                  <td>Weitgehend erfüllt</td>
+                  <td>Vollständig erfüllt</td>
+                </tr>
+              </table>
+              <table  class="table table-bordered">
+                <tr>
+                  <th colspan="2">Reflexion (Gewicht: 3)</th>
+                </tr>
+                <tr>
+                  <th>1BE</th>
+                  <th>2BE</th>
+                </tr>
+                <tr>
+                  <td><b>Kaum Reflexionsfähigkeit erkennbar.</b>
+                      Die Kurzreflexionen wurden selten genutzt oder 
+                      das Semester wurde abschließend reflektiert 
+                      oder die Reflexion wurde während des Semsters manchmal vorgenommen.
+                  </td>
+                  <td><b>Reflexionsfähigkeit zum Teil erkennbar.</b>
+                      Die Kurzreflexionen wurden selten genutzt. 
+                      Das Semester wurde abschließend reflektiert 
+                      oder die Reflexion wurde während des Semsters manchmal vorgenommen.
+                  </td>
+                </tr>
+                <tr>
+                  <th>3BE</th>
+                  <th>4BE</th>
+                </tr>
+                <tr>
+                  <td><b>Gute Reflexionsfähigkeit erkennbar.</b> 
+                      Die Reflexion wurde mehrfach während des Semsters vorgenommen. 
+                      Die Kurzreflexionen wurden genutzt. 
+                      Das Semester wurde abschließend ergänzend reflektiert.
+                  </td>
+                  <td><b>Sehr gute Reflexionsfähigkeit erkennbar.</b> 
+                      Die Reflexion wurde mehrfach während des Semsters vorgenommen. 
+                      Die Kurzreflexionen wurden sinnvoll genutzt. 
+                      Das Semester wurde abschließend ausführlich ergänzend und glaubhaft reflektiert.</td>
+                </tr>
+              </table>
+            </div>
+            <p class="scriptstyle">Die Dokumentation der Arbeit enthält z.B. die Lösungen zu den Arbeitsaufträgen, weitere (digitalisierte) Mitschriften, Quellen, Recherchen, gezeichnete oder ausgedruckte
+              Bilder, Mind-Maps sowie verlinkte Videos und Webseiten. 
+              <b>Dabei ist darauf zu achten, dass eine Sammlung von abfotografierten Heftseiten keine digitale Dokumentation im Sinne des digitalen Portfolios darstellt.</b>
+              Die durchgängige Reflexion beinhaltet die Arbeit in der Klasse, in der Gruppe, Einzelarbeit, die Reflexion des Erkenntnisstands etc.
+              Die Lehrkraft kann in den Kategorien Dokumentation und Reflexion jeweils 1 bzw. 2BE von der Bewertung individuell abziehen.</p>
