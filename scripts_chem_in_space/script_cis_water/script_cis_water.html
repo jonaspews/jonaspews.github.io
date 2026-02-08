@@ -25,6 +25,19 @@
   <!-- for reflection radar chart-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  
 
+  <!-- KaTex -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.css" integrity="sha384-ZPG16qaLEYhaeOLR/7TSh574xruFCYuPrEldfLjIeKY6Ydn71Mpb7UYzkc9g1YrU" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.js" integrity="sha384-t6DI6M9eGZH7T3G/OnFmKeIuD5g9lSHY+ZiOvCub8pkQmqioX1LmcZ9w3C0J+yMl" crossorigin="anonymous"></script>
+
+  <!-- Optional: Eigenes CSS -->
+  <style>
+    .chem-formula {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.5rem;
+      color: #e74c3c;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -318,16 +331,21 @@
   </p>
   <!-- VIDEO -->
   <!-- START--> 
+  <div class="row justify-content-center">  
   <div  style="background-color: #26303a; 
               box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
               transition: box-shadow 0.3s ease;
-              margin-bottom: 2rem;"
-        class="border border-light">
-    <video controls width="100%" poster="vorschaubild.jpg">
+              margin-bottom: 2rem;
+              padding: 1rem;
+              width: 90%;"
+        class="border border-light row justify-content-center">
+    <video controls style="width: 90%; height: auto; max-width: 800px; max-height: 600px;"
+         poster="vorschaubild.jpg" poster="vorschaubild.jpg">
       <source src="img/01_BioHo_rspielSmall.mp4" type="video/mp4">
       Dein Browser unterstützt keine Videos. 
       <a href="img/01_BioHo_rspielSmall.mp4">Download hier</a>.
     </video>
+  </div>
   </div>
   <!-- END -->
   <!-- VIDEO -->
@@ -510,6 +528,138 @@
 
 
 
+<!-- *****************************************************************************************-->
+<!-- *** Start Of Chapter ********************************************************************-->
+<!-- *****************************************************************************************-->
+<hr>  <!-- seperator before new chapter-->
+<h1 class="display-2" id="equation_water">Die Reaktionsgleichung für die Synthese von Wasser</h1>
+  <p class="lead">
+    Wenn man Energie in Form von Strom in Wasser reinsteckt, bekommt man Wasserstoff und Sauerstoff. Wenn man die beiden jetzt wieder mit einander verbindet, bekommt man die Energie dann zurück? Vielleicht kann man so Strom erzeugen oder irgendwie Raketen antreiben? Der Professor experimentiert fleissig rum, aber sehr selbst.
+  </p>
+  <!-- VIDEO -->
+  <!-- START-->
+  <div class="row justify-content-center">  
+  <div  style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;
+              margin-bottom: 2rem;
+              padding: 1rem;
+              width: 90%;"
+        class="border border-light row justify-content-center">
+    <video controls style="width: 90%; height: auto; max-width: 800px; max-height: 600px;"
+         poster="vorschaubild.jpg" poster="vorschaubild.jpg">
+      <source src="img/02_Wasserstoff_Intro.mp4" type="video/mp4">
+      Dein Browser unterstützt keine Videos. 
+      <a href="img/02_Wasserstoff_Intro.mp4">Download hier</a>.
+    </video>
+  </div>
+  </div>
+  <!-- END -->
+  <!-- VIDEO -->
+
+  <p class="lead">
+    <b>Das vierte Problem wartet schon auf dich:</b> du musst der Crew und dem Profesor helfen, damit sie das richtige Mischungsverhältnis finden.
+  </p>
+  <p class="lead">Der nächste Raketenstart soll bald stattfinden. Damit alles rechtzeitig fertig wird, braucht die Bodencrew deine Ergebnisse in ca. <b>135 Minuten</b>. Das sollte genug Zeit sein, um alles zu klären. Vielleicht teilst du dir die Arbeit mit anderen Kolleg:innen! Alexander und Valentina forschen auch auf der Raumstation. Sie können vielleicht auch helfen.
+  </p>
+  <p class="lead">
+    <b>Am Ende solltest du</b> erklären können, was die Reaktionsgleichung für die Synthese von Wasser aufgestellt wird. Du solltest die Reaktion mit Hilfe einer ausgeglichenen Reaktionsgleichung beschreiben können. Dabei solltest du das LEGO-Modell benutzen können. 
+  </p>
+  
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
+  <div class="chapterContent"> <!-- START div "chapterContent" -->
+    <h2 class="display-4">Wortgleichung und Formelgleichung</h2> <!-- START subsection-->
+      <p>Wunderbar, Sauerstoff und Wasserstoff machen zusammen einen wunderbaren Raketentreibstoff. Aber der Professor hatte ja noch Probleme bei der Mischung der beiden Gase. Die Versuche zum Aufbau von Wasserstoff haben ja gezeigt, dass das Verhältnis von H2 zu O2 2:1 sein muss. Aber geht auch was anderes? Alexander hat da anscheinend schon eine Idee.</p>
+      
+      <p class="lead">
+        <b>Auftrag: Erläutere, warum Wasser immer die Formel H<sub>2</sub>O hat.</b>
+      </p>
+        <ol class="lead">
+          <li>
+            <b>Als kleine Wiederholung</b>: du kannst mit dem BOHR'schen Atommodell eigentlich schon erklären, warum Wasser immer H<sub>2</sub>O ist. <b>Zeichne</b> dazu das BOHR'sche Atommodell der beiden Elemente Sauerstoff und Wasserstoff und <b>erkläre</b> mit Hilfe der Oktettregel (und ggf. der LEWIS-Formel), wie sich die Atome zu Wasser verbinden.
+          </li>
+          <li><b>Lies</b> den Infotext des Professors.</li>
+          <li><b>Erläutere</b> den Begriff <i>Wertigkeit</i> an einem eigenen Beispiel.</li>
+          <li>Erläutere mit Hilfe deiner Lösung warum es nur H<sub>2</sub>O als Formel geben kann. Bilde die Formel von Wasser mit Hilfe der vorgegebenen Arbeitsschritte.</li>
+        </ol>
+        
+        <!-- COMIC -->
+        <!-- START --> 
+        <!--1st row-->
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <h5 class="display-5">Wertigkeit von Atomen</h5>
+              <p class="lead">
+                Der englische Chemiker SIR EDWARD FRANKLAND schlug 1852 zum ersten Mal das Konzept der Wertigkeit vor. Die Wertigkeit eines Atoms gibt an, wie viele Wasserstoffatome es binden oder ersetzen kann. Zahlreiche Untersuchungen haben gezeigt, dass das Wasserstoffatom selbst immer einwertig ist. <br>
+                Die Wertigkeit eines Atoms wird mit einer römischen Zahl gekennzeichnet. Viele Chemiker haben darauf hin weitere Stoffe untersucht und haben die Wertigkeit verschiedener Elemente rausgefunden. Die Wertigkeit der Atome von verschiedenen Elementen kann man heute aus Tabellen ablesen.
+              </p>
+              <img src="img/2026_k3_lego.png" alt="Valentina und Alexander" class="img-fluid align-items-center" style="max-width: 600px;">
+              <p class="lead">Mit Hilfe der Wertigkeit kann man auch die Formeln von anderen Verbindungen ermitteln. Als Hilfsmittel kann man Legosteine als Modell benutzen. Ein Atom wird durch ein Legobaustein modellhaft dargestellt. Moleküle bestehen aus mehreren Legosteinen. Man darf nur zwei Reihen übereinander bauen. Folgende Schritte müssen nun beachtet werden:</p>
+              <ol>
+                <li><b>Wertigkeit herausfinden:</b> Die Wertigkeit der einzelnen Atome werden aus Tabellen abgelesen. Du kannst sie auch aus dem Periodensystem ableiten:
+                <ul>
+                  <li>1.HG: 1</li>
+                  <li>2.HG: 2</li>
+                  <li>3.HG: 3</li>
+                  <li>4.HG: 4</li>
+                  <li>5.HG: 3</li>
+                  <li>6.HG: 2</li>
+                  <li>7.HG: 1</li>
+                </ul>
+                Es gibt aber auch Abweichungen. Daher empfiehlt es sich, noch mal nachzuschauen.
+                </li> 
+                <li><b>Wertigkeit ausgleichen:</b> Die Legosteine werden durch Vervielfachen solange ergänzt, bis alle Steckplätze der unteren Reihe belegt sind. Es dürfen keine Ecken entstehen! Sauerstoff hat die Wertigkeit II. Es hat also zwei Steckplätze. Man kann zwei Bausteine für den einwertigen Wasserstoff drauf setzen.</li>
+                <li><b>Formel erstellen:</b> Die Anzahl gleicher Legosteine wird in der Formel durch eine kleine, tiefergestellte Zahl verdeutlicht. Da Chemiker faul sind, braucht man nie eine "1" schreiben. Das Legosteinmodell für Wasser besteht aus einem Sauerstoff-Legostein und zwei Wasserstoff-Legosteinen. Die Formel ist also immer H<sub>2</sub>O (nicht H<subs>2</subs>O<subs>1</subs>).</li>
+              </ol>
+          </div>
+        </div>
+        
+        <!-- END -->
+        <!-- COMIC -->
+
+        <h2 class="display-4">Übung zur Wertigkeit</h2> <!-- START subsection-->
+        <p class="lead">
+          <b>Auftrag: Zeichne das Legosteinmodell für die gegebenen Formeln!</b>
+        </p>
+        <ol class="lead">
+          <li>Br<sub>2</sub></li>
+          <li>Br<sub>2</sub>O</li>
+          <li>SO<sub>2</sub></li>
+          <li>Al<sub>2</sub>O<sub>3</sub></li>
+          <li>MgO</li>
+        </ol>
+        <p class="lead">
+          <b>Auftrag: Stelle die Formel folgender Verbindungen auf (Tipp: Schreibe immer die 3 Schritte auf)!</b>
+        </p>
+        <p class="lead">Die römischen Zahlen in der Klammer sind die Wertigkeit der Metall-Atome.</p>
+        <ol class="lead">
+          <li>Kupfer(I)-oxid</li>
+          <li>Eisen(III)-oxid</li>
+          <li>Calciumoxid</li>
+          <li>Aluminiumchlorid</li>
+        </ol>
+
+
+  <!-- END subsection-->
+  </div> <!-- END div "chapterContent" -->
+<hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
   <!-- end of main content of script -->        
 </div> <!-- DO NOT DELETE-->
 
@@ -527,6 +677,36 @@
   integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
   crossorigin="anonymous"></script>-->
 <script src="../../js/scripts_global_javascripts.js"></script>
+
+
+
+<!-- VORLAGEN für chemische Gleichung-->
+<!-- 
+<p class="lead">Im Text direkt kann man Formeln unterbringen, so wie  die Reaktionsgleichung für die Knallgasprobe
+   <span class="chem-formula">\(\ce{2H2 + O2 -> 2 H2O}\)</span>.</p>
+
+   <p>Im Text direkt kann man Formeln unterbringen, so wie  die Reaktionsgleichung für die Knallgasprobe \(\ce{2H2 + O2 -> 2 H2O}\).</p>
+    <p>Man kann Gleichungen aber auch zentriert darstellen, wie das oft in wissenschaftlichen Publikationen genmacht wird:
+          $$\ce{2H2 + O2 -> 2 H2O}$$  
+    </p>
+    <p>Ansonsten gibt es:</p>
+    <ul>
+      <li>einfache Formeln: \(\ce{H2O}\),\(\ce{2H2O}\), \(\ce{H2SO4}\)</li>
+      <li>Formeln mit Aggregatzusant: \(\ce{H2O_{(l)}}\), \(\ce{H2O_{(s)}}\), \(\ce{H2O_{(g)}}\), \(\ce{H2SO4_{(aq)}}\) </li>
+      <li>Ionenschreibweisen: \(\ce{H+}\), \(\ce{Cl-}\), \(\ce{Mg^2+}\), \(\ce{SO4^2-}\)</li>
+      <li>Reaktionspfeile:</li>
+      <ul>
+        <li>Normaler Pfeil: \(\ce{C6H12O6 -> 2C2H5OH + 2CO2}\)</li>
+        <li>Normaler Pfeil mit Beschriftung: \(\ce{C6H12O6 ->[Kat.] 2C2H5OH + 2CO2}\)</li>
+        <li>Mesomeriepfeil: \(\ce{A <-> B}\)</li>
+        <li>Gleichgewichtspfeil: \(\ce{H2O + CO2 <=> H2CO3}\), \(\ce{H2O + CO2 <=>> H2CO3}\), \(\ce{H2O + CO2 <<=> H2CO3}\) </li>
+      </ul>
+    </ul>
+-->
+
+
+
+
 </body>
 
 </html>
