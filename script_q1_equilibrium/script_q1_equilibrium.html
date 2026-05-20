@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- for reflection radar chart-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 </head>
 
@@ -27,204 +27,217 @@
   <header> <!-- navigation (still TODO)-->
     <!-- <h1 class="display-1 text-white">Q2</h1> -->
     <!-- TODO: Chemistry by Minnie Pigeon from the Noun Project-->
-    <button class="accordion display-4 text-white"><img id="headerSymbol" src="symbols/noun_Chemistry_55633_w.png">Inhalt</button>
+    <button class="accordion display-4 text-white"><img id="headerSymbol"
+        src="symbols/noun_Chemistry_55633_w.png">Inhalt</button>
     <div class="panel" id="headerPanel">
       <p class="display-4 panelParagraph"><a href="#intro" class="hrefContent">Einführung</a></p>
-      <p class="display-4 panelParagraph"><a href="#equi_reaction" class="hrefContent">Die Gleichgewichtsreaktion</a></p>
+      <p class="display-4 panelParagraph"><a href="#equi_reaction" class="hrefContent">Die Gleichgewichtsreaktion</a>
+      </p>
       <p class="display-4 panelParagraph"><a href="#lechatelier" class="hrefContent">LeChatelier</a></p>
       <p class="display-4 panelParagraph"><a href="#kinetics" class="hrefContent">Reaktionskinetik</a></p>
-      <p class="display-4 panelParagraph"><a href="#acidbase" class="hrefContent">Säure-Base-Gleichgewichte</a></p>    
+      <p class="display-4 panelParagraph"><a href="#acidbase" class="hrefContent">Säure-Base-Gleichgewichte</a></p>
       <!-- <p class="display-4">Lorem ipsum...</p> -->
     </div>
 
   </header>
-  
+
   <!-- start main content of script -->
   <div id="mainContent" class="container-fluid">
     <div class="row">
       <h1 class="display-1">Skript - Gleichgewichte</h1>
-      <hr>  <!-- seperator before new chapter-->
-        <!-- style for script: use display-2 for chapter headlines-->
-        <h1 id="intro" class="display-2">Einführung</h1>
-          <p class="lead">
-            Mit Hilfe dieses Skriptes sollen Sie sich das Thema <i>Gleichgewichte in der Chemie</i> selbstständig erarbeiten. Selbstständig
-            bedeutet wirklich SELBST und STÄNDIG. 
-          </p>
-          <p class="scriptstyle">
-            Der Unterricht im klassischen Sinne hat aufgehört. Sie können Ihr eigenes
-            Tempo bestimmen und sich Ihre eigenen Partner suchen. Sollte die Lehrkraft nicht da sein, haben Sie nun immer
-            das Material um selbstständig zu arbeiten.
-          </p>
-          <p class="scriptstyle">Die Lehrkraft soll Ihnen dabei als Berater zur Seite stehen. Wenn Sie Fragen haben oder auf Probleme stoßen,
-            die Sie weder allein noch im Team lösen konnten, dann fragen Sie nach!</p>
-          <p class="scriptstyle">
-          Für jedes Kapitel dieser Reihe ist angegeben, wie Sie vorgehen sollten. Die Vorüberlegungen sollen Ihnen helfen
-          Wissen zu reaktivieren oder Wissenslücken zu schließen. Wenn Sie sich an die vorgegebenen Vorgehensweisen hallten,
-          sollte es keine Probleme geben.</p>
-          <p class="scriptstyle">
-          Vielleicht fragen Sie sich jetzt, warum die Lehrer so faul sein dürfen und Sie jetzt alles allein machen müssen.
-          Der Grund ist recht einfach: die Lehrer haben alles bereits so vorbereitet, dass Sie sich intensiv mit einem Thema
-          beschäftigen können. Dadurch bleibt es besser in Ihrem Gedächtnis. Sie lernen effektiver die Inhalte, verbessern
-          Ihr eigenes Zeitmanagement und analysieren Ihre eigenen Fähig- und Fertigkeiten.
-          </p>
+      <hr> <!-- seperator before new chapter-->
+      <!-- style for script: use display-2 for chapter headlines-->
+      <h1 id="intro" class="display-2">Einführung</h1>
+      <p class="lead">
+        Mit Hilfe dieses Skriptes sollen Sie sich das Thema <i>Gleichgewichte in der Chemie</i> selbstständig
+        erarbeiten. Selbstständig
+        bedeutet wirklich SELBST und STÄNDIG.
+      </p>
+      <p class="scriptstyle">
+        Der Unterricht im klassischen Sinne hat aufgehört. Sie können Ihr eigenes
+        Tempo bestimmen und sich Ihre eigenen Partner suchen. Sollte die Lehrkraft nicht da sein, haben Sie nun immer
+        das Material um selbstständig zu arbeiten.
+      </p>
+      <p class="scriptstyle">Die Lehrkraft soll Ihnen dabei als Berater zur Seite stehen. Wenn Sie Fragen haben oder auf
+        Probleme stoßen,
+        die Sie weder allein noch im Team lösen konnten, dann fragen Sie nach!</p>
+      <p class="scriptstyle">
+        Für jedes Kapitel dieser Reihe ist angegeben, wie Sie vorgehen sollten. Die Vorüberlegungen sollen Ihnen helfen
+        Wissen zu reaktivieren oder Wissenslücken zu schließen. Wenn Sie sich an die vorgegebenen Vorgehensweisen
+        hallten,
+        sollte es keine Probleme geben.</p>
+      <p class="scriptstyle">
+        Vielleicht fragen Sie sich jetzt, warum die Lehrer so faul sein dürfen und Sie jetzt alles allein machen müssen.
+        Der Grund ist recht einfach: die Lehrer haben alles bereits so vorbereitet, dass Sie sich intensiv mit einem
+        Thema
+        beschäftigen können. Dadurch bleibt es besser in Ihrem Gedächtnis. Sie lernen effektiver die Inhalte, verbessern
+        Ihr eigenes Zeitmanagement und analysieren Ihre eigenen Fähig- und Fertigkeiten.
+      </p>
 
-          <h2 class="display-4">Symbole im Skript</h2>
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-                <div>
-                  <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-                </div>
-                <div>
-                  <p class="scriptstyle">
-                    In diesen Texten finden Sie Erklärungen und Hintergründe! <br> 
-                    Die Quellen finden Sie in den Fußnoten. Diese Quellen können Ihnen auch als Quizvorbereitung helfen. <br>
-                    Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte Quelle.<br>
-                    Bild: Information by dDara from the Noun Project
-                  </p>
-                </div>
-            </div>
-            
-            <!-- TODO: the alignment of the content does not really look even spaced or good when the viewport is
+      <h2 class="display-4">Symbole im Skript</h2>
+      <!-- INFO-Box start -->
+      <!-- ************** -->
+      <div class="containerBoxInfo flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            In diesen Texten finden Sie Erklärungen und Hintergründe! <br>
+            Die Quellen finden Sie in den Fußnoten. Diese Quellen können Ihnen auch als Quizvorbereitung helfen. <br>
+            Übrigens, nicht alle Quellen sind Wikipedia. Aber es ist eine nützliche und in Chemie akzeptierte
+            Quelle.<br>
+            Bild: Information by dDara from the Noun Project
+          </p>
+        </div>
+      </div>
+
+      <!-- TODO: the alignment of the content does not really look even spaced or good when the viewport is
             bigger (desktop screen or a bit larger than iPad), 
             maybe it is usefull to change CSS:justify-content based on @media-queries -->
-            
-            <!-- REVIEW-Box start -->
-            <!-- **************** -->
-            <div class="containerBoxReview flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy"> 
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br> 
-                  Sie sollten die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt 
-                  haben. <br> 
-                  Falls nicht, arbeiten Sie Ihre Wissenslücken bitte selbstständig auf.<br>
-                  Bild: Arrow by Aleksandr Vector from the Noun Project
-                </p>
-              </div>
-            </div>
-            <!-- REVIEW-Box end -->
-            <!-- ************** -->
+
+      <!-- REVIEW-Box start -->
+      <!-- **************** -->
+      <div class="containerBoxReview flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_Arrow_1009809.png" alt="review logo" loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            An diesen Stellen sollen Sie Ihr Wissen auffrischen!<br>
+            Sie sollten die entsprechenden Themen schon vorher im (Chemie-)Unterricht behandelt
+            haben. <br>
+            Falls nicht, arbeiten Sie Ihre Wissenslücken bitte selbstständig auf.<br>
+            Bild: Arrow by Aleksandr Vector from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- REVIEW-Box end -->
+      <!-- ************** -->
 
 
-            <!-- FastLearner-Box start -->
-            <!-- ********************* -->
-            <div class="containerBoxFast flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_thunder_3429624.png" alt="thunder " loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Es soll keine Langeweile aufkommen. <br>
-                  Wenn Sie mit den Aufträgen bereits fertig sind, während Ihre Gruppe noch arbeitet, 
-                  können Sie sich hier noch weiter in das Thema vertiefen. <br>
-                  Bild: thunder by Pascal Heß from the Noun Project    
-                </p>
-              </div>
-            </div>
-            <!-- FastLearner-Box end -->
-            <!-- ******************* -->
+      <!-- FastLearner-Box start -->
+      <!-- ********************* -->
+      <div class="containerBoxFast flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_thunder_3429624.png" alt="thunder " loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            Es soll keine Langeweile aufkommen. <br>
+            Wenn Sie mit den Aufträgen bereits fertig sind, während Ihre Gruppe noch arbeitet,
+            können Sie sich hier noch weiter in das Thema vertiefen. <br>
+            Bild: thunder by Pascal Heß from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- FastLearner-Box end -->
+      <!-- ******************* -->
 
-            <!-- Method-Box start -->
-            <!-- *****************-->
-            <div class="containerBoxMethod flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin. <br>
-                  Bild: Chemistry by Eucalyp from the Noun Project    
-                </p>
-              </div>
-            </div>
-            <!-- Method-Box end -->
-            <!-- ***************-->
+      <!-- Method-Box start -->
+      <!-- *****************-->
+      <div class="containerBoxMethod flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            Dieses Symbol weißt immer auf eine Durchführung für ein Experiment hin. <br>
+            Bild: Chemistry by Eucalyp from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- Method-Box end -->
+      <!-- ***************-->
 
-            <!-- Time-Box start -->
-            <!-- ***************-->
-            <div class="containerBoxTime flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_clock_1696015.png" alt="clock logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Das Zeitsymbol soll Ihnen zeigen, wie lange Sie für das jeweilige Kapitel brauchen sollten.<br>
-                  Diese Zeitangabe dient aber nur als Orientierung. Am Ende müssen Sie nur die Planung der Lehrkraft und Ihre eigene Zeitplanung beachten.<br>
-                  Bild: clock by Mr. Minuvi from the Noun Project  
-                </p>
-              </div>
-            </div>
-            <!-- Time-Box end -->
-            <!-- ************ -->
+      <!-- Time-Box start -->
+      <!-- ***************-->
+      <div class="containerBoxTime flex-container">
+        <div>
+          <img class="symbolInfo" src="symbols/noun_clock_1696015.png" alt="clock logo" loading="lazy">
+        </div>
+        <div>
+          <p class="scriptstyle">
+            Das Zeitsymbol soll Ihnen zeigen, wie lange Sie für das jeweilige Kapitel brauchen sollten.<br>
+            Diese Zeitangabe dient aber nur als Orientierung. Am Ende müssen Sie nur die Planung der Lehrkraft und Ihre
+            eigene Zeitplanung beachten.<br>
+            Bild: clock by Mr. Minuvi from the Noun Project
+          </p>
+        </div>
+      </div>
+      <!-- Time-Box end -->
+      <!-- ************ -->
 
 
-          <h2 class="display-4">Bewertung</h2>
-          <p class="scriptstyle">
-            Die Bewertung im Semester erfolgt anhand von:
-          </p>
-            <div>
-              <ul class="scriptstyle">
-                <li>Tests</li>
-                <li>Protokollen</li>
-                <li>Mitarbeit im Unterricht bei der Sicherung und Diskussion von Inhalten</li>
-                <li>digitalem Portfolio</li>
-                <li>ggf. Klausur</li>
-              </ul>
-            </div>
-          <p class="scriptstyle">
-            Auf Grund unvorhergesehener Umstände (z.B. Pandemie) kann sich diese Liste auch
-            ändern. Bitte halten Sie mit Ihrer Lehrkraft Rücksprache.
-          </p>
-          
-          <h2 class="display-4">Das digitale Portfolio</h2>
-          <p class="scriptstyle">
-            Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller Arbeitsergebnisse. Sie können und sollten in diesem Portfolio alles sammeln, was Sie an Materialien und Produkten
-            selbst erarbeitetet haben. Die zweite Funktion des Portfolios ist die Darstellung Ihrer eigenen Entwicklung. Mit
-            Hilfe des Portfolios belegen Sie Ihren Lernfortschritt und reflektieren Ihre Arbeitsergebnisse und Arbeitsweisen.
-            Diese Reflexion sollte sich auf alle Arbeitsprozesse, wie z.B. Recherchen oder Gruppenarbeiten, beziehen. Die
-            Selbstreflexion sollte unabhängig von den Arbeitsaufträgen der Lehrkraft erfolgen.</p>
-          <p class="scriptstyle">
-            Darüber hinaus können Sie dieses Portfolio auch als Teil Ihrer zukünftigen Bewerbungsmappen nutzen. Ihr zukünftiger Arbeitgeber erlangt dadurch ein umfassenderes Bild von Ihnen. Sehen Sie das Portfolio also nicht nur als
-            weiteren Schulhefter sondern auch als Selbstdarstellungsmöglichkeit.</p>
-          <p class="scriptstyle">
-            Die Bewertung des Portfolios erfolgt zum Ende des jeweiligen Semesters und erfolgt mit Hilfe des gegebenen
-            Bewertungsrasters.
-          </p>
-          <h3>Hilfreiche Fragen für die Reflexion</h3>
-          <p  class="scriptstyle">
-            Falls Sie anfangs bei der Reflexion Probleme haben, können Sie sich erst einmal 
-            an diesen Fragen orientieren. Die Reflexion sollten Sie regelmäßig durchführen und 
-            als Fließtext ausformulieren.
-          </p>
-          <div>
-            <ul class="scriptstyle">
-              <li>Habe ich die Zeit effektiv genutzt?</li>
-              <li>Habe ich alle Aufträge gelöst?</li>
-              <li>Habe ich alles verstanden?</li>  
-              <li>Habe ich gut allein gearbeitet?</li>
-              <li>Habe ich gut in der Gruppe gearbeitet?</li>
-              <li>Was kann ich in der nächsten Stunde besser machen?</li>
-            </ul>
-          </div>
-          <h3>Netzdiagramm zur Schnellreflexion</h3>
-          <p class="scriptstyle">
-            In Ihrem digitalen Portfolio sollen Sie Ihren Arbeits- und Lernprozess sinnvoll
-            reflektieren um Verbesserungsmöglichkeiten zu finden und dann umzusetzen. Dazu sollten 
-            Sie regelmäßig, also beispielsweise nach jedem Kapitel, eine Reflexion durchführen.
-          </p>
-          <p class="scriptstyle">
-            Dieses Netzdiagramm soll Ihnen dabei helfen. Sie können den Code für das Diagramm an die 
-            jeweilige Stelle in ihrem digitalen Portfolio kopieren und dort anpassen. Dadurch visualisieren
-            Sie für sich ihren Fortschritt. Am Ende sollte das Netzdiagramm komplett gefüllt sein.
-          </p>
-          <p class="scriptstyle">
-            Zusätzlich sollten Sie die Reflexion in einem Fließtext ausformulieren. Das könnten Seite
-            auch unterhalb des Diagramms in Ihrem Portfolio machen. 
-          </p>
-          <!--
+      <h2 class="display-4">Bewertung</h2>
+      <p class="scriptstyle">
+        Die Bewertung im Semester erfolgt anhand von:
+      </p>
+      <div>
+        <ul class="scriptstyle">
+          <li>Tests</li>
+          <li>Protokollen</li>
+          <li>Mitarbeit im Unterricht bei der Sicherung und Diskussion von Inhalten</li>
+          <li>digitalem Portfolio</li>
+          <li>ggf. Klausur</li>
+        </ul>
+      </div>
+      <p class="scriptstyle">
+        Auf Grund unvorhergesehener Umstände (z.B. Pandemie) kann sich diese Liste auch
+        ändern. Bitte halten Sie mit Ihrer Lehrkraft Rücksprache.
+      </p>
+
+      <h2 class="display-4">Das digitale Portfolio</h2>
+      <p class="scriptstyle">
+        Das Portfolio ist ein Teil der Arbeit und Bewertung. Zum einen dient es der Sicherung und Sammlung aller
+        Arbeitsergebnisse. Sie können und sollten in diesem Portfolio alles sammeln, was Sie an Materialien und
+        Produkten
+        selbst erarbeitetet haben. Die zweite Funktion des Portfolios ist die Darstellung Ihrer eigenen Entwicklung. Mit
+        Hilfe des Portfolios belegen Sie Ihren Lernfortschritt und reflektieren Ihre Arbeitsergebnisse und
+        Arbeitsweisen.
+        Diese Reflexion sollte sich auf alle Arbeitsprozesse, wie z.B. Recherchen oder Gruppenarbeiten, beziehen. Die
+        Selbstreflexion sollte unabhängig von den Arbeitsaufträgen der Lehrkraft erfolgen.</p>
+      <p class="scriptstyle">
+        Darüber hinaus können Sie dieses Portfolio auch als Teil Ihrer zukünftigen Bewerbungsmappen nutzen. Ihr
+        zukünftiger Arbeitgeber erlangt dadurch ein umfassenderes Bild von Ihnen. Sehen Sie das Portfolio also nicht nur
+        als
+        weiteren Schulhefter sondern auch als Selbstdarstellungsmöglichkeit.</p>
+      <p class="scriptstyle">
+        Die Bewertung des Portfolios erfolgt zum Ende des jeweiligen Semesters und erfolgt mit Hilfe des gegebenen
+        Bewertungsrasters.
+      </p>
+      <h3>Hilfreiche Fragen für die Reflexion</h3>
+      <p class="scriptstyle">
+        Falls Sie anfangs bei der Reflexion Probleme haben, können Sie sich erst einmal
+        an diesen Fragen orientieren. Die Reflexion sollten Sie regelmäßig durchführen und
+        als Fließtext ausformulieren.
+      </p>
+      <div>
+        <ul class="scriptstyle">
+          <li>Habe ich die Zeit effektiv genutzt?</li>
+          <li>Habe ich alle Aufträge gelöst?</li>
+          <li>Habe ich alles verstanden?</li>
+          <li>Habe ich gut allein gearbeitet?</li>
+          <li>Habe ich gut in der Gruppe gearbeitet?</li>
+          <li>Was kann ich in der nächsten Stunde besser machen?</li>
+        </ul>
+      </div>
+      <h3>Netzdiagramm zur Schnellreflexion</h3>
+      <p class="scriptstyle">
+        In Ihrem digitalen Portfolio sollen Sie Ihren Arbeits- und Lernprozess sinnvoll
+        reflektieren um Verbesserungsmöglichkeiten zu finden und dann umzusetzen. Dazu sollten
+        Sie regelmäßig, also beispielsweise nach jedem Kapitel, eine Reflexion durchführen.
+      </p>
+      <p class="scriptstyle">
+        Dieses Netzdiagramm soll Ihnen dabei helfen. Sie können den Code für das Diagramm an die
+        jeweilige Stelle in ihrem digitalen Portfolio kopieren und dort anpassen. Dadurch visualisieren
+        Sie für sich ihren Fortschritt. Am Ende sollte das Netzdiagramm komplett gefüllt sein.
+      </p>
+      <p class="scriptstyle">
+        Zusätzlich sollten Sie die Reflexion in einem Fließtext ausformulieren. Das könnten Seite
+        auch unterhalb des Diagramms in Ihrem Portfolio machen.
+      </p>
+      <!--
            ____       __ _           _             
           |  _ \ ___ / _| | _____  _(_) ___  _ __  
           | |_) / _ \ |_| |/ _ \ \/ / |/ _ \| '_ \ 
@@ -236,289 +249,332 @@
 
           -->
 
-          <!-- Start copying here -->
-          <!-- ab hier kopieren -->
+      <!-- Start copying here -->
+      <!-- ab hier kopieren -->
 
-            <!-- for STYLE reasons the chart-CANVAS is embedded in a seperate DIV-container -->
-            <!-- wegen des STYLE ist die chart-CANVAS in einem seperaten DIV-container eingebettet -->
-          <div class="chartContainer">
-            <!-- this canvas is later used to draw the chart, 
+      <!-- for STYLE reasons the chart-CANVAS is embedded in a seperate DIV-container -->
+      <!-- wegen des STYLE ist die chart-CANVAS in einem seperaten DIV-container eingebettet -->
+      <div class="chartContainer">
+        <!-- this canvas is later used to draw the chart, 
                   if you want to draw several seperate charts you have to pay attention to the IDs -->
-            <!-- in diesem canvas wird das Digramm gezeichnet
-                  wenn du mehrere Diagramme zeichnen willst, muss du die IDs anpassen-->      
-            <canvas id="evaluation_01" class="chartCanvas"></canvas>
+        <!-- in diesem canvas wird das Digramm gezeichnet
+                  wenn du mehrere Diagramme zeichnen willst, muss du die IDs anpassen-->
+        <canvas id="evaluation_01" class="chartCanvas"></canvas>
+      </div>
+
+      <script>
+        var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
+        var chartTitle = "Kapitel 1";  // change accordingly
+        var dataSetValues = [15, 4, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
+
+        // this checks whether values in dataSetValues are in the expected range, TODO: maybe later tell user which value is wrong
+        dataSetValues.forEach(function (item) {
+          if (item < 0 || item > 15) {
+            console.log(item);
+            alert("Notenwert falsch: " + item + "!");
+            dataSetValues = [0, 0, 0, 0, 0];
+          };
+        }
+        );
+
+        var chartCanvas = document.getElementById(canvasId);  // don't change this
+        var chartData = {
+          labels: ["Einzelarbeit", "Gruppenarbeit", "Effizienz", "Zeitplanung", "Verständnis"],  // don't change this
+          datasets: [
+            {
+              label: chartTitle,  // keep this
+              backgroundColor: "rgba(131, 15, 173,0.7)",  // change color and saturation/opacity here
+              data: dataSetValues  // keep this
+            },
+          ]
+        };
+
+        var radarChart = new Chart(chartCanvas, {
+          type: 'radar',  // keep this
+          data: chartData,
+          options: {
+            title: {
+              display: true,
+              text: 'Reflexion'  // change this title as you like it
+            },
+            scale: {
+              angleLines: {
+                display: true
+              },
+              ticks: {
+                min: 0,
+                max: 15,
+                stepSize: 2,
+              }
+            },
+            responsive: true,  // keep this
+            maintainAspectRatio: false  // keep this
+          }
+        });
+      </script>
+
+      <!-- bis hier kopieren -->
+      <!-- Stop copying here-->
+
+      <h3>Bewertung des digitalen Portfolios</h3>
+      <!-- one table at this point (for mobile), later maybe media queries and two tables to switch -->
+      <!-- see: https://stackoverflow.com/questions/37551057/how-to-change-table-layout-depending-on-resolution  -->
+      <div class="tableContainer">
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="2">Umsetzung digitales Portfolio (Gewicht: 1)</th>
+          </tr>
+          <tr>
+            <th>1BE</th>
+            <th>2BE</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>schönes HTML</td>
+          </tr>
+          <tr>
+            <th>3BE</th>
+            <th>4BE</th>
+          </tr>
+          <tr>
+            <td>HTML,CSS</td>
+            <td>schönes HTML, schönes CSS (JavaScript)</td>
+          </tr>
+        </table>
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="2">Dokumentation (Gewicht: 2)</th>
+          </tr>
+          <tr>
+            <th>1BE</th>
+            <th>2BE</th>
+          </tr>
+          <tr>
+            <td>Weniger als zur Hälfte erfüllt</td>
+            <td>Mehr als zur Hälfte erfüllt</td>
+          </tr>
+          <tr>
+            <th>3BE</th>
+            <th>4BE</th>
+          </tr>
+          <tr>
+            <td>Weitgehend erfüllt</td>
+            <td>Vollständig erfüllt</td>
+          </tr>
+        </table>
+        <table class="table table-bordered">
+          <tr>
+            <th colspan="2">Reflexion (Gewicht: 3)</th>
+          </tr>
+          <tr>
+            <th>1BE</th>
+            <th>2BE</th>
+          </tr>
+          <tr>
+            <td><b>Kaum Reflexionsfähigkeit erkennbar.</b>
+              Die Kurzreflexionen wurden selten genutzt oder
+              das Semester wurde abschließend reflektiert
+              oder die Reflexion wurde während des Semsters manchmal vorgenommen.
+            </td>
+            <td><b>Reflexionsfähigkeit zum Teil erkennbar.</b>
+              Die Kurzreflexionen wurden selten genutzt.
+              Das Semester wurde abschließend reflektiert
+              oder die Reflexion wurde während des Semsters manchmal vorgenommen.
+            </td>
+          </tr>
+          <tr>
+            <th>3BE</th>
+            <th>4BE</th>
+          </tr>
+          <tr>
+            <td><b>Gute Reflexionsfähigkeit erkennbar.</b>
+              Die Reflexion wurde mehrfach während des Semsters vorgenommen.
+              Die Kurzreflexionen wurden genutzt.
+              Das Semester wurde abschließend ergänzend reflektiert.
+            </td>
+            <td><b>Sehr gute Reflexionsfähigkeit erkennbar.</b>
+              Die Reflexion wurde mehrfach während des Semsters vorgenommen.
+              Die Kurzreflexionen wurden sinnvoll genutzt.
+              Das Semester wurde abschließend ausführlich ergänzend und glaubhaft reflektiert.</td>
+          </tr>
+        </table>
+      </div>
+      <p class="scriptstyle">Die Dokumentation der Arbeit enthält z.B. die Lösungen zu den Arbeitsaufträgen, weitere
+        (digitalisierte) Mitschriften, Quellen, Recherchen, gezeichnete oder ausgedruckte
+        Bilder, Mind-Maps sowie verlinkte Videos und Webseiten.
+        <b>Dabei ist darauf zu achten, dass eine Sammlung von abfotografierten Heftseiten keine digitale Dokumentation
+          im Sinne des digitalen Portfolios darstellt.</b>
+        Die durchgängige Reflexion beinhaltet die Arbeit in der Klasse, in der Gruppe, Einzelarbeit, die Reflexion des
+        Erkenntnisstands etc.
+        Die Lehrkraft kann in den Kategorien Dokumentation und Reflexion jeweils 1 bzw. 2BE von der Bewertung
+        individuell abziehen.
+      </p>
+
+
+      <!-- *****************************************************************************************-->
+      <!-- *** Start Of Chapter ********************************************************************-->
+      <!-- *****************************************************************************************-->
+      <hr> <!-- seperator before new chapter-->
+      <h1 class="display-2" id="equi_reaction">Die Gleichgewichtsreaktion</h1>
+      <p class="lead">
+        Viele Reaktionen in der Chemie erreichen einen Punkt, ab dem sie sich im Gleichgewicht befinden. Hier sollen Sie
+        sich die wesentlichen Aspekte
+        einer allgemeinen Gleichgewichtsreaktion erarbeiten.
+      </p>
+
+
+      <!-- ***************************************************************************************** -->
+      <!-- *** Start of Content ******************************************************************** -->
+
+      <div class="chapterContent">
+
+        <h2 class="display-4">Der Stechheberversuch</h2>
+        <p class="scriptstyle">
+          <b>Auftrag: Untersuchen Sie das Konzept der Gleichgewichtsreaktion mit Hilfe des Stechheberversuchs.</b>
+        </p>
+        <ol class="scriptstyle">
+          <li>Informieren Sie sich kurz über das Konzept der Gleichgewichtsreaktion.</li>
+          <li>Führen Sie das <b>Modellexperiment</b> durch.</li>
+          <li>Schreiben Sie ein <b>einfaches Protokoll</b>. Tabellarisieren Sie dabei ihre Meßergebnisse
+            und stellen Sie sie in der Auswertung grafisch (Übung zu Spreadsheet!!) dar.</li>
+          <li><b>Vergleichen</b> Sie die Meßergebnisse der drei Versuche.</li>
+          <li><b>Erläutern</b> Sie das Prinzip des chemischen Gleichgewichts mit Hilfe des Versuchs.</li>
+        </ol>
+        <!-- Method-Box start -->
+
+        <!-- *****************-->
+        <div class="containerBoxMethod flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
           </div>
-
-            <script>
-              var canvasId = "evaluation_01";  // change accordingly, id has to fit ID of canvas you want to fill!!!!
-              var chartTitle = "Kapitel 1";  // change accordingly
-              var dataSetValues = [15, 4, 11, 10, 11];  // evaluate according to grade points  (0,1,2,3,4,5 ... 13,14,15)
-
-                // this checks whether values in dataSetValues are in the expected range, TODO: maybe later tell user which value is wrong
-              dataSetValues.forEach(function(item) {
-                  if (item < 0 || item > 15) {
-                    console.log(item);
-                    alert("Notenwert falsch: " + item + "!");
-                    dataSetValues = [0,0,0,0,0];
-                  };
-                }
-              );
-
-              var chartCanvas = document.getElementById(canvasId);  // don't change this
-              var chartData = {
-                labels: ["Einzelarbeit", "Gruppenarbeit", "Effizienz", "Zeitplanung", "Verständnis"],  // don't change this
-                datasets: [
-                  {
-                  label: chartTitle,  // keep this
-                  backgroundColor: "rgba(131, 15, 173,0.7)",  // change color and saturation/opacity here
-                  data: dataSetValues  // keep this
-                  }, 
-                ]
-              };
-
-              var radarChart = new Chart(chartCanvas, {
-                type: 'radar',  // keep this
-                data: chartData,
-                options: {
-                    title: {
-                        display: true,
-                        text: 'Reflexion'  // change this title as you like it
-                    },
-                    scale: {
-                        angleLines: {
-                            display: true
-                        },
-                        ticks: {
-                            min: 0,
-                            max: 15,
-                            stepSize: 2,
-                        }
-                    },
-                    responsive: true,  // keep this
-                    maintainAspectRatio: false  // keep this
-                }
-              });
-            </script>
-
-          <!-- bis hier kopieren -->
-          <!-- Stop copying here-->
-          
-          <h3>Bewertung des digitalen Portfolios</h3>
-              <!-- one table at this point (for mobile), later maybe media queries and two tables to switch -->
-                <!-- see: https://stackoverflow.com/questions/37551057/how-to-change-table-layout-depending-on-resolution  -->
-            <div class="tableContainer">
-              <table class="table table-bordered">
-                <tr>
-                  <th colspan="2">Umsetzung digitales Portfolio (Gewicht: 1)</th>
-                </tr>
-                <tr>
-                  <th>1BE</th>
-                  <th>2BE</th>
-                </tr>
-                <tr>
-                  <td>HTML</td>
-                  <td>schönes HTML</td>
-                </tr>
-                <tr>
-                  <th>3BE</th>
-                  <th>4BE</th>
-                </tr>
-                <tr>
-                  <td>HTML,CSS</td>
-                  <td>schönes HTML, schönes CSS (JavaScript)</td>
-                </tr>
-              </table>
-              <table  class="table table-bordered">
-                <tr>
-                  <th colspan="2">Dokumentation (Gewicht: 2)</th>
-                </tr>
-                <tr>
-                  <th>1BE</th>
-                  <th>2BE</th>
-                </tr>
-                <tr>
-                  <td>Weniger als zur Hälfte erfüllt</td>
-                  <td>Mehr als zur Hälfte erfüllt</td>
-                </tr>
-                <tr>
-                  <th>3BE</th>
-                  <th>4BE</th>
-                </tr>
-                <tr>
-                  <td>Weitgehend erfüllt</td>
-                  <td>Vollständig erfüllt</td>
-                </tr>
-              </table>
-              <table  class="table table-bordered">
-                <tr>
-                  <th colspan="2">Reflexion (Gewicht: 3)</th>
-                </tr>
-                <tr>
-                  <th>1BE</th>
-                  <th>2BE</th>
-                </tr>
-                <tr>
-                  <td><b>Kaum Reflexionsfähigkeit erkennbar.</b>
-                      Die Kurzreflexionen wurden selten genutzt oder 
-                      das Semester wurde abschließend reflektiert 
-                      oder die Reflexion wurde während des Semsters manchmal vorgenommen.
-                  </td>
-                  <td><b>Reflexionsfähigkeit zum Teil erkennbar.</b>
-                      Die Kurzreflexionen wurden selten genutzt. 
-                      Das Semester wurde abschließend reflektiert 
-                      oder die Reflexion wurde während des Semsters manchmal vorgenommen.
-                  </td>
-                </tr>
-                <tr>
-                  <th>3BE</th>
-                  <th>4BE</th>
-                </tr>
-                <tr>
-                  <td><b>Gute Reflexionsfähigkeit erkennbar.</b> 
-                      Die Reflexion wurde mehrfach während des Semsters vorgenommen. 
-                      Die Kurzreflexionen wurden genutzt. 
-                      Das Semester wurde abschließend ergänzend reflektiert.
-                  </td>
-                  <td><b>Sehr gute Reflexionsfähigkeit erkennbar.</b> 
-                      Die Reflexion wurde mehrfach während des Semsters vorgenommen. 
-                      Die Kurzreflexionen wurden sinnvoll genutzt. 
-                      Das Semester wurde abschließend ausführlich ergänzend und glaubhaft reflektiert.</td>
-                </tr>
-              </table>
-            </div>
-            <p class="scriptstyle">Die Dokumentation der Arbeit enthält z.B. die Lösungen zu den Arbeitsaufträgen, weitere (digitalisierte) Mitschriften, Quellen, Recherchen, gezeichnete oder ausgedruckte
-              Bilder, Mind-Maps sowie verlinkte Videos und Webseiten. 
-              <b>Dabei ist darauf zu achten, dass eine Sammlung von abfotografierten Heftseiten keine digitale Dokumentation im Sinne des digitalen Portfolios darstellt.</b>
-              Die durchgängige Reflexion beinhaltet die Arbeit in der Klasse, in der Gruppe, Einzelarbeit, die Reflexion des Erkenntnisstands etc.
-              Die Lehrkraft kann in den Kategorien Dokumentation und Reflexion jeweils 1 bzw. 2BE von der Bewertung individuell abziehen.</p>
+          <div>
+            <p class="scriptstyle">
+              Füllen Sie einen Meßzylinder (A) mit Wasser. Nehmen Sie einen zweiten, gleichgroßen Meßzylinder (B) und
+              lassen Sie ihn leer.
+              Notieren Sie den Volumenstand von A und B.
+            <ul>
+              <li>Nehmen Sie zwei Glasrohre mit gleichem Durchmesser. Stellen Sie in jeweils einen Zylinder ein
+                Glasrohr.
+                Verschließen Sie das obere Ende mit Ihrem Daumen und geben Sie die Flüssigkeit, die in dem Glasrohr ist,
+                in den jeweils anderen Meßzylinder. Notieren Sie den Volumenstand in A und B. Wiederholen Sie diesen
+                Vorgang 30mal.</li>
+              <li>Nehmen Sie zwei Glasrohre, die einen größeren oder kleineren Durchmesser als in Versuch 1 haben.
+                Wiederholen Sie das Experiment.</li>
+              <li>Nehmen Sie zwei Glasrohre mit unterschiedlichem Durchmesser. Wiederholen Sie das Experiment.</li>
+            </ul>
+            </p>
+            <img class="img-fluid" src="img/stechheberversuch.png" alt="stechheberversuch modell" loading="lazy">
+          </div>
+        </div>
+        <!-- Method-Box end -->
+        <!-- ***************-->
 
 
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
-        <hr>  <!-- seperator before new chapter-->
-        <h1 class="display-2" id="equi_reaction">Die Gleichgewichtsreaktion</h1>
-          <p class="lead">
-            Viele Reaktionen in der Chemie erreichen einen Punkt, ab dem sie sich im Gleichgewicht befinden. Hier sollen Sie sich die wesentlichen Aspekte
-             einer allgemeinen Gleichgewichtsreaktion erarbeiten. 
-          </p>
+        <hr> <!-- seperator before new chapter-->
+        <!-- ***************************************************************************************** -->
+        <!-- *** End Of Chapter ********************************************************************** -->
+        <!-- ***************************************************************************************** -->
 
-
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
-
-          <div class="chapterContent">
-            
-            <h2 class="display-4">Der Stechheberversuch</h2>
-              <p class="scriptstyle">
-                  <b>Auftrag: Untersuchen Sie das Konzept der Gleichgewichtsreaktion mit Hilfe des Stechheberversuchs.</b>
-                </p>
-                  <ol class="scriptstyle">
-                    <li>Informieren Sie sich kurz über das Konzept der Gleichgewichtsreaktion.</li>
-                    <li>Führen Sie das <b>Modellexperiment</b> durch.</li>
-                    <li>Schreiben Sie ein <b>einfaches Protokoll</b>. Tabellarisieren Sie dabei ihre Meßergebnisse 
-                    und stellen Sie sie in der Auswertung grafisch (Übung zu Spreadsheet!!) dar.</li>
-                    <li><b>Vergleichen</b> Sie die Meßergebnisse der drei Versuche.</li>
-                    <li><b>Erläutern</b> Sie das Prinzip des chemischen Gleichgewichts mit Hilfe des Versuchs.</li>
-                  </ol>
-                        <!-- Method-Box start -->
-
-                        <!-- *****************-->
-            <div class="containerBoxMethod flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Füllen Sie einen Meßzylinder (A) mit Wasser. Nehmen Sie einen zweiten, gleichgroßen Meßzylinder (B) und lassen Sie ihn leer. 
-                  Notieren Sie den Volumenstand von A und B.
-                  <ul>
-                    <li>Nehmen Sie zwei Glasrohre mit gleichem Durchmesser. Stellen Sie in jeweils einen Zylinder ein Glasrohr. 
-                      Verschließen Sie das obere Ende mit Ihrem Daumen und geben Sie die Flüssigkeit, die in dem Glasrohr ist, 
-                      in den jeweils anderen Meßzylinder. Notieren Sie den Volumenstand in A und B. Wiederholen Sie diesen Vorgang 30mal.</li>
-                    <li>Nehmen Sie zwei Glasrohre, die einen größeren oder kleineren Durchmesser als in Versuch 1 haben. Wiederholen Sie das Experiment.</li>
-                    <li>Nehmen Sie zwei Glasrohre mit unterschiedlichem Durchmesser. Wiederholen Sie das Experiment.</li>
-                  </ul>
-                </p>
-                <img class="img-fluid" src="img/stechheberversuch.png" alt="stechheberversuch modell" loading="lazy">
-              </div>
-            </div>
-            <!-- Method-Box end -->
-            <!-- ***************-->
-
-
-        <hr>  <!-- seperator before new chapter-->
-<!-- ***************************************************************************************** -->
-<!-- *** End Of Chapter ********************************************************************** -->
-<!-- ***************************************************************************************** -->              
-
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
-        <hr>  <!-- seperator before new chapter-->
+        <!-- *****************************************************************************************-->
+        <!-- *** Start Of Chapter ********************************************************************-->
+        <!-- *****************************************************************************************-->
+        <hr> <!-- seperator before new chapter-->
         <h1 class="display-2" id="lechatelier">LeChatelier</h1>
-          <p class="lead">
-            Bisher haben Sie sich nur mit dem Gleichgewichtszustand beschäftigt. Viele Prozesse in Natur und Technik befinden sich in Gleichgewichtszuständen. 
-            Das Gleichgewicht lässt sich aber auch beeinflussen. Das kann Vorteile haben, aber auch Nachteile. Ein Beispiel ist die Versauerung der Meere, als Folge des industriellen CO<sub>2</sub> Auststoßes.
-          </p>
+        <p class="lead">
+          Bisher haben Sie sich nur mit dem Gleichgewichtszustand beschäftigt. Viele Prozesse in Natur und Technik
+          befinden sich in Gleichgewichtszuständen.
+          Das Gleichgewicht lässt sich aber auch beeinflussen. Das kann Vorteile haben, aber auch Nachteile. Ein
+          Beispiel ist die Versauerung der Meere, als Folge des industriellen CO<sub>2</sub> Auststoßes.
+        </p>
 
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
+        <!-- ***************************************************************************************** -->
+        <!-- *** Start of Content ******************************************************************** -->
 
 
 
         <div class="chapterContent">
           <h2 class="display-4">Die Versauerung der Meere</h2>
-            <p class="scriptstyle">
-              <b>Auftrag: Erklären Sie anhand der Fragen und des gegebenen Textes die Versauerung der Meere.</b>
-            </p>
-            <ol class="scriptstyle">
-              <li>Stellen Sie eine Reaktionsgleichung auf, die die Abgabe des Kohlenstoffdioxids aus dem Meer beschreibt.</li>
-              <li>Beschreiben Sie den Verlauf des gelösten Kohlenstoffdioxids in Abhängigkeit der Temperatur.</li>
-              <li>Beschreiben Sie den Verlauf des gelösten Kohlenstoffdioxids in Abhängigkeit der Kohlenstoffdioxid-Konzentration in der Luft.</li>
-              <li>Nennen Sie mögliche Folgen der erhöhten Aufnahme von Kohlenstoffdioxid durch das Meer und beschreiben Sie diese kurz.</li>
-            </ol>
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Im Ökosystem Erde gibt es mehrere natürliche Kohlenstoffsenken, die Kohlenstoffdioxid speichern. Zu diesen Senken zählen zum Beispiel Moore, Wälder, Böden aber auch Meere. Dabei enthalten die Weltmeere knapp 16-mal mehr Kohlenstoffdioxid als die gesamte Landbiospähre und die Meere nehmen weiter Kohlenstoffdioxid auf. Seit der Industrialisierung konnte beobachtet werden, dass die Aufnahme von Kohlenstoffdioxid durch das Meer proportional zum Anstieg des durch den Menschen produzierten Kohlenstoffdioxid ansteigt. Also gilt je höher die Kohlenstoffdioxidkonzentration in der Atmosphäre, desto mehr Kohlenstoffdioxid wird vom Meer absorbiert.[<a href="https://klima-kollekte.de/ueber-uns/aktuell/co2-senke-ozean" alt="Klima Kollekte: letzter Zugriff: 28.04.2024">1</a>] <br>
-                  Doch durch die Erwärmung der Erde wird in vielen Teilen der Erde immer mehr Kohlenstoffdioxid durch das Meer an die Atmosphäre abgegeben. Besonders sind hiervon die wärmeren Meere betroffen. Kältere Meere hingegen sind in der Lage besser den Kohlenstoffdioxid zu speichern. So konnte festgestellt werden, dass der pH-Wert des Meeres sich seit der Industrialisierung von 8,2 auf 8,1 verringert hat.[<a href="https://www.umweltbundesamt.de/themen/wasser/meere/nutzung-belastungen/meere-unter-druck-ozeanversauerung-durch-co2#ozeane-kohlenstoffdioxid-speicher-" alt="Umwelt Bundesamt: letzter Zugriff: 28.04.2024">2</a>]
-                </p>
-              </div>
+          <p class="scriptstyle">
+            <b>Auftrag: Erklären Sie anhand der Fragen und des gegebenen Textes die Versauerung der Meere.</b>
+          </p>
+          <ol class="scriptstyle">
+            <li>Stellen Sie eine Reaktionsgleichung auf, die die Abgabe des Kohlenstoffdioxids aus dem Meer beschreibt.
+            </li>
+            <li>Beschreiben Sie den Verlauf des gelösten Kohlenstoffdioxids in Abhängigkeit der Temperatur.</li>
+            <li>Beschreiben Sie den Verlauf des gelösten Kohlenstoffdioxids in Abhängigkeit der
+              Kohlenstoffdioxid-Konzentration in der Luft.</li>
+            <li>Nennen Sie mögliche Folgen der erhöhten Aufnahme von Kohlenstoffdioxid durch das Meer und beschreiben
+              Sie diese kurz.</li>
+          </ol>
+          <!-- INFO-Box start -->
+          <!-- ************** -->
+          <div class="containerBoxInfo flex-container">
+            <div>
+              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
             </div>
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-          
+            <div>
+              <p class="scriptstyle">
+                Im Ökosystem Erde gibt es mehrere natürliche Kohlenstoffsenken, die Kohlenstoffdioxid speichern. Zu
+                diesen Senken zählen zum Beispiel Moore, Wälder, Böden aber auch Meere. Dabei enthalten die Weltmeere
+                knapp 16-mal mehr Kohlenstoffdioxid als die gesamte Landbiospähre und die Meere nehmen weiter
+                Kohlenstoffdioxid auf. Seit der Industrialisierung konnte beobachtet werden, dass die Aufnahme von
+                Kohlenstoffdioxid durch das Meer proportional zum Anstieg des durch den Menschen produzierten
+                Kohlenstoffdioxid ansteigt. Also gilt je höher die Kohlenstoffdioxidkonzentration in der Atmosphäre,
+                desto mehr Kohlenstoffdioxid wird vom Meer absorbiert.[<a
+                  href="https://klima-kollekte.de/ueber-uns/aktuell/co2-senke-ozean"
+                  alt="Klima Kollekte: letzter Zugriff: 28.04.2024">1</a>] <br>
+                Doch durch die Erwärmung der Erde wird in vielen Teilen der Erde immer mehr Kohlenstoffdioxid durch das
+                Meer an die Atmosphäre abgegeben. Besonders sind hiervon die wärmeren Meere betroffen. Kältere Meere
+                hingegen sind in der Lage besser den Kohlenstoffdioxid zu speichern. So konnte festgestellt werden, dass
+                der pH-Wert des Meeres sich seit der Industrialisierung von 8,2 auf 8,1 verringert hat.[<a
+                  href="https://www.umweltbundesamt.de/themen/wasser/meere/nutzung-belastungen/meere-unter-druck-ozeanversauerung-durch-co2#ozeane-kohlenstoffdioxid-speicher-"
+                  alt="Umwelt Bundesamt: letzter Zugriff: 28.04.2024">2</a>]
+              </p>
+            </div>
+          </div>
+          <!-- INFO-Box start -->
+          <!-- ************** -->
+
           <h2 class="display-4">Die Verschiebung des chemischen Gleichgewichts</h2>
-            <p class="lead">
-              Stellen Sie sich vor sie sind ein Forscherteam, welches die Kohlenstoffdioxidkonzentration in der Atmosphäre verringern möchte, indem das Meer als Kohlenstoffdioxidspeicher genutzt wird. Es liegt an Ihnen zu erklären, wie man sich das Meer als CO2-Speicher nutzbar machen kann.<br>
-              Als gute Wissenschaftler wissen Sie natürlich, dass sich bereits der Chemiker Henri LeChatelier ausführlich mit dem chemischen Gleichgewicht beschäftigt hat und das Prinzip des kleinsten Zwangs aufgestellt hat. Diese Prinzipien kann man sich für die Beeinflussung chemischer Reaktionen zu Nutze machen. Vielleicht hilft das auch bei Ihrem Problem?!
-            </p>
+          <p class="lead">
+            Stellen Sie sich vor sie sind ein Forscherteam, welches die Kohlenstoffdioxidkonzentration in der Atmosphäre
+            verringern möchte, indem das Meer als Kohlenstoffdioxidspeicher genutzt wird. Es liegt an Ihnen zu erklären,
+            wie man sich das Meer als CO2-Speicher nutzbar machen kann.<br>
+            Als gute Wissenschaftler wissen Sie natürlich, dass sich bereits der Chemiker Henri LeChatelier ausführlich
+            mit dem chemischen Gleichgewicht beschäftigt hat und das Prinzip des kleinsten Zwangs aufgestellt hat. Diese
+            Prinzipien kann man sich für die Beeinflussung chemischer Reaktionen zu Nutze machen. Vielleicht hilft das
+            auch bei Ihrem Problem?!
+          </p>
           <p class="scriptstyle">
             <br>
-              <b>Auftrag: Erklären Sie inwieweit es sinnvoll ist das Meer als Kohlenstoffdioxid-Speicher zu verwenden. Nutzen Sie dafür die Erkenntnisse von LeChatelier.</b>
-            </p>
-              <ol class="scriptstyle">
-                <li>Lesen Sie die Durchführungen, führen Sie die Experimente durch und schreiben Sie ein <b>ausführliches</b> Protokoll!</li>
-                <li>Für die <b>Hypothese:</b> Stellen Sie Vermutungen für die folgenden allgemeinen Reaktionen auf. Dabei sollen Sie noch keine Recherchen betreiben.</li>
-                <ul>
-                  <li>Die Reaktion 2A(g) + B(g) &rlarr; C(g) soll durch Druck beeinflusst werden. <b>Erklären</b> Sie, welches Volumen alle gasförmigen Stoffe (bezogen auf ein Mol) haben(<i>Tipp:</i> molares Volumen)? <b>Vermuten</b> Sie, wie sich ein hoher Druck bzw. ein niedriger Druck auswirken könnten?</li>
-                  <li>Die Hinreaktion der Gleichgewichtsreaktion A + B &rlarr; C + D verläuft exotherm. <b>Vermuten</b> Sie, wie man das Gleichgewicht mit Hilfe der Temperatur verschieben könnte?</li>
-                </ul>
-                <li>Weitere Fragen für die <b>Auswertung</b>:</li>
-                <ul>
-                  <li><b>Erklären</b> Sie das Prinzip von Le-Chatelier und wenden Sie es auf die durchgeführten Versuche an. Beziehen Sie sich dabei auf Ihre Beobachtung.</li>
-                  <li><b>Beschreiben</b> Sie ausgehend von Ihren Ergebnissen, wie die Löslichkeit von Gasen in Wasser beeinflusst werden kann.</li>
-                  <li>Sind die Meere als geeignete CO<sub>2</sub>-Speicher? Beziehen Sie sich hierfür auf die Skalierung Ihrer Experimente und die Folgen derer für die Umwelt.</li>
-                  <li><b>Beschreiben</b> Sie ausgehend von Ihren Ergebnissen zur Löslichkeit von Gasen in Wasser, warum Fische unter Wasser atmen können.</li>
-                  <li><b>Erklären</b> Sie zudem weshalb Fische im Sommer zumeist weiter oben schwimmen.</li>
-                </ul>
-              </ol>
+            <b>Auftrag: Erklären Sie inwieweit es sinnvoll ist das Meer als Kohlenstoffdioxid-Speicher zu verwenden.
+              Nutzen Sie dafür die Erkenntnisse von LeChatelier.</b>
+          </p>
+          <ol class="scriptstyle">
+            <li>Lesen Sie die Durchführungen, führen Sie die Experimente durch und schreiben Sie ein
+              <b>ausführliches</b> Protokoll!</li>
+            <li>Für die <b>Hypothese:</b> Stellen Sie Vermutungen für die folgenden allgemeinen Reaktionen auf. Dabei
+              sollen Sie noch keine Recherchen betreiben.</li>
+            <ul>
+              <li>Die Reaktion 2A(g) + B(g) &rlarr; C(g) soll durch Druck beeinflusst werden. <b>Erklären</b> Sie,
+                welches Volumen alle gasförmigen Stoffe (bezogen auf ein Mol) haben(<i>Tipp:</i> molares Volumen)?
+                <b>Vermuten</b> Sie, wie sich ein hoher Druck bzw. ein niedriger Druck auswirken könnten?</li>
+              <li>Die Hinreaktion der Gleichgewichtsreaktion A + B &rlarr; C + D verläuft exotherm. <b>Vermuten</b> Sie,
+                wie man das Gleichgewicht mit Hilfe der Temperatur verschieben könnte?</li>
+            </ul>
+            <li>Weitere Fragen für die <b>Auswertung</b>:</li>
+            <ul>
+              <li><b>Erklären</b> Sie das Prinzip von Le-Chatelier und wenden Sie es auf die durchgeführten Versuche an.
+                Beziehen Sie sich dabei auf Ihre Beobachtung.</li>
+              <li><b>Beschreiben</b> Sie ausgehend von Ihren Ergebnissen, wie die Löslichkeit von Gasen in Wasser
+                beeinflusst werden kann.</li>
+              <li>Sind die Meere als geeignete CO<sub>2</sub>-Speicher? Beziehen Sie sich hierfür auf die Skalierung
+                Ihrer Experimente und die Folgen derer für die Umwelt.</li>
+              <li><b>Beschreiben</b> Sie ausgehend von Ihren Ergebnissen zur Löslichkeit von Gasen in Wasser, warum
+                Fische unter Wasser atmen können.</li>
+              <li><b>Erklären</b> Sie zudem weshalb Fische im Sommer zumeist weiter oben schwimmen.</li>
+            </ul>
+          </ol>
           <!-- Method-Box start -->
           <!-- *****************-->
           <div class="containerBoxMethod flex-container">
@@ -528,7 +584,8 @@
             <div>
               <p class="scriptstyle">
                 <b>Verschiebung mit Hilfe der Temperatur:</b>
-                100 ml einer Kohlensäurelösung (Sprudelwasser) werden gleichverteilt in zwei Bechergläser gegeben und anschließend mit einigen Tropfen Universalindikator versetzt.<br>
+                100 ml einer Kohlensäurelösung (Sprudelwasser) werden gleichverteilt in zwei Bechergläser gegeben und
+                anschließend mit einigen Tropfen Universalindikator versetzt.<br>
                 Becherglas A wird anschließend mithilfe einer Heizplatte vorsichtig erwärmt.<br>
                 Becherglas B wird für 20 min stehengelassen und beobachtet.
               </p>
@@ -545,8 +602,12 @@
             <div>
               <p class="scriptstyle">
                 <b>Verschiebung mit Hilfe des Drucks:</b>
-                Ziehen Sie in eine Spritze 10mL CO<sub>2</sub> auf. Ziehen Sie dann etwas Wasser mit Unitest mit der Spritze auf, bis die Farbe nach gelb umschlägt (ca. 5mL). Überschüssiges Kohlenstoffdioxid wird verworfen, indem Sie vorsichtig das überschüßige Gas aus der Spritze drücken. Verschließen Sie die Spritze.<br>
-                Ziehen Sie den Stempel raus und beobachten Sie. Drücken Sie dann den Stempel wieder rein und beobachten Sie.   
+                Ziehen Sie in eine Spritze 10mL CO<sub>2</sub> auf. Ziehen Sie dann etwas Wasser mit Unitest mit der
+                Spritze auf, bis die Farbe nach gelb umschlägt (ca. 5mL). Überschüssiges Kohlenstoffdioxid wird
+                verworfen, indem Sie vorsichtig das überschüßige Gas aus der Spritze drücken. Verschließen Sie die
+                Spritze.<br>
+                Ziehen Sie den Stempel raus und beobachten Sie. Drücken Sie dann den Stempel wieder rein und beobachten
+                Sie.
               </p>
             </div>
           </div>
@@ -561,8 +622,10 @@
             <div>
               <p class="scriptstyle">
                 <b>Verschiebung durch Konzentrationsänderung:</b>
-                Ziehen Sie in eine Spritze 5mL H<sub>2</sub>O mit Indikator auf. Ziehen Sie nun 5ml CO<sub>2</sub> in die Spritze. Drücken Sie überschüßiges Gas aus der Spritze und beobachten Sie.<br>
-                Ziehen Sie nun weitere 5ml CO<sub>2</sub> in die Spritze. Drücken Sie wieder überschüßiges Gas aus der Spritze und beobachten Sie.<br>
+                Ziehen Sie in eine Spritze 5mL H<sub>2</sub>O mit Indikator auf. Ziehen Sie nun 5ml CO<sub>2</sub> in
+                die Spritze. Drücken Sie überschüßiges Gas aus der Spritze und beobachten Sie.<br>
+                Ziehen Sie nun weitere 5ml CO<sub>2</sub> in die Spritze. Drücken Sie wieder überschüßiges Gas aus der
+                Spritze und beobachten Sie.<br>
                 Wiederholen Sie den Vorgang ggf. mit weiteren 5ml CO<sub>2</sub>.
               </p>
             </div>
@@ -571,251 +634,283 @@
           <!-- ***************-->
         </div>
 
-          <!-- *****************************************************************************************-->
-          <!-- *** End Of Chapter ********************************************************************-->
-          <!-- *****************************************************************************************-->
+        <!-- *****************************************************************************************-->
+        <!-- *** End Of Chapter ********************************************************************-->
+        <!-- *****************************************************************************************-->
 
-          
 
-          <!-- *****************************************************************************************-->
-          <!-- *** Start Of Chapter ********************************************************************-->
-          <!-- *****************************************************************************************-->
-        <hr>  <!-- seperator before new chapter-->
+
+        <!-- *****************************************************************************************-->
+        <!-- *** Start Of Chapter ********************************************************************-->
+        <!-- *****************************************************************************************-->
+        <hr> <!-- seperator before new chapter-->
         <h1 class="display-2" id="kinetics">Reaktionskinetik</h1>
-          <p class="lead">
-            Nachdem Sie sich mit der Steuerung des chemischen Gleichgewichts beschäftigt haben, ist es nun an der Zeit sich ein wenig mit einigen Rechnungen und Beobachtungen zur Reaktionskinetik zu beschäftigen.
+        <p class="lead">
+          Nachdem Sie sich mit der Steuerung des chemischen Gleichgewichts beschäftigt haben, ist es nun an der Zeit
+          sich ein wenig mit einigen Rechnungen und Beobachtungen zur Reaktionskinetik zu beschäftigen.
+        </p>
+
+        <!-- ***************************************************************************************** -->
+        <!-- *** Start of Content ******************************************************************** -->
+
+        <div class="chapterContent">
+          <h2 class="display-4">Das Massenwirkungsgesetz</h2> <!-- START subsection-->
+          <p class="scriptstyle">
+            <b>Auftrag: Erläutern Sie den Begriff Massenwirkungsgesetz am Beispiel der Iodwasserstoff-Synthese!</b>
           </p>
-
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
-
-<div class="chapterContent">
-            <h2 class="display-4">Das Massenwirkungsgesetz</h2> <!-- START subsection-->
+          <ol class="scriptstyle">
+            <li><b>Recherchieren</b> Sie den Begriff Massenwirkungsgesetz!</li>
+            <li><b>Lesen</b> Sie den Text und stellen Sie die <b>Reaktionsgleichung</b> für die Produktion von
+              Iodwasserstoff.</li>
+            <li><b>Formulieren</b> Sie das MWG für die Reaktion. <b>Nennen</b> Sie die Einheit der
+              Gleichgewichtskonstante.</li>
+            <li><b>Erläutern</b> Sie, wie sich die Konzentration von Edukten und Produkten im Verlauf der Reaktion
+              ändern. Nehmen Sie einen allgemeinen Verlauf der Reaktion an.</li>
+            <li><b>Erläutern</b> Sie wie sich die Reaktion ändern würde, wenn der Katalysator (hypothetisch) weggelassen
+              wird. <b>Nennen</b> Sie die drei definierenden Eigenschaften eines Katalysators.</li>
+            <li><b>Vermuten</b> Sie, welche Bedeutung das MWG für die chemische Industrie haben kann. Überlegen Sie
+              dabei, welche Wertebereiche K annehmen kann und was sie bedeuten.</li>
+            <li><b>Formulieren</b> Sie das Massenwirkungsgesetz für die allgemeine Reaktionsgleichung aA + bB &rlarr; cC
+              + dD auf!</li>
+          </ol>
+          <!-- END subsection-->
+          <!-- INFO-Box start -->
+          <!-- ************** -->
+          <div class="containerBoxInfo flex-container">
+            <div>
+              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+            </div>
+            <div>
               <p class="scriptstyle">
-                  <b>Auftrag: Erläutern Sie den Begriff Massenwirkungsgesetz am Beispiel der Iodwasserstoff-Synthese!</b>
-                </p>
-                  <ol class="scriptstyle">
-                    <li><b>Recherchieren</b> Sie den Begriff Massenwirkungsgesetz!</li>
-                    <li><b>Lesen</b> Sie den Text und stellen Sie die <b>Reaktionsgleichung</b> für die Produktion von Iodwasserstoff.</li>
-                    <li><b>Formulieren</b> Sie das MWG für die Reaktion. <b>Nennen</b> Sie die Einheit der Gleichgewichtskonstante.</li>
-                    <li><b>Erläutern</b> Sie, wie sich die Konzentration von Edukten und Produkten im Verlauf der Reaktion ändern. Nehmen Sie einen allgemeinen Verlauf der Reaktion an.</li>
-                    <li><b>Erläutern</b> Sie wie sich die Reaktion ändern würde, wenn der Katalysator (hypothetisch) weggelassen wird. <b>Nennen</b> Sie die drei definierenden Eigenschaften eines Katalysators.</li>
-                    <li><b>Vermuten</b> Sie, welche Bedeutung das MWG für die chemische Industrie haben kann. Überlegen Sie dabei, welche Wertebereiche K annehmen kann und was sie bedeuten.</li>
-                    <li><b>Formulieren</b> Sie das Massenwirkungsgesetz für die allgemeine Reaktionsgleichung aA + bB &rlarr; cC + dD auf!</li>
-                  </ol>
-            <!-- END subsection-->
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Iodwasserstoff (Summenformel HI)ist ein farbloses, stechend riechendes, giftiges Gas, das sich sehr gut in Wasser unter Bildung 
-                  der sehr starken Iodwasserstoffsäure löst. Industriell erfolgt die Herstellung durch katalytische Reaktion der gasförmigen Elemente 
-                  über einen auf 500°C erwärmten Platin-Schwamm als Katalysator. (Quelle (zusammengefasst): <a href="https://de.wikipedia.org/wiki/Iodwasserstoff">Wikipedia</a>)
-                </p>
-              </div>
+                Iodwasserstoff (Summenformel HI)ist ein farbloses, stechend riechendes, giftiges Gas, das sich sehr gut
+                in Wasser unter Bildung
+                der sehr starken Iodwasserstoffsäure löst. Industriell erfolgt die Herstellung durch katalytische
+                Reaktion der gasförmigen Elemente
+                über einen auf 500°C erwärmten Platin-Schwamm als Katalysator. (Quelle (zusammengefasst): <a
+                  href="https://de.wikipedia.org/wiki/Iodwasserstoff">Wikipedia</a>)
+              </p>
             </div>
+          </div>
 
 
 
-            <p class="scriptstyle">
-              <b>Auftrag: Vertiefen Sie mit Hilfe von KI ihre Kenntnisse zur Nutzung des MWG!</b>
-                </p>
-                  <ol class="scriptstyle">
-                    <li>Arbeiten Sie in Kleingruppen.</li>
-                    <li>Nutzen Sie KI, um sich die Lösungen für die unten aufgeführten Aufgaben zu erarbeiten. Formulieren Sie ihre Prompts so, dass sie wirklich detailliert erklärt bekommen, wie man diese Aufgaben löst.</li>
-                    <li>Fragen Sie dabei auch nach einem allgemeinen Lösungsweg.</li>
-                    <li>Bereiten Sie sich darauf vor, einzeln eine Aufgabe mit Hilfe ihrer Aufzeichnungen zu erklären und vorzurechnen</li>
-                  </ol>
-            <!-- END subsection-->
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  In einem geschlossenen 25l-Behälter werden 3,05mol Iod und 7,75mol Wasserstoff erhitzt. Das Experiment ergab, dass nach Einstellung des Gleichgewichts 5,86molIodwasserstoff vorlagen.<br>
-                  <b>Berechnen</b> Sie die Gleichgewichtskonstante K.
-                  Bei Berechnungen, bei denen K einheitenlos ist, kann man nur mit der Stoffmenge rechnen, anstatt mit der Konzentration.
-                </p>
-              </div>
+          <p class="scriptstyle">
+            <b>Auftrag: Vertiefen Sie mit Hilfe von KI ihre Kenntnisse zur Nutzung des MWG!</b>
+          </p>
+          <ol class="scriptstyle">
+            <li>Arbeiten Sie in Kleingruppen.</li>
+            <li>Nutzen Sie KI, um sich die Lösungen für die unten aufgeführten Aufgaben zu erarbeiten. Formulieren Sie
+              ihre Prompts so, dass sie wirklich detailliert erklärt bekommen, wie man diese Aufgaben löst.</li>
+            <li>Fragen Sie dabei auch nach einem allgemeinen Lösungsweg.</li>
+            <li>Bereiten Sie sich darauf vor, einzeln eine Aufgabe mit Hilfe ihrer Aufzeichnungen zu erklären und
+              vorzurechnen</li>
+          </ol>
+          <!-- END subsection-->
+          <!-- INFO-Box start -->
+          <!-- ************** -->
+          <div class="containerBoxInfo flex-container">
+            <div>
+              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
             </div>
-            <!-- END subsection-->
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  In einem geschlossenen Kolben (1Liter) werden 0,4mol Methansäuremethylester mit 0,4mol Wasser hydrolisiert und die Konzentration der entstehenden Methansäure bestimmt. Nach 15min bleibt die Konzentration der Methansäure konstatn bei 0,15mol/l. <b>Berechnen</b> Sie die Gleichgewichtskonstante K.
-                </p>
-              </div>
+            <div>
+              <p class="scriptstyle">
+                In einem geschlossenen 25l-Behälter werden 3,05mol Iod und 7,75mol Wasserstoff erhitzt. Das Experiment
+                ergab, dass nach Einstellung des Gleichgewichts 5,86molIodwasserstoff vorlagen.<br>
+                <b>Berechnen</b> Sie die Gleichgewichtskonstante K.
+                Bei Berechnungen, bei denen K einheitenlos ist, kann man nur mit der Stoffmenge rechnen, anstatt mit der
+                Konzentration.
+              </p>
             </div>
           </div>
           <!-- END subsection-->
-            <!-- INFO-Box start -->
-            <!-- ************** -->
-            <div class="containerBoxInfo flex-container">
-              <div>
-                <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
-              </div>
-              <div>
-                <p class="scriptstyle">
-                  Bei einer bestimmten Temperatur gilt für die Bildung von Iodwasserstoff aus den Elementen eine Gleichgewichtskonstante K=40. In einem Behälter mit dem Volumen von einem Liter reagieren 1mol Ioddampf mit 1mol Wasserdampf.<br>
-                  <b>Berechnen</b> Sie die Konzentration aller Stoffe im Gleichgewicht. Ermitteln Sie anschließend die Ausbeute an Iodwasserstoff.
-                </p>
-              </div>
+          <!-- INFO-Box start -->
+          <!-- ************** -->
+          <div class="containerBoxInfo flex-container">
+            <div>
+              <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+            </div>
+            <div>
+              <p class="scriptstyle">
+                In einem geschlossenen Kolben (1Liter) werden 0,4mol Methansäuremethylester mit 0,4mol Wasser
+                hydrolisiert und die Konzentration der entstehenden Methansäure bestimmt. Nach 15min bleibt die
+                Konzentration der Methansäure konstatn bei 0,15mol/l. <b>Berechnen</b> Sie die Gleichgewichtskonstante
+                K.
+              </p>
             </div>
           </div>
-
-
-          <h2 class="display-4">Reaktionsgeschwindigkeit</h2>
-              <p class="scriptstyle">
-                <b>Auftrag: Erarbeiten Sie sich mit Hilfe der Quelle das Konzept der Reaktionsgeschwindigkeit.</b>
-              </p>
-                <ol class="scriptstyle">
-                  <li>Nutzen Sie die <a href="https://www.u-helmich.de/che/EF/inhaltsfeld-1/5-Geschwindigkeit/indexIF1-5.html"><b>Quelle</b></a> um die folgenden
-                     Fragen zu beantworten.</li>
-                  <li><b>Formulieren</b> Sie für die Reaktionen von HCl und Zink die Reaktionsgleichung auf.</li>
-                  <li><b>Erläutern</b> Sie an einem selbstgewählten Beispiel den Begriff (Säure-)Konzentration!</li>
-                  <li><b>Erläutern</b> Sie das Konzept der Stoßtheorie!</li>
-                  <li><b>Erläutern</b> Sie den Begriff Reaktionsgeschwindigkeit!</li>
-                  <li><b>Erklären</b> Sie wie man die Reaktionsgeschwindigkeit erhöhen kann!</li> 
-                </ol>
-</div>
-
         </div>
+        <!-- END subsection-->
+        <!-- INFO-Box start -->
+        <!-- ************** -->
+        <div class="containerBoxInfo flex-container">
+          <div>
+            <img class="symbolInfo" src="symbols/noun_Information_3692322.png" alt="wiki logo" loading="lazy">
+          </div>
+          <div>
+            <p class="scriptstyle">
+              Bei einer bestimmten Temperatur gilt für die Bildung von Iodwasserstoff aus den Elementen eine
+              Gleichgewichtskonstante K=40. In einem Behälter mit dem Volumen von einem Liter reagieren 1mol Ioddampf
+              mit 1mol Wasserdampf.<br>
+              <b>Berechnen</b> Sie die Konzentration aller Stoffe im Gleichgewicht. Ermitteln Sie anschließend die
+              Ausbeute an Iodwasserstoff.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<hr>  <!-- seperator before new chapter-->
-<!-- ***************************************************************************************** -->
-<!-- *** End Of Chapter ********************************************************************** -->
-<!-- ***************************************************************************************** -->
 
-<!-- *****************************************************************************************-->
-<!-- *** Start Of Chapter ********************************************************************-->
-<!-- *****************************************************************************************-->
-<hr>  <!-- seperator before new chapter-->
-<h1 class="display-2" id="acidbase">Säure-Base-Gleichgewichte</h1>
+      <h2 class="display-4">Reaktionsgeschwindigkeit</h2>
+      <p class="scriptstyle">
+        <b>Auftrag: Erarbeiten Sie sich mit Hilfe der Quelle das Konzept der Reaktionsgeschwindigkeit.</b>
+      </p>
+      <ol class="scriptstyle">
+        <li>Nutzen Sie die <a
+            href="https://www.u-helmich.de/che/EF/inhaltsfeld-1/5-Geschwindigkeit/indexIF1-5.html"><b>Quelle</b></a> um
+          die folgenden
+          Fragen zu beantworten.</li>
+        <li><b>Formulieren</b> Sie für die Reaktionen von HCl und Zink die Reaktionsgleichung auf.</li>
+        <li><b>Erläutern</b> Sie an einem selbstgewählten Beispiel den Begriff (Säure-)Konzentration!</li>
+        <li><b>Erläutern</b> Sie das Konzept der Stoßtheorie!</li>
+        <li><b>Erläutern</b> Sie den Begriff Reaktionsgeschwindigkeit!</li>
+        <li><b>Erklären</b> Sie wie man die Reaktionsgeschwindigkeit erhöhen kann!</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <hr> <!-- seperator before new chapter-->
+  <!-- ***************************************************************************************** -->
+  <!-- *** End Of Chapter ********************************************************************** -->
+  <!-- ***************************************************************************************** -->
+
+  <!-- *****************************************************************************************-->
+  <!-- *** Start Of Chapter ********************************************************************-->
+  <!-- *****************************************************************************************-->
+  <hr> <!-- seperator before new chapter-->
+  <h1 class="display-2" id="acidbase">Säure-Base-Gleichgewichte</h1>
   <p class="lead">
-    Bisher haben wir Säuren und Basen immer getrennt bearbeitet. Aber auch hier hat sich die Wissenschaft weiterentwickelt und man hat festgestellt, dass auch Säuren und Basen mit chemischen Gleichgewichten zu tun haben. Wie das funktioniert, sollen Sie in diesem Abschnitt erarbeiten. 
+    Bisher haben wir Säuren und Basen immer getrennt bearbeitet. Aber auch hier hat sich die Wissenschaft
+    weiterentwickelt und man hat festgestellt, dass auch Säuren und Basen mit chemischen Gleichgewichten zu tun haben.
+    Wie das funktioniert, sollen Sie in diesem Abschnitt erarbeiten.
   </p>
 
 
-<!-- ***************************************************************************************** -->
-<!-- *** Start of Content ******************************************************************** -->
+  <!-- ***************************************************************************************** -->
+  <!-- *** Start of Content ******************************************************************** -->
 
-<div class="chapterContent">
-  <!-- start subsection -->
-  <h2 class="display-4">Brönstedt-Definition</h2>
+  <div class="chapterContent">
+    <!-- start subsection -->
+    <h2 class="display-4">Brönstedt-Definition</h2>
     <p class="lead">
-      Sie haben sich in den vorherigen Klassenstufen größtenteile mit Säuren und Basen nach der Definition von Arrhenius beschäftigt. Nun ist es Zeit diese wichtigen chemischen Begriffe zu erweitern.
+      Sie haben sich in den vorherigen Klassenstufen größtenteile mit Säuren und Basen nach der Definition von Arrhenius
+      beschäftigt. Nun ist es Zeit diese wichtigen chemischen Begriffe zu erweitern.
     </p>
     <p class="scriptstyle">
       <b>Auftrag: Erarbeiten Sie sich experimentell die Definition der Säuren und Basen nach Brönstedt.</b>
     </p>
+    <ol class="scriptstyle">
+      <li><b>Wiederholen</b> Sie die Definition von Säuren und Basen nach Arrhenius.</li>
+      <li><b>Lesen</b> Sie die Durchführung und führen Sie das Experiment durch. <b>Protokollieren</b> Sie das
+        Experiment.</li>
+      <li><b>Erklären</b> Sie in Ihrer Hypothese, warum Ammoniak keine Arrhenius-Base sein kann.</li>
+      <li>Beantworten Sie die gegebenen Fragen als Teil der Auswertung.</li>
       <ol class="scriptstyle">
-        <li><b>Wiederholen</b> Sie die Definition von Säuren und Basen nach Arrhenius.</li>
-        <li><b>Lesen</b> Sie die Durchführung und führen Sie das Experiment durch. <b>Protokollieren</b> Sie das Experiment.</li>
-        <li><b>Erklären</b> Sie in Ihrer Hypothese, warum Ammoniak keine Arrhenius-Base sein kann.</li>
-        <li>Beantworten Sie die gegebenen Fragen als Teil der Auswertung.</li>
-        <ol class="scriptstyle">
-          <li><b>Recherchieren</b> Sie die Begriffe <i>Brönstedt-Säure</i> und <i>-Base</i>.</li>
-          <li><b>Erläutern</b> Sie mit Hilfe einer Reaktionsgleichung ihre Beobachtungen.</li>
-          <li><b>Erläutern</b> Sie mit obiger Gleichung das den Begriff korrespondierende Säure-Base Paare.</li>
-          <li><b>Erklären</b> Sie, warum Natriumhydroxid zwar eine Arrhenius-Base, aber keine Brönstedt-Base ist.</li>
-        </ol>
+        <li><b>Recherchieren</b> Sie die Begriffe <i>Brönstedt-Säure</i> und <i>-Base</i>.</li>
+        <li><b>Erläutern</b> Sie mit Hilfe einer Reaktionsgleichung ihre Beobachtungen.</li>
+        <li><b>Erläutern</b> Sie mit obiger Gleichung das den Begriff korrespondierende Säure-Base Paare.</li>
+        <li><b>Erklären</b> Sie, warum Natriumhydroxid zwar eine Arrhenius-Base, aber keine Brönstedt-Base ist.</li>
       </ol>
-  <!-- Method-Box start -->
-  <!-- *****************-->
-  <div class="containerBoxMethod flex-container">
-    <div>
-      <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+    </ol>
+    <!-- Method-Box start -->
+    <!-- *****************-->
+    <div class="containerBoxMethod flex-container">
+      <div>
+        <img class="symbolInfo" src="symbols/noun_Chemistry_2643114.png" alt="thunder " loading="lazy">
+      </div>
+      <div>
+        <p class="scriptstyle">
+          Prüfen Sie den pH-Wert von konzentriertem Ammoniak! Füllen Sie <b>einige Tropfen</b> auf ein Uhrglass. Halten
+          Sie einen trockenen Indikatorstreifen über die Flüssigkeit. Feuchten Sie das Indikatorpapier dann an und
+          halten Sie es erneut über den Ammoniak.
+        </p>
+      </div>
     </div>
-    <div>
-      <p class="scriptstyle">
-        Prüfen Sie den pH-Wert von konzentriertem Ammoniak! Füllen Sie <b>einige Tropfen</b> auf ein Uhrglass. Halten Sie einen trockenen Indikatorstreifen über die Flüssigkeit. Feuchten Sie das Indikatorpapier dann an und halten Sie es erneut über den Ammoniak.
-      </p>
-    </div>
-  </div>
-  <!-- Method-Box end -->
-  <!-- ***************-->
-  <!-- start subsection -->
+    <!-- Method-Box end -->
+    <!-- ***************-->
+    <!-- start subsection -->
 
     <!-- start subsection -->
     <h2 class="display-4">Autoprotolyse des Wassers</h2>
     <p class="lead">
-      Destilliertes Wasser sollte eigentlich keinen Strom leiten. Wer es aber misst, stellt fest, dass es doch Strom leitet. Woher kommen aber die freien Ladungsträger, die wir als Strom messen?
+      Destilliertes Wasser sollte eigentlich keinen Strom leiten. Wer es aber misst, stellt fest, dass es doch Strom
+      leitet. Woher kommen aber die freien Ladungsträger, die wir als Strom messen?
     </p>
     <p class="scriptstyle">
       <b>Auftrag: Erklären Sie mit Hilfe der Fragen, warum Wasser Strom leiten kann.</b>
     </p>
-      <ol class="scriptstyle">
-        <li><b>Erläutern</b> Sie den Begriff <i>Protolyse</i>.</li>
-        <li><b>Erläutern</b> Sie den Begriff <i>Autoprotolyse des Wassers</i>.</li>
-        <li><b>Erläutern</b> Sie den Begriff <i>Oxonium-Ion</i>.</li>
-        <li><b>Erklären</b> Sie, warum Wasser auch als <i>Ampholyt</i> bezeichnet wird.</li>
-        <li><b>Erläutern</b> Sie den Begriff <i>Ionenprodukt des Wassers</i>.</li>        
-      </ol>
-  <!-- end subsection -->
-  <!-- start subsection -->
+    <ol class="scriptstyle">
+      <li><b>Erläutern</b> Sie den Begriff <i>Protolyse</i>.</li>
+      <li><b>Erläutern</b> Sie den Begriff <i>Autoprotolyse des Wassers</i>.</li>
+      <li><b>Erläutern</b> Sie den Begriff <i>Oxonium-Ion</i>.</li>
+      <li><b>Erklären</b> Sie, warum Wasser auch als <i>Ampholyt</i> bezeichnet wird.</li>
+      <li><b>Erläutern</b> Sie den Begriff <i>Ionenprodukt des Wassers</i>.</li>
+    </ol>
+    <!-- end subsection -->
+    <!-- start subsection -->
     <h2 class="display-4">Der pH-Wert</h2>
     <p class="lead">
-      Der pH-Wert sollte Ihnen schon seit der 9.Klasse immer wieder über den Weg gelaufen sein. Allerdings wurden bis jetzt nie die eigentlichen Hintergründe erklärt. Dafür haben Sie nun das chemische
-und mathematische Rüstzeug.
+      Der pH-Wert sollte Ihnen schon seit der 9.Klasse immer wieder über den Weg gelaufen sein. Allerdings wurden bis
+      jetzt nie die eigentlichen Hintergründe erklärt. Dafür haben Sie nun das chemische
+      und mathematische Rüstzeug.
     </p>
     <p class="scriptstyle">
       <b>Auftrag: Erläutern Sie das Konzept des pH-Werts.</b>
     </p>
-      <ol class="scriptstyle">
-        <li><b>Erläutern</b> Sie den Begriff <i>pH-Wert</i>.</li>
-        <li><b>Erläutern</b> Sie, warum der pH-Wert von Wasser 7 beträgt.</li>
-        <li><b>Erläutern</b> Sie den Begriff <i>pOH-Wert</i>.</li>        
-      </ol>
+    <ol class="scriptstyle">
+      <li><b>Erläutern</b> Sie den Begriff <i>pH-Wert</i>.</li>
+      <li><b>Erläutern</b> Sie, warum der pH-Wert von Wasser 7 beträgt.</li>
+      <li><b>Erläutern</b> Sie den Begriff <i>pOH-Wert</i>.</li>
+    </ol>
     <!-- end subsection -->
     <!-- start subsection -->
     <h2 class="display-4">Starke und schwache Säuren und Basen</h2>
     <p class="scriptstyle">
       <b>Auftrag: Erläutern Sie das Konzept starker und schwacher Säuren und Basen.</b>
     </p>
-      <ol class="scriptstyle">
-        <li>Leiten Sie an einem selbstgewählten Beispiel die Gleichgewichtskonstante KS für das Protolysegleichgewicht einer Brönstedt-Säure her. Leiten Sie außerdem die Gleichgewichtskonstante
-          KB für das Protolysegleichgewicht einer Brönstedt-Base her.</li>
-        <li><b>Erklären</b> Sie die Bedeutung der Gleichgewichtskonstanten.</li>
-        <li><b>Erläutern</b> Sie den pKS- und pKB-Wert.</li>
-        <li><b>Erklären</b> Sie die Begriffe starke und schwache Säuren bzw. Basen.</li>
-        <li><b>Erläutern</b> Sie den Zusammenhang von pKS und pH-Wert bei starken Säuren. <b>Erläutern</b> Sie auch das Äquivalent für Basen.</li>
-        <li><b>Berechnen</b> Sie den pH-Wert einer Salzsäure mit c(HCl) = 0,01mol/l.</li>        
-      </ol>
+    <ol class="scriptstyle">
+      <li>Leiten Sie an einem selbstgewählten Beispiel die Gleichgewichtskonstante KS für das Protolysegleichgewicht
+        einer Brönstedt-Säure her. Leiten Sie außerdem die Gleichgewichtskonstante
+        KB für das Protolysegleichgewicht einer Brönstedt-Base her.</li>
+      <li><b>Erklären</b> Sie die Bedeutung der Gleichgewichtskonstanten.</li>
+      <li><b>Erläutern</b> Sie den pKS- und pKB-Wert.</li>
+      <li><b>Erklären</b> Sie die Begriffe starke und schwache Säuren bzw. Basen.</li>
+      <li><b>Erläutern</b> Sie den Zusammenhang von pKS und pH-Wert bei starken Säuren. <b>Erläutern</b> Sie auch das
+        Äquivalent für Basen.</li>
+      <li><b>Berechnen</b> Sie den pH-Wert einer Salzsäure mit c(HCl) = 0,01mol/l.</li>
+    </ol>
     <!-- end subsection -->
-  
-</div>
 
-<hr>  <!-- seperator before new chapter-->
-<!-- ***************************************************************************************** -->
-<!-- *** End Of Chapter ********************************************************************** -->
-<!-- ***************************************************************************************** -->
+  </div>
+
+  <hr> <!-- seperator before new chapter-->
+  <!-- ***************************************************************************************** -->
+  <!-- *** End Of Chapter ********************************************************************** -->
+  <!-- ***************************************************************************************** -->
 
 
-  <!-- end of main content of script -->        
+  <!-- end of main content of script -->
   </div> <!-- DO NOT DELETE-->
 
 
-    <!-- DO NOT DELETE-->
-    <!-- JavaScript for Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-      crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+  <!-- DO NOT DELETE-->
+  <!-- JavaScript for Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
