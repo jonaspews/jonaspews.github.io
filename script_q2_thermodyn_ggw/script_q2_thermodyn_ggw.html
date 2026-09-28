@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en"  data-bs-theme="dark">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chemie im Weltraum: Wasser</title>
+  <meta name="description" content="Skript CiS: Wasser">
+  <meta name="author" content="Jonas Pews">
+  <!-- developed via https://bootstrapious.com/p/bootstrap-sidebar  -->
+
+
+  <!-- Bootstrap 5 CSS CDN TODO: ALWAYS check for new Bootstrap -->
+  <!-- old version <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- own CSS -->
+  <link rel="stylesheet" href="../../css/scripts_global_styles.css">
+
+  <!-- MathJax support -->
+  <script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <!-- for reflection radar chart-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>  
+
+  <!-- KaTex -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.css" integrity="sha384-ZPG16qaLEYhaeOLR/7TSh574xruFCYuPrEldfLjIeKY6Ydn71Mpb7UYzkc9g1YrU" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.js" integrity="sha384-t6DI6M9eGZH7T3G/OnFmKeIuD5g9lSHY+ZiOvCub8pkQmqioX1LmcZ9w3C0J+yMl" crossorigin="anonymous"></script>
+
+  <!-- Optional: Eigenes CSS -->
+  <style>
+    .chem-formula {
+      font-family: 'Arial', sans-serif;
+      font-size: 1.5rem;
+      color: #e74c3c;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header> <!-- navigation (still TODO)-->
+    <!-- <h1 class="display-1 text-white">Q2</h1> -->
+    <!-- TODO: Chemistry by Minnie Pigeon from the Noun Project-->
+    <button class="accordion display-4 text-white"><img id="headerSymbol" src="../../symbols/noun_Chemistry_55633_w.png">Inhalt</button>
+    <div class="panel" id="headerPanel">
+      <p class="display-4 panelParagraph"><a href="#intro" class="hrefContent">Einführung</a></p>
+      <p class="display-4 panelParagraph"><a href="#water_for_30d" class="hrefContent">Wasserverbrauch</a></p>
+      <p class="display-4 panelParagraph"><a href="#mystery_gas" class="hrefContent">Mysteriöse Gase</a></p>
+      <p class="display-4 panelParagraph"><a href="#formula_lego" class="hrefContent">Wertigkeit</a></p>
+      <!-- following entry should always be last entry in panel-->
+      <p class="display-5 panelParagraph text-end"><a href="../../index.html" class="hrefContent">&#171;&#171;</a>
+        <!--<img id="switchDL" src="../../symbols/noun-erlenmeyer-2673382_sw.png">--></p>
+    </div>
+
+  </header>
+  
+  <!-- start main content of script -->
+  <div id="mainContent" class="container-fluid">
+    <div class="row">
+      <h1 class="display-1">Skript - Chemie im Weltall: Wasser</h1>
+      <hr>  <!-- seperator before new chapter-->
+        <!-- style for script: use display-2 for chapter headlines-->
+        <h1 id="intro" class="display-2">Einführung</h1>
+          <p class="lead">
+            Mit Hilfe dieses Skriptes sollt ihr euch das Thema <i>Wasser</i> selbstständig erarbeiten. Selbstständig
+            bedeutet wirklich SELBST und STÄNDIG. 
+          </p>
+          <p class="lead">
+            Der Unterricht im klassischen Sinne hat aufgehört. Ihr könnt euer eigenes
+            Tempo bestimmen und eigene Partner suchen. Sollte die Lehrkraft nicht da sein, habt ihr nun immer
+            das Material um selbstständig zu arbeiten.
+          </p>
+          <p class="lead">Die Lehrkraft soll dabei als Berater und Helfer zur Seite stehen. Wenn du Fragen hast oder auf Probleme stößt,
+            die du weder allein noch im Team lösen kannst, dann frag nach!</p>
+          <p class="lead">
+          Für jedes Kapitel dieser Reihe ist angegeben, wie du vorgehen solltest. Die Vorüberlegungen sollen dir helfen
+          Wissen zu reaktivieren oder Wissenslücken zu schließen. Wenn du dich an die vorgegebenen Vorgehensweisen hältst,
+          sollte es keine Probleme geben.</p>
+          <p class="lead">
+          Vielleicht fragst du dich jetzt, warum die Lehrkraft so faul sein darf und du jetzt alles "allein" machen musst.
+          Der Grund ist recht einfach: die Lehrkraft haben alles bereits so vorbereitet, dass du dich intensiv mit einem Thema
+          beschäftigen kannst. Dadurch bleibt es besser in deinem Gedächtnis. Du lernst effektiver die Inhalte, verbesserst
+          dein eigenes Zeitmanagement und analysierst deine eigenen Fähig- und Fertigkeiten.
+          </p>
+
+          <h2 class="display-4">Bewertung</h2>
+          <p class="lead">
+            Die Bewertung im Semester erfolgt anhand von:
+          </p>
+            <div>
+              <ul class="lead">
+                <li>Tests</li>
+                <li>Protokollen</li>
+                <li>Mitarbeit im Unterricht bei der Sicherung und Diskussion von Inhalten</li>
+                <li>ggf. gesammelte Unterschriften pro Kapitel (nach Abspraache mit der Lehrkraft)</li>
+              </ul>
+            </div>
+          <p class="lead">
+            Auf Grund unvorhergesehener Umstände (z.B. Pandemie) kann sich diese Liste auch
+            ändern.
+          </p>
+          
+
+<!-- *****************************************************************************************-->
+<!-- *** Start Of Chapter ********************************************************************-->
+<!-- *****************************************************************************************-->
+<hr>  <!-- seperator before new chapter-->
+<h1 class="display-2" id="water_for_30d">Wasserverbrauch</h1>
+  <p class="lead">
+    Herzlichen Willkommen! Du wurdest ausgewählt bei der Aquarius-Raummission mitzuarbeiten. Du wirst sowohl
+    den Astronaut:innen auf der Raumstation Auarius als auch dem Professor auf der Erde mit deinem chemischen
+    Expertenwissen helfen, verschiedene Probleme zu lösen.
+  </p>
+  <!-- COMIC -->
+  <!-- START --> 
+  <!--1st row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div class="flex-grow-1">
+        <p class="lead">Valentina und Alexander sind die mutigen Forscher, die sich auf den Weg zur Aquarius-Raumstation machen. Sie sollen dort Experimente durchführen und weitere Raumfahrtmissionen in die Tiefen des Alls vorbereiten.</p>
+    </div>
+    <div>
+        <img src="img/2026_raumfahrerin_neu_2.png" alt="Valentina und Alexander" class="img-fluid" style="max-width: 300px;">
+    </div>
+  </div>
+  <!--2nd row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div>
+        <img src="img/2026_professor_neu.png" alt="Professor" class="img-fluid" style="max-width: 300px;">
+    </div>
+    <div class="flex-grow-2">
+        <p class="lead">Valentina und Alexander sind die mutigen Forscher, die sich auf den Weg zur Aquarius-Raumstation machen. Sie sollen dort Experimente durchführen und weitere Raumfahrtmissionen in die Tiefen des Alls vorbereiten.</p>
+    </div>    
+  </div>
+  <!--3rd row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div class="flex-grow-1">
+        <p class="lead">Die Aquarius-Raumstation ist vielleicht schon etwas in die Jahre gekommen, aber ist eigentlich so gut wie unzerstörbar. Das Sicherheitsdesign wurde von der Titanic übernommen. Hier werden die Forscher:innen die nächste Zeit verbringen.</p>
+    </div>
+    <div>
+        <img src="img/2026_raumstation_neu.png" alt="Aquarius-Raumstation" class="img-fluid" style="max-width: 300px;">
+    </div>
+  </div>
+  <!-- END -->
+  <!-- COMIC -->
+  
+  <p class="lead">
+    <b>Das erste Problem wartet schon auf dich:</b> wir brauchen Wasser auf der Raumstation. Aber wie viel sollen wir mit der Rakete nach oben schicken?
+  </p>
+  <p class="lead">Der Professor braucht deine Berechnungen in ca. <b>90 Minuten</b>. Das sollte genug Zeit sein, um alles herauszufinden. Vielleicht teilst du dir die Arbeit mit anderen Kolleg:innen!
+  </p>
+  <p class="lead">
+    <b>Am Ende solltest du</b> abschätzen können, wie viel Wasser ein Mensch in ca. 30 Tagen verbraucht.
+  </p>
+  
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
+  <div class="chapterContent"> <!-- START div "chapterContent" -->
+    <h2 class="display-4">Wie viel Wasser verbrauchen zwei Menschen in 30 Tagen?</h2> <!-- START subsection-->
+      <p class="lead">Valentina und Alexander sind ca. 30 Tage oben, bevor die nächste Versorgungsrakete gestartet werden kann. So lange müssen beide mit Wasser versorgt sein.</p>
+      <p class="lead">
+        <b>Auftrag: Ermittle den ungefähren Wasserverbrauch für zwei Personen in 30 Tagen.</b>
+      </p>
+        <ol class="lead">
+          <li><b>Berechne</b> mit Hilfe der gegebenen Informationen (siehe unten) den Wasserverbrauch in einem bestimmten
+              Lebensbereich von zwei Personen über 30 Tage! (Tipp: 1dm³ = 1 Liter )</li>
+          <li>Stelle die Ergebnisse in Form einer <b>Tabelle</b> übersichtlich dar. Am besten ist jeder Lebensbereich ist eine Spalte.</li>
+        </ol>
+        
+        <!-- COMIC -->
+  <!-- START --> 
+  <!--1st row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div class="flex-grow-1">
+        <h5 class="display-5">Badezimmer</h5>
+        <p class="lead">
+          <ul class="lead">
+          <li><b>Toilette</b> – Der Spülkasten hat folgende Abmaße: 40cm x 30cm x 10cm (Breite/Höhe/Tiefe). Wie
+              oft benutzt du die Toilette am Tag?</li>
+          <li><b>Zähneputzen</b> – Nimm einen 400 mL Meßbecher und halte ihn für 5 Sekunden unter laufendes
+              Wasser. Du kannst auch ein anderes Gefäß nehmen, falls du keinen Meßbecher hast, z.B. eine
+              0,5l Cola-Flasche. Schätze dann ab wie lange du Zähne putzt und berechne den Verbrauch (Nicht
+              vergessen: 2x täglich Zähneputzen).</li>
+          <li><b>Duschen</b> – Auf der Raumstation sind alle Wasserleitungen im Bad gleich groß. Du kannst also die
+              Menge vom Zähneputzen nutzen. Wie lange und wie oft die Woche duschst du?</li>
+          <li><b>Baden</b> – Die Badewanne misst 40cm x 50cm x 140cm (Höhe/Tiefe/Breite). Wie oft gehst du im
+              Monat baden?</li>
+          </ul>
+        </p>
+    </div>
+    <div>
+        <img src="img/2026_k1_badezimmer.png" alt="Valentina und Alexander" class="img-fluid" style="max-width: 300px;">
+    </div>
+  </div>
+  <!--2nd row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div>
+        <img src="img/2026_k1_kueche.png" alt="Professor" class="img-fluid" style="max-width: 300px;">
+    </div>
+    <div class="flex-grow-2">
+        <h5 class="display-5">Nahrung</h5>
+        <p class="lead">
+          <ul class="lead">
+            <li><b>Kochen</b> – Beim Kochen verbraucht man durchschnittlich 4L pro Mahlzeit. Wie oft kocht ihr pro Woche?</li>
+            <li><b>Pflanzen</b> – Damit die Nutzpflanzen genügend Nahrung produzieren, müssen sie jeden Tag gegossen werden. Dafür benötigt man ca. 5L.</li>
+            <li><b>Fische</b> – In der Raumstation sind zwei Aquarien aufgebaut, Abmaße 40cm x 50cm x 70cm (Höhe/Tiefe/Breite), die zwei Mal pro Monat gereinigt werden müssen. Dabei wird das Wasser komplett ausgetauscht.</li>
+            <li><b>Kaffee</b> – Astronauten sind berüchtigt für ihren Kaffeeverbrauch. Jede Tasse fasst 200ml und davon werden ungefähr 5 am Tag getrunken.</li>
+          </ul>
+        </p>
+    </div>    
+  </div>
+  <!--3rd row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div class="flex-grow-1">
+      <h5 class="display-5">Alltag</h5>
+        <p class="lead">
+          <ul class="lead">
+            <li><b>Trinken</b> – überlege dir, wie viel Cola, Saft etc. du pro Tag trinkst und nimm diese Menge für den Wasserverbrauch.</li>
+            <li><b>Sport</b> – Unsere Astronauten müssen fit bleiben, daher müssen sie min. jeden zweiten Tag Sport treiben und dabei ca. einen Liter Wasser extra trinken.</li>
+            <li><b>Blumen</b> – Eine grüne Umgebung ist gut für die Psyche, die Blumen müssen jeden Tag mit ca. 5L begossen werden.</li>    
+            <li><b>Hygiene</b> – Hände waschen ist wichtig, nimm einen 400 mL Becher und halte ihn 5 Sekunden unter laufendes Wasser. Wie lange und wie oft wäschst du dir die Hände? Berechne daraus den Wasserverbrauch.</li>
+          </ul>
+        </p>
+    </div>
+    <div>
+        <img src="img/2026_k1_hobbyraum.png" alt="Aquarius-Raumstation" class="img-fluid" style="max-width: 300px;">
+    </div>
+  </div>
+  <!--4th row-->
+  <div style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;" 
+        class="p-3 
+               mb-5 
+               rounded 
+               d-flex flex-column flex-md-row 
+               align-items-center 
+               border border-light 
+               gap-2">
+    <div>
+        <img src="img/2026_k1_reinigung.png" alt="Professor" class="img-fluid" style="max-width: 300px;">
+    </div>
+    <div class="flex-grow-2">
+      <h5 class="display-5">Reinigung</h5>  
+      <p class="lead">
+        <ul class="lead">
+          <li><b>Spülmaschine</b> – Ein Spülgang verbraucht ca. 10 L pro Waschgang. Wie oft in der Woche spült deine Familie ungefähr das Geschirr? Wie oft werden zwei Personen dann das Geschirr spülen? Denk auch daran, dass Töpfe etc. abgewaschen werden müssen.</li>
+          <li><b>Waschmaschine</b> – Ein Waschgang verbraucht ca. 40 L. Denke auch hier an deine Familie. Wie oft wascht ihr Wäsche pro Woche? Schätze auch hier wieder für zwei Personen ab.</li>
+          <li><b>Reinigen</b> – Die Küche und das Bad müssen einmal die Woche gewischt werden. Dazu benötigt man mindestens einen 10 Liter Eimer.</li>
+          <li><b>Fensterputzen</b> – Die Raumstation hat ca. 12m² Fensterfläche. Pro m² braucht man 200 mL. Die Fenster werden einmal im Monat gereinigt.</li>
+        </ul>
+      </p>
+    </div>    
+  </div>
+  <!-- END -->
+  <!-- COMIC -->
+  <!-- END subsection-->
+  </div> <!-- END div "chapterContent" -->
+<hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
+
+<!-- *****************************************************************************************-->
+<!-- *** Start Of Chapter ********************************************************************-->
+<!-- *****************************************************************************************-->
+<hr>  <!-- seperator before new chapter-->
+<h1 class="display-2" id="mystery_gas">Mysteriöse Gase</h1>
+  <p class="lead">
+    Sehr gut! Die Astronauten sind eine Weile versorgt. Aber die Raumstation wurde während der letzten Finanzkrise ein wenig billig zusammengeschraubt. Da sind einige Teile locker. Am besten du hörst dir die Nachricht selbst mal an. Was kann da passiert sein?
+  </p>
+  <!-- VIDEO -->
+  <!-- START--> 
+  <div class="row justify-content-center">  
+  <div  style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;
+              margin-bottom: 2rem;
+              padding: 1rem;
+              width: 90%;"
+        class="border border-light row justify-content-center">
+    <video controls style="width: 90%; height: auto; max-width: 800px; max-height: 600px;"
+         poster="vorschaubild.jpg" poster="vorschaubild.jpg">
+      <source src="img/01_BioHo_rspielSmall.mp4" type="video/mp4">
+      Dein Browser unterstützt keine Videos. 
+      <a href="img/01_BioHo_rspielSmall.mp4">Download hier</a>.
+    </video>
+  </div>
+  </div>
+  <!-- END -->
+  <!-- VIDEO -->
+
+  <p class="lead">
+    <b>Das zweite Problem wartet schon auf dich:</b> du musst rausfinden, welche Gase entstanden sind und was das mit dem Wasser zu tun hat.
+  </p>
+  <p class="lead">Die Crew braucht deine Erkenntnisse in ca. <b>90 Minuten</b>. Das sollte genug Zeit sein, um alles herauszufinden. Vielleicht teilst du dir die Arbeit mit anderen Kolleg:innen!
+  </p>
+  <p class="lead">
+    <b>Am Ende solltest du</b> erklären können, wie man die entstehenden Gase nachweisen kann und wie Wasser aufgebaut ist. Außerdem solltest du wissen, was ein Hoffmannscher Zersetzungsapparat ist.
+  </p>
+  
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
+  <div class="chapterContent"> <!-- START div "chapterContent" -->
+    <h2 class="display-4">Welche Gase entstehen bei der elektrischen Zersetzung von Wasser?</h2> <!-- START subsection-->
+      <p class="lead">Die Astronauten der Aquarius-Raumstation haben sich das technische Problem noch mal genauer angesehen. Schlauer sind sie trotzdem nicht geworden. Dabei kann ihnen nur du und der Professor helfen!</p>
+      <p class="lead">
+        <b>Auftrag: Schau und hör dir den Mitschnitt der Kommunikation von der Raumstation noch einmal an. Notiere dir stichpunktartig was passiert ist.</b>
+      </p>
+      <p class="lead"><b>Auftrag: Untersuche experimentell, welche Gase entstanden sein könnten.</b></p>
+        <ol class="lead">
+          <li>
+            <b>Plant und beschreibt</b> ein Experiment, mit dem ihr den Unfall am Wassertank mit den Materialien und den Hinweisen des Professors nachstellt
+          </li>
+          <li><b>Plant und beschreibt</b> geeignete Versuche, um das/die entstehende(n) Gas(e) nachzuweisen.</li>
+          <li>Besprecht die Durchführung mit eurer Lehrkraft.</li>
+          <li>Führt die <b>Experimente</b> durch und <b>protokolliert</b> sie.</li>
+          <li><b>Erklärt</b>, welche Gase entstanden sind.</li>
+        </ol>
+        
+        <!-- COMIC -->
+        <!-- START --> 
+        <!--1st row-->
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <h5 class="display-5">Durchführung</h5>
+              <p class="lead">
+                Um den Unfall auf der Raumstation nachzubauen hat mein Kollege Hoffmann einen kleinen Apparat gebaut. Vielleicht kann man den später irgendwie noch gebrauchen. Die entstehenden Gase kann man darin dann auch vielleicht pneumatisch Auffangen. Ihr findet bestimmt noch ein paar kleine Reagenzgläser irgendwo. Verbindet diesen Apparat mit dem Netzteil. Stellt die Spannung auf 12 Volt. Sobald das Netzteil angeschaltet wird, nicht mehr ins Wasser fassen!!! <br>
+                Beobachtet was an den metallischen Stromleitern passiert und wartet ein wenig bis genug Gas in den Reagenzgläsern ist. Notiert euch auch das Volumenverhältnis zwischen den entstehenden Gasen. Führt dann die bekannten Nachweisreaktionen durch. (Tipp: Vielleicht reicht erst mal ein Glimmspan als Gerät bevor ihr im Chemikalienschrank rumwühlt!)
+              </p>
+          </div>
+          <div>
+              <img src="img/2026_k2_hoffmann.png" alt="Valentina und Alexander" class="img-fluid" style="max-width: 300px;">
+          </div>
+        </div>
+        
+        <!-- END -->
+        <!-- COMIC -->
+  <!-- END subsection-->
+  </div> <!-- END div "chapterContent" -->
+<hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
+
+<!-- *****************************************************************************************-->
+<!-- *** Start Of Chapter ********************************************************************-->
+<!-- *****************************************************************************************-->
+<hr>  <!-- seperator before new chapter-->
+<h1 class="display-2" id="formula_lego">Hat Wasser immer die Formel H<sub>2</sub>O?</h1>
+  <p class="lead">
+    Die beiden Crew-Mitglieder wollen sich nach den ganzen Experimenten ein wenig ausruhen. Doch der Forschergeist ist geweckt. Wasser besteht aus Wasserstoff und Sauerstoff. Und die Formel kenn man ja: H<sub>2</sub>O. Aber ist das überall so? Das Universum ist schließlich groß und voller unbekannter Planeten.
+  </p>
+  
+  <p class="lead">
+    <b>Das dritte Problem wartet schon auf dich:</b> du musst den Valentina und Alexander erklären, warum Wasser immer H<sub>2</sub>O ist.
+  </p>
+  <p class="lead">Die Crew hat gerade eine Pause von ca. <b>135 Minuten</b>. Das sollte genug Zeit sein, um alles zu erklären. Vielleicht teilst du dir die Arbeit mit anderen Kolleg:innen!
+  </p>
+  <p class="lead">
+    <b>Am Ende solltest du</b> erklären können, was die Wertigkeit von Elementen ist und was sie mit LEGO-Bausteinen zu tun hat. Du solltest dann auch für fast jede Verbindung die Formel herleiten können.
+  </p>
+  
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
+  <div class="chapterContent"> <!-- START div "chapterContent" -->
+    <h2 class="display-4">Die Wertigkeit von Atomen</h2> <!-- START subsection-->
+      <p>Der Professor hat von deinem kleinen Problem gehört. Er hat dir ein wenig Lernmaterial geschickt. Das sollte dir bei der Lösung helfen.</p>
+      <p class="lead">
+        <b>Auftrag: Erläutere, warum Wasser immer die Formel H<sub>2</sub>O hat.</b>
+      </p>
+        <ol class="lead">
+          <li>
+            <b>Als kleine Wiederholung</b>: du kannst mit dem BOHR'schen Atommodell eigentlich schon erklären, warum Wasser immer H<sub>2</sub>O ist. <b>Zeichne</b> dazu das BOHR'sche Atommodell der beiden Elemente Sauerstoff und Wasserstoff und <b>erkläre</b> mit Hilfe der Oktettregel (und ggf. der LEWIS-Formel), wie sich die Atome zu Wasser verbinden.
+          </li>
+          <li><b>Lies</b> den Infotext des Professors.</li>
+          <li><b>Erläutere</b> den Begriff <i>Wertigkeit</i> an einem eigenen Beispiel.</li>
+          <li>Erläutere mit Hilfe deiner Lösung warum es nur H<sub>2</sub>O als Formel geben kann. Bilde die Formel von Wasser mit Hilfe der vorgegebenen Arbeitsschritte.</li>
+        </ol>
+        
+        <!-- COMIC -->
+        <!-- START --> 
+        <!--1st row-->
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <h5 class="display-5">Wertigkeit von Atomen</h5>
+              <p class="lead">
+                Der englische Chemiker SIR EDWARD FRANKLAND schlug 1852 zum ersten Mal das Konzept der Wertigkeit vor. Die Wertigkeit eines Atoms gibt an, wie viele Wasserstoffatome es binden oder ersetzen kann. Zahlreiche Untersuchungen haben gezeigt, dass das Wasserstoffatom selbst immer einwertig ist. <br>
+                Die Wertigkeit eines Atoms wird mit einer römischen Zahl gekennzeichnet. Viele Chemiker haben darauf hin weitere Stoffe untersucht und haben die Wertigkeit verschiedener Elemente rausgefunden. Die Wertigkeit der Atome von verschiedenen Elementen kann man heute aus Tabellen ablesen.
+              </p>
+              <img src="img/2026_k3_lego_wertigkeit_allg.png" alt="Prof and Lego" class="img-fluid align-items-center" style="max-width: 600px;">
+              <p class="lead">Mit Hilfe der Wertigkeit kann man auch die Formeln von anderen Verbindungen ermitteln. Als Hilfsmittel kann man Legosteine als Modell benutzen. Ein Atom wird durch ein Legobaustein modellhaft dargestellt. Moleküle bestehen aus mehreren Legosteinen. Man darf nur zwei Reihen übereinander bauen. Folgende Schritte müssen nun beachtet werden:</p>
+              <ol>
+                <li><b>Wertigkeit herausfinden:</b> Die Wertigkeit der einzelnen Atome werden aus Tabellen abgelesen. Du kannst sie auch aus dem Periodensystem ableiten:
+                <ul>
+                  <li>1.HG: 1</li>
+                  <li>2.HG: 2</li>
+                  <li>3.HG: 3</li>
+                  <li>4.HG: 4</li>
+                  <li>5.HG: 3</li>
+                  <li>6.HG: 2</li>
+                  <li>7.HG: 1</li>
+                </ul>
+                Es gibt aber auch Abweichungen. Daher empfiehlt es sich, noch mal nachzuschauen.
+                </li> 
+                <li><b>Wertigkeit ausgleichen:</b> Die Legosteine werden durch Vervielfachen solange ergänzt, bis alle Steckplätze der unteren Reihe belegt sind. Es dürfen keine Ecken entstehen! Sauerstoff hat die Wertigkeit II. Es hat also zwei Steckplätze. Man kann zwei Bausteine für den einwertigen Wasserstoff drauf setzen.</li>
+                <li><b>Formel erstellen:</b> Die Anzahl gleicher Legosteine wird in der Formel durch eine kleine, tiefergestellte Zahl verdeutlicht. Da Chemiker faul sind, braucht man nie eine "1" schreiben. Das Legosteinmodell für Wasser besteht aus einem Sauerstoff-Legostein und zwei Wasserstoff-Legosteinen. Die Formel ist also immer H<sub>2</sub>O (nicht H<subs>2</subs>O<subs>1</subs>).</li>
+              </ol>
+          </div>
+        </div>
+        
+        <!-- END -->
+        <!-- COMIC -->
+
+        <h2 class="display-4">Übung zur Wertigkeit</h2> <!-- START subsection-->
+        <p class="lead">
+          <b>Auftrag: Zeichne das Legosteinmodell für die gegebenen Formeln!</b>
+        </p>
+        <ol class="lead">
+          <li>Br<sub>2</sub></li>
+          <li>Br<sub>2</sub>O</li>
+          <li>SO<sub>2</sub></li>
+          <li>Al<sub>2</sub>O<sub>3</sub></li>
+          <li>MgO</li>
+        </ol>
+        <p class="lead">
+          <b>Auftrag: Stelle die Formel folgender Verbindungen auf (Tipp: Schreibe immer die 3 Schritte auf)!</b>
+        </p>
+        <p class="lead">Die römischen Zahlen in der Klammer sind die Wertigkeit der Metall-Atome.</p>
+        <ol class="lead">
+          <li>Kupfer(I)-oxid</li>
+          <li>Eisen(III)-oxid</li>
+          <li>Calciumoxid</li>
+          <li>Aluminiumchlorid</li>
+        </ol>
+
+
+  <!-- END subsection-->
+  </div> <!-- END div "chapterContent" -->
+<hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
+
+<!-- *****************************************************************************************-->
+<!-- *** Start Of Chapter ********************************************************************-->
+<!-- *****************************************************************************************-->
+<hr>  <!-- seperator before new chapter-->
+<h1 class="display-2" id="equation_water">Die Reaktionsgleichung für die Synthese von Wasser</h1>
+  <p class="lead">
+    Wenn man Energie in Form von Strom in Wasser reinsteckt, bekommt man Wasserstoff und Sauerstoff. Wenn man die beiden jetzt wieder mit einander verbindet, bekommt man die Energie dann zurück? Vielleicht kann man so Strom erzeugen oder irgendwie Raketen antreiben? Der Professor experimentiert fleissig rum, aber sehr selbst.
+  </p>
+  <!-- VIDEO -->
+  <!-- START-->
+  <div class="row justify-content-center">  
+  <div  style="background-color: #26303a; 
+              box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+              transition: box-shadow 0.3s ease;
+              margin-bottom: 2rem;
+              padding: 1rem;
+              width: 90%;"
+        class="border border-light row justify-content-center">
+    <video controls style="width: 90%; height: auto; max-width: 800px; max-height: 600px;"
+         poster="vorschaubild.jpg" poster="vorschaubild.jpg">
+      <source src="img/02_Wasserstoff_Intro.mp4" type="video/mp4">
+      Dein Browser unterstützt keine Videos. 
+      <a href="img/02_Wasserstoff_Intro.mp4">Download hier</a>.
+    </video>
+  </div>
+  </div>
+  <!-- END -->
+  <!-- VIDEO -->
+
+  <p class="lead">
+    <b>Das vierte Problem wartet schon auf dich:</b> du musst der Crew und dem Profesor helfen, damit sie das richtige Mischungsverhältnis finden.
+  </p>
+  <p class="lead">Der nächste Raketenstart soll bald stattfinden. Damit alles rechtzeitig fertig wird, braucht die Bodencrew deine Ergebnisse in ca. <b>135 Minuten</b>. Das sollte genug Zeit sein, um alles zu klären. Vielleicht teilst du dir die Arbeit mit anderen Kolleg:innen! Alexander und Valentina forschen auch auf der Raumstation. Sie können vielleicht auch helfen.
+  </p>
+  <p class="lead">
+    <b>Am Ende solltest du</b> erklären können, was die Reaktionsgleichung für die Synthese von Wasser aufgestellt wird. Du solltest die Reaktion mit Hilfe einer ausgeglichenen Reaktionsgleichung beschreiben können. Dabei solltest du das LEGO-Modell benutzen können. 
+  </p>
+  
+
+<!-- ***************************************************************************************** -->
+<!-- *** Start of Content ******************************************************************** -->
+
+  <div class="chapterContent"> <!-- START div "chapterContent" -->
+    <h2 class="display-4">Wortgleichung und Formelgleichung</h2> <!-- START subsection-->
+      <p class="lead">Wunderbar, Sauerstoff und Wasserstoff machen zusammen einen wunderbaren Raketentreibstoff. Aber der Professor hatte ja noch Probleme bei der Mischung der beiden Gase. Die Versuche zum Aufbau von Wasserstoff haben ja gezeigt, dass das Verhältnis von H<sub>2</sub> zu O<sub>2</sub> 2:1 sein muss. Aber geht auch was anderes? Alexander hat da anscheinend schon eine Idee.</p>
+      
+      <!--<p class="lead">
+        <b>Auftrag: Erläutere, warum Wasser immer die Formel H<sub>2</sub>O hat.</b>
+      </p>
+        <ol class="lead">
+          <li>
+            <b>Als kleine Wiederholung</b>: du kannst mit dem BOHR'schen Atommodell eigentlich schon erklären, warum Wasser immer H<sub>2</sub>O ist. <b>Zeichne</b> dazu das BOHR'sche Atommodell der beiden Elemente Sauerstoff und Wasserstoff und <b>erkläre</b> mit Hilfe der Oktettregel (und ggf. der LEWIS-Formel), wie sich die Atome zu Wasser verbinden.
+          </li>
+          <li><b>Lies</b> den Infotext des Professors.</li>
+          <li><b>Erläutere</b> den Begriff <i>Wertigkeit</i> an einem eigenen Beispiel.</li>
+          <li>Erläutere mit Hilfe deiner Lösung warum es nur H<sub>2</sub>O als Formel geben kann. Bilde die Formel von Wasser mit Hilfe der vorgegebenen Arbeitsschritte.</li>
+        </ol>-->
+        
+        <!-- COMIC -->
+        <!-- START --> 
+        <!--1st row-->
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <h5 class="display-5">Alexanders Logbuch</h5>
+              <p class="lead">
+                Wir haben eine Maschine entwickelt, die chemische Reaktionen genauer untersucht. So wollen wir dem Professor mit der Mischung für seinen Raketentreibstoff helfen. Leider versteht die Maschine nur Formeln und Symbole und keine Wortgleichungen.
+              </p>
+              <img src="img/2026_k4_maschine_alex2.png" alt="Alexander and machine" class="img-fluid align-items-center" style="max-width: 600px;">
+          </div>
+        </div>
+        
+        <!-- END -->
+        <!-- COMIC -->
+
+        <p class="lead">
+          <b>Auftrag: Hilf Alexander mit der Eingabe!</b>
+        </p>
+        <ol class="lead">
+          <li>Schreibe zuerst die Wortgleichung für die Synthese von Wasser aus Wasserstoff und Sauerstoff auf. Nutze dazu die gegebene Tabelle.</li>
+          <li>Ersetze dann die Worte durch Formeln. Wenn du die Formel für einige Stoffe nicht weißt, schau in deinem Tafelwerk nach. Denke an BrINClHOF!</li>
+        </ol>
+        <!-- COMIC -->
+        <!-- START --> 
+        <!--1st row-->
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <img src="img/2026_k4_tabelle_wertigkeit_01.png" alt="prof und tafel" class="img-fluid align-items-center" style="max-width: 600px;">
+          </div>
+        </div>
+        
+        <!-- END -->
+        <!-- COMIC -->
+
+      <h2 class="display-4">Formelgleichungen ausgleichen - Grundprinzip</h2> <!-- START subsection-->
+
+        <!-- COMIC -->
+        <!-- START --> 
+        <!--1st row-->
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <h5 class="display-5">Alexanders Logbuch</h5>
+              <p class="lead">
+                Danke für die Hilfe, aber es scheint noch etwas schwieriger zu sein. Die Maschine zeigt eine Fehlermeldung: das Gesetz der Erhaltung der Masse muss beachtet werden. Wir sollen die Formelgleichung ausgleichen. Was heißt das? Wo ist der Professor, wenn man ihn braucht?!
+              </p>
+              <img src="img/2026_k4_maschine_alex2.png" alt="Alexander and machine" class="img-fluid align-items-center" style="max-width: 600px;">
+          </div>
+        </div>
+        <div style="background-color: #26303a; 
+                    box-shadow: 0 4px 8px rgba(156, 4, 211, 0.3);
+                    transition: box-shadow 0.3s ease;" 
+              class="p-3 
+                    mb-5 
+                    rounded 
+                    d-flex flex-column flex-md-row 
+                    align-items-center 
+                    border border-light 
+                    gap-2">
+          <div class="flex-grow-1">
+              <h5 class="display-5">Meldung des Professors</h5>
+              <p class="lead">
+                Beim Ausgleichen kann man nur die Anzahl der Moleküle verändern. Man schreibt die Menge der Moleküle als Zahl vor die Formel! Die Verbindungen kann man nicht mehr ändern, also nicht den Index ändern. H<sub>2</sub>O bleibt H<sub>2</sub>O!! Versuch es noch einmal! Du kannst auch das LEGO-Modell nutzen, um dir das zu verbildlichen.
+              </p>
+              <img src="img/2026_k4_maschine_professor.png" alt="Prof and machine" class="img-fluid align-items-center" style="max-width: 600px;">
+          </div>
+        </div>
+        <!-- END -->
+        <!-- COMIC -->
+
+        <p class="lead">
+          <b>Auftrag: Hilf Alexander noch einmal mit der Eingabe!</b>
+        </p>
+        <ol class="lead">
+          <li><b>Schreibe zuerst die Wortgleichung</b> für die Synthese von Wasser aus Wasserstoff und Sauerstoff auf. Nutze dazu die gegebene Tabelle.</li>
+          <li><b>Ersetze dann die Worte durch Formeln.</b> Wenn du die Formel für einige Stoffe nicht weißt, schau in deinem Tafelwerk nach. Denke an BrINClHOF!</li>
+          <li><b>Zeichne die LEGO-Modelle unter die Formeln,</b> wie in der Tabelle unten. Denke an BrINClHOF und die Wertigkeit der Atome!</li>
+          <li><b>Zähle nun die Anzahl der LEGO-Bausteine</b> für jedes Element. Wenn die Anzahl links und rechts nicht gleich ist, musst du die Reaktionsgleichung noch ausgleichen. Dazu musst du nun weitere LEGO-Blöcke von Wasser, Sauerstoff oder Wasserstoff hinzufügen. (TIPP: wenn du Blöcke hinzufügen musst, fang mit einem weiteren Wasserblock an. Schau dir danach die Stoffe auf der linken Seite an.)</li>
+          <li>Wenn du nun links und rechts gleichviele LEGO-Stein hast, musst du nun die <b>Formelgleichung anpassen</b>. Wenn du z.B. zwei Wasserblöcke hast, musst du 2H<sub>2</sub>O schreiben. Die Anzahl der Teilchen nennt man Faktor und man schreibt sie als große Zahl vor die Formel!</li>
+        </ol>
+
+  <!-- END subsection-->
+  </div> <!-- END div "chapterContent" -->
+<hr>  <!-- seperator before new chapter-->
+<!-- ***************************************************************************************** -->
+<!-- *** End Of Chapter ********************************************************************** -->
+<!-- ***************************************************************************************** -->
+
+
+  <!-- end of main content of script -->        
+</div> <!-- DO NOT DELETE-->
+
+
+<!-- DO NOT DELETE-->
+<!-- JavaScript for Bootstrap 5 TODO: check for new version -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+  integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+  crossorigin="anonymous"></script>-->
+  <!-- old version <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+  crossorigin="anonymous"></script>-->
+<script src="../../js/scripts_global_javascripts.js"></script>
+
+
+
+<!-- VORLAGEN für chemische Gleichung-->
+<!-- 
+<p class="lead">Im Text direkt kann man Formeln unterbringen, so wie  die Reaktionsgleichung für die Knallgasprobe
+   <span class="chem-formula">\(\ce{2H2 + O2 -> 2 H2O}\)</span>.</p>
+
+   <p>Im Text direkt kann man Formeln unterbringen, so wie  die Reaktionsgleichung für die Knallgasprobe \(\ce{2H2 + O2 -> 2 H2O}\).</p>
+    <p>Man kann Gleichungen aber auch zentriert darstellen, wie das oft in wissenschaftlichen Publikationen genmacht wird:
+          $$\ce{2H2 + O2 -> 2 H2O}$$  
+    </p>
+    <p>Ansonsten gibt es:</p>
+    <ul>
+      <li>einfache Formeln: \(\ce{H2O}\),\(\ce{2H2O}\), \(\ce{H2SO4}\)</li>
+      <li>Formeln mit Aggregatzusant: \(\ce{H2O_{(l)}}\), \(\ce{H2O_{(s)}}\), \(\ce{H2O_{(g)}}\), \(\ce{H2SO4_{(aq)}}\) </li>
+      <li>Ionenschreibweisen: \(\ce{H+}\), \(\ce{Cl-}\), \(\ce{Mg^2+}\), \(\ce{SO4^2-}\)</li>
+      <li>Reaktionspfeile:</li>
+      <ul>
+        <li>Normaler Pfeil: \(\ce{C6H12O6 -> 2C2H5OH + 2CO2}\)</li>
+        <li>Normaler Pfeil mit Beschriftung: \(\ce{C6H12O6 ->[Kat.] 2C2H5OH + 2CO2}\)</li>
+        <li>Mesomeriepfeil: \(\ce{A <-> B}\)</li>
+        <li>Gleichgewichtspfeil: \(\ce{H2O + CO2 <=> H2CO3}\), \(\ce{H2O + CO2 <=>> H2CO3}\), \(\ce{H2O + CO2 <<=> H2CO3}\) </li>
+      </ul>
+    </ul>
+-->
+
+
+
+
+</body>
+
+</html>
